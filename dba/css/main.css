@@ -132,7 +132,7 @@
 /**
  * Apply a clearfix to an element.
  */
-/* 
+/*
  *  Owl Carousel - Animate Plugin
  */
 /* line 5, ../sass/core/owl-carousel/_owl.animate.scss */
@@ -172,7 +172,7 @@
     opacity: 0;
   }
 }
-/* 
+/*
  * 	Owl Carousel - Auto Height Plugin
  */
 /* line 7, ../sass/core/owl-carousel/_owl.autoheight.scss */
@@ -184,7 +184,7 @@
   transition: height 500ms ease-in-out;
 }
 
-/* 
+/*
  *  Core Owl Carousel CSS File
  */
 /* line 4, ../sass/core/owl-carousel/_owl.carousel.scss */
@@ -295,7 +295,7 @@
   display: block;
 }
 
-/* 
+/*
  * 	Owl Carousel - Lazy Load Plugin
  */
 /* line 9, ../sass/core/owl-carousel/_owl.lazyload.scss */
@@ -312,7 +312,7 @@
   transform-style: preserve-3d;
 }
 
-/* 
+/*
  * 	Owl Carousel - Video Plugin
  */
 /* line 8, ../sass/core/owl-carousel/_owl.video.scss */
@@ -375,8 +375,8 @@
   z-index: 1;
 }
 
-/* 
- *  Owl Carousel CSS3 Transitions 
+/*
+ *  Owl Carousel CSS3 Transitions
  *  v1.3.2
  */
 /* line 6, ../sass/core/owl-carousel/_owl.transitions.scss */
@@ -5627,7 +5627,7 @@ select::-ms-expand {
     float: right;
     margin-right: 10px;
     padding-right: 75px;
-    background-image: url("../../../img/ucl-ico.svg");
+    background-image: url("../img/ucl-ico.svg");
     background-position: 100% 0;
     background-repeat: no-repeat;
     opacity: 0.4;
@@ -5644,7 +5644,7 @@ select::-ms-expand {
   width: 80px;
   height: 62px;
   margin: 0 auto 10px;
-  background-image: url("../../../img/window-ico.svg");
+  background-image: url("../img/window-ico.svg");
   background-size: 100% 100%;
 }
 
@@ -5655,7 +5655,7 @@ select::-ms-expand {
   height: 62px;
   margin: 0 auto 10px;
   left: 10px;
-  background-image: url("../../../img/pensil-ico.svg");
+  background-image: url("../img/pensil-ico.svg");
   background-size: 100% 100%;
 }
 
@@ -5666,7 +5666,7 @@ select::-ms-expand {
   height: 62px;
   margin: 0 auto 10px;
   right: 10px;
-  background-image: url("../../../img/money-ico.svg");
+  background-image: url("../img/money-ico.svg");
   background-size: 100% 100%;
 }
 
@@ -5732,7 +5732,7 @@ select::-ms-expand {
 /* line 41, ../components/video_section/clientlibs/video_section.scss */
 .video-section__navigation__right {
   float: right;
-  background-image: url("../../../img/arrow.svg");
+  background-image: url("../img/arrow.svg");
   background-size: 100% 100%;
 }
 /* line 47, ../components/video_section/clientlibs/video_section.scss */
@@ -5742,7 +5742,7 @@ select::-ms-expand {
   -webkit-transform: rotate(-180deg);
   transform: rotate(-180deg);
   float: left;
-  background-image: url("../../../img/arrow.svg");
+  background-image: url("../img/arrow.svg");
   background-size: 100% 100%;
 }
 /* line 56, ../components/video_section/clientlibs/video_section.scss */
@@ -5781,7 +5781,7 @@ select::-ms-expand {
   height: 45px;
   border: 0;
   background-color: transparent;
-  background-image: url("../../../img/video_play_btn.svg");
+  background-image: url("../img/video_play_btn.svg");
   background-size: 100% 100%;
   fill: red;
 }
@@ -5987,7 +5987,7 @@ select::-ms-expand {
   width: 100%;
   height: 272px;
   margin: 36px auto 26px;
-  background-image: url("../../../img/step_1.svg");
+  background-image: url("../img/step_1.svg");
   background-size: 100% 100%;
 }
 
@@ -5996,7 +5996,7 @@ select::-ms-expand {
   width: 100%;
   height: 272px;
   margin: 36px auto 26px;
-  background-image: url("../../../img/step_2.svg");
+  background-image: url("../img/step_2.svg");
   background-size: 100% 100%;
 }
 
@@ -6005,7 +6005,7 @@ select::-ms-expand {
   width: 100%;
   height: 272px;
   margin: 36px auto 26px;
-  background-image: url("../../../img/step_3.svg");
+  background-image: url("../img/step_3.svg");
   background-size: 100% 100%;
 }
 
@@ -6071,31 +6071,31 @@ select::-ms-expand {
 }
 /* line 31, ../components/map_component/clientlibs/map_component.scss */
 .map-component__achivments-icon--icon1 {
-  background-image: url("../../../img/icon1.svg");
+  background-image: url("../img/icon1.svg");
 }
 /* line 34, ../components/map_component/clientlibs/map_component.scss */
 .map-component__achivments-icon--icon2 {
-  background-image: url("../../../img/icon2.svg");
+  background-image: url("../img/icon2.svg");
 }
 /* line 37, ../components/map_component/clientlibs/map_component.scss */
 .map-component__achivments-icon--icon3 {
   width: 26px;
   height: 39px;
-  background-image: url("../../../img/icon3.svg");
+  background-image: url("../img/icon3.svg");
 }
 /* line 43, ../components/map_component/clientlibs/map_component.scss */
 .map-component__achivments-icon--icon4 {
   width: 31px;
   height: 32px;
-  background-image: url("../../../img/icon4.svg");
+  background-image: url("../img/icon4.svg");
 }
 /* line 49, ../components/map_component/clientlibs/map_component.scss */
 .map-component__achivments-icon--icon5 {
-  background-image: url("../../../img/icon5.svg");
+  background-image: url("../img/icon5.svg");
 }
 /* line 52, ../components/map_component/clientlibs/map_component.scss */
 .map-component__achivments-icon--icon6 {
-  background-image: url("../../../img/icon6.svg");
+  background-image: url("../img/icon6.svg");
 }
 /* line 60, ../components/map_component/clientlibs/map_component.scss */
 .map-component__achivments-item {
@@ -6198,31 +6198,31 @@ select::-ms-expand {
   }
   /* line 138, ../components/map_component/clientlibs/map_component.scss */
   .map-component__achivments-icon--icon1 {
-    background-image: url("../../../img/icon1.svg");
+    background-image: url("../img/icon1.svg");
   }
   /* line 141, ../components/map_component/clientlibs/map_component.scss */
   .map-component__achivments-icon--icon2 {
-    background-image: url("../../../img/icon2.svg");
+    background-image: url("../img/icon2.svg");
   }
   /* line 144, ../components/map_component/clientlibs/map_component.scss */
   .map-component__achivments-icon--icon3 {
     width: 26px;
     height: 39px;
-    background-image: url("../../../img/icon3.svg");
+    background-image: url("../img/icon3.svg");
   }
   /* line 150, ../components/map_component/clientlibs/map_component.scss */
   .map-component__achivments-icon--icon4 {
     width: 31px;
     height: 32px;
-    background-image: url("../../../img/icon4.svg");
+    background-image: url("../img/icon4.svg");
   }
   /* line 156, ../components/map_component/clientlibs/map_component.scss */
   .map-component__achivments-icon--icon5 {
-    background-image: url("../../../img/icon5.svg");
+    background-image: url("../img/icon5.svg");
   }
   /* line 159, ../components/map_component/clientlibs/map_component.scss */
   .map-component__achivments-icon--icon6 {
-    background-image: url("../../../img/icon6.svg");
+    background-image: url("../img/icon6.svg");
   }
   /* line 164, ../components/map_component/clientlibs/map_component.scss */
   .map-component__achivments-list {
