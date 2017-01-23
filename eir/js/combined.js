@@ -2042,6 +2042,57 @@ EIR.define('HeroSection', ['jQuery', 'Response'], function($, Response) {
     return HeroSection;
 });
 
+EIR.define('TopSliderComponent', ['jQuery', 'Response'], function($, Response) {
+
+	'use strict';
+	// constructor
+	function TopSliderComponent ($el) {
+		console.log('*** TopSliderComponent ***');
+
+		var owl = $(".owl-top-slider-carousel");
+
+		owl.owlCarousel({
+			items : 1, //10 items above 1000px browser width
+			itemsDesktop : [1000,1], //5 items between 1000px and 901px
+			itemsDesktopSmall : [800,1], // betweem 900px and 601px
+			itemsTablet: [799,1], //1 items between 600 and 0
+			itemsMobile : false, // itemsMobile disabled - inherit from itemsTablet option
+			autoPlay : false,
+			stopOnHover : true,
+			autoHeight : true
+		});
+
+		// Custom Navigation Events
+		$(".next").click(function(){
+			owl.trigger('owl.next');
+		})
+		$(".prev").click(function(){
+			owl.trigger('owl.prev');
+		})
+	}
+
+	// register as view
+	this.registerView('TopSliderComponent', TopSliderComponent);
+	//
+	// always return constructor if you define a 'class'
+	return TopSliderComponent;
+});
+
+EIR.define('ProductTableComponent', ['jQuery', 'Response'], function($, Response) {
+
+    'use strict';
+    // constructor
+    function ProductTableComponent ($el) {
+        console.log('*** ProductTableComponent ***');
+
+    }
+    // register as view
+    this.registerView('ProductTableComponent', ProductTableComponent);
+    //
+    // always return constructor if you define a 'class'
+    return ProductTableComponent;
+});
+
 EIR.define('BeginComponent', ['jQuery', 'Response'], function($, Response) {
 
     'use strict';
