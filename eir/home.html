@@ -16,18 +16,49 @@
     
     ">
 
-<div class="main-header" data-component="MainHeader">
-  <div class="main-header__inner">
+<!--% include ../../components/main_header/main_header.ejs %-->
+<div class="main-menu-component" data-component="MainMenu">
+  <div class="main-menu-component__inner">
+    <div class="main-logo-block">
+      <div class="main-logo">
+        <a class="main-logo__img" href="/"></a>
+        <a class="main-logo__text" href="/"></a>
+      </div>
+    </div>
+    <div class="main-menu-info">
+      <nav class="main-menu-nav">
+        <ul>
+          <li class="main-menu-nav__item"><a href="#">אודות</a></li>
+          <li class="main-menu-nav__item"><a href="#">נכסים למגורים</a></li>
+          <li class="main-menu-nav__item"><a href="#">נכסים להשקעה</a></li>
+          <li class="main-menu-nav__item"><a href="#" class="active">סוכנים</a></li>
+          <li class="main-menu-nav__item"><a href="#">בלוג</a></li>
+          <li class="main-menu-nav__item"><a href="#">קריירה</a></li>
+          <li class="main-menu-nav__item"><a href="#">סיפורי הצלחה</a></li>
+          <li class="main-menu-nav__item"><a href="#">צור קשר</a></li>
+        </ul>
+      </nav>
+      <div class="search-block">
+        <div class="col">1</div>
+        <div class="col">2</div>
+        <div class="col">3</div>
+        <div class="col">
+          <button class="search-btn">חפש<span class="zoom-ico"></span></button>
+        </div>
+        <div class="col">
+          <a href="" class="phone">077-670-5959<span class="phone-ico"></span></a>
+        </div>
+        <div class="col">
+          <button class="sign-btn">הרשמה לעדכונים<span class="person-ico2"></span></button>
+        </div>
+        <div class="col">
+          <button class="add-btn">נכסים שאהבתי<span class="star-ico3"></span></button>
+        </div>
+      </div>
+    </div>
 
   </div>
 </div>
-
-
-<!-- <div class="main-header__burger-btn-wrapper">
-  <button class="main-header__burger-btn" name="button" type="button">
-    <i class="fa fa-bars"></i>
-  </button>
-</div> -->
 
 <div class="top-slider-component" data-component="TopSliderComponent">
 	<div class="top-slider-component__inner">
@@ -142,7 +173,6 @@
 	</div>
 </div>
 
-<!--% include ../../components/main_menu/main_menu.ejs %-->
 <!-- <div class="hero-section" data-component="HeroSection">
 	<div class="hero-section__inner">
 		<h1>hero section</h1>

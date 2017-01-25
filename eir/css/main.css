@@ -674,54 +674,6 @@
   background-color: rgba(0, 53, 89, 0.8);
 }
 
-/* line 82, ../sass/core/_vars.scss */
-.star-icon {
-  z-index: 100;
-  display: block;
-  width: 25px;
-  height: 25px;
-  margin: 15px;
-  background-image: url("../img/star-ico1.svg");
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
-
-/* line 93, ../sass/core/_vars.scss */
-.left-icon {
-  z-index: 100;
-  display: block;
-  width: 16px;
-  height: 30px;
-  margin-left: 20px;
-  background-image: url("../img/left-ico1.svg");
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
-
-/* line 104, ../sass/core/_vars.scss */
-.star-icon2 {
-  z-index: 100;
-  display: inline-block;
-  width: 21px;
-  height: 21px;
-  margin: 20px 5px;
-  background-image: url("../img/star-ico2.svg");
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
-
-/* line 115, ../sass/core/_vars.scss */
-.lock-icon {
-  z-index: 100;
-  display: inline-block;
-  width: 20px;
-  height: 22px;
-  margin: 20px 5px;
-  background-image: url("../img/lock-ico.svg");
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
-
 @font-face {
   font-family: 'FbRonibe';
   src: url("../fonts/fbronibe-light-webfont.woff2") format("woff2"), url("../fonts/fbronibe-light-webfont.woff") format("woff");
@@ -749,11 +701,59 @@
  * 5. use the sprite-image in your Sass/Scss using: '@include use-sprite(<sprite-name>)'
  */
 /* line 47, ../sass/core/_sprites.scss */
+.star-icon {
+  z-index: 100;
+  display: block;
+  width: 25px;
+  height: 25px;
+  margin: 15px;
+  background-image: url("../img/star-ico1.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+/* line 58, ../sass/core/_sprites.scss */
+.left-icon {
+  z-index: 100;
+  display: block;
+  width: 16px;
+  height: 30px;
+  margin-left: 20px;
+  background-image: url("../img/left-ico1.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+/* line 69, ../sass/core/_sprites.scss */
+.star-icon2 {
+  z-index: 100;
+  display: inline-block;
+  width: 21px;
+  height: 21px;
+  margin: 20px 5px;
+  background-image: url("../img/star-ico2.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+/* line 80, ../sass/core/_sprites.scss */
+.lock-icon {
+  z-index: 100;
+  display: inline-block;
+  width: 20px;
+  height: 22px;
+  margin: 20px 5px;
+  background-image: url("../img/lock-ico.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+/* line 92, ../sass/core/_sprites.scss */
 .bedrooms-ico {
   position: relative;
   padding: 0 55px 0 0;
 }
-/* line 50, ../sass/core/_sprites.scss */
+/* line 95, ../sass/core/_sprites.scss */
 .bedrooms-ico:before {
   content: '';
   display: block;
@@ -768,15 +768,16 @@
   height: 26px;
   right: 0;
   background-image: url("../img/gray-bed-ico.svg");
+  background-size: 100%;
   background-repeat: no-repeat;
 }
 
-/* line 62, ../sass/core/_sprites.scss */
+/* line 108, ../sass/core/_sprites.scss */
 .bedrooms-ico2 {
   position: relative;
   padding: 0 75px 0 0;
 }
-/* line 65, ../sass/core/_sprites.scss */
+/* line 111, ../sass/core/_sprites.scss */
 .bedrooms-ico2:before {
   content: '';
   display: block;
@@ -791,15 +792,16 @@
   height: 36px;
   right: 0;
   background-image: url("../img/yellow-bed-ico.svg");
+  background-size: 100%;
   background-repeat: no-repeat;
 }
 
-/* line 78, ../sass/core/_sprites.scss */
+/* line 125, ../sass/core/_sprites.scss */
 .surface-ico {
   position: relative;
   padding: 0 55px 0 0;
 }
-/* line 81, ../sass/core/_sprites.scss */
+/* line 128, ../sass/core/_sprites.scss */
 .surface-ico:before {
   content: '';
   display: block;
@@ -814,15 +816,16 @@
   height: 31px;
   right: 10px;
   background-image: url("../img/gray-arrow-ico.svg");
+  background-size: 100%;
   background-repeat: no-repeat;
 }
 
-/* line 93, ../sass/core/_sprites.scss */
+/* line 141, ../sass/core/_sprites.scss */
 .surface-ico2 {
   position: relative;
   padding: 0 65px 0 0;
 }
-/* line 96, ../sass/core/_sprites.scss */
+/* line 144, ../sass/core/_sprites.scss */
 .surface-ico2:before {
   content: '';
   display: block;
@@ -834,18 +837,19 @@
   transform: translateY(-50%);
   position: absolute;
   width: 42px;
-  height: 24px;
+  height: 42px;
   right: 0;
   background-image: url("../img/yellow-arrow-ico.svg");
+  background-size: 100%;
   background-repeat: no-repeat;
 }
 
-/* line 108, ../sass/core/_sprites.scss */
+/* line 157, ../sass/core/_sprites.scss */
 .shower-ico {
   position: relative;
   padding: 0 70px 0 0;
 }
-/* line 111, ../sass/core/_sprites.scss */
+/* line 160, ../sass/core/_sprites.scss */
 .shower-ico:before {
   content: '';
   display: block;
@@ -860,27 +864,80 @@
   height: 48px;
   right: 0;
   background-image: url("../img/yellow-shower-ico.svg");
+  background-size: 100%;
   background-repeat: no-repeat;
 }
 
-/* line 126, ../sass/core/_sprites.scss */
+/* line 173, ../sass/core/_sprites.scss */
+.zoom-ico {
+  display: inline-block;
+  position: relative;
+  width: 23px;
+  height: 23px;
+  top: 6px;
+  margin: 0 10px 0 0;
+  background-image: url("../img/zoom-ico-white.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+/* line 185, ../sass/core/_sprites.scss */
+.phone-ico {
+  display: inline-block;
+  position: relative;
+  width: 19px;
+  height: 19px;
+  top: 6px;
+  margin: 0 10px 0 0;
+  background-image: url("../img/phone-ico.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+/* line 197, ../sass/core/_sprites.scss */
+.person-ico2 {
+  display: inline-block;
+  position: relative;
+  width: 23px;
+  height: 23px;
+  top: 6px;
+  margin: 0 10px 0 0;
+  background-image: url("../img/person-ico2.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+/* line 209, ../sass/core/_sprites.scss */
+.star-ico3 {
+  display: inline-block;
+  position: relative;
+  width: 21px;
+  height: 21px;
+  top: 6px;
+  margin: 0 10px 0 0;
+  background-image: url("../img/star-ico3.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+/* line 224, ../sass/core/_sprites.scss */
 .fa-linkedin {
   color: #ffffff;
   height: 100px !important;
   display: block;
 }
 
-/* line 132, ../sass/core/_sprites.scss */
+/* line 230, ../sass/core/_sprites.scss */
 .fa-google-plus {
   color: #EB4040 !important;
 }
 
-/* line 136, ../sass/core/_sprites.scss */
+/* line 234, ../sass/core/_sprites.scss */
 .fa-twitter {
   color: #85D3FF;
 }
 
-/* line 140, ../sass/core/_sprites.scss */
+/* line 238, ../sass/core/_sprites.scss */
 .fa-facebook {
   color: #4A90E2;
 }
@@ -5075,225 +5132,289 @@ select::-ms-expand {
 }
 
 /* line 1, ../components/main_menu/clientlibs/main_menu.scss */
-.main-menu {
-  font-family: "fbronibe", "Trebuchet MS", Ubuntu, serif;
-  font-size: 26px;
-  font-style: normal;
-  font-weight: 300;
-  position: relative;
-  display: none;
-  background-color: #fff;
-}
-/* line 9, ../components/main_menu/clientlibs/main_menu.scss */
-.main-menu--active {
-  display: block;
-}
-/* line 12, ../components/main_menu/clientlibs/main_menu.scss */
-.main-menu__overlay {
-  height: 100vh;
-  background-color: #fff;
-}
-/* line 16, ../components/main_menu/clientlibs/main_menu.scss */
-.main-menu__navigation {
-  width: 100%;
-  position: absolute;
-  top: 0;
-}
-@media (min-width: 1280px) {
-  /* line 16, ../components/main_menu/clientlibs/main_menu.scss */
-  .main-menu__navigation {
-    max-width: 1280px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-/* line 23, ../components/main_menu/clientlibs/main_menu.scss */
-.main-menu__navigation-item__link {
-  *zoom: 1;
-  display: block;
-  padding-right: 20px;
-  padding-left: 20px;
-  color: rgba(0, 0, 0, 0.2);
-  border-bottom: 1px solid #ccc;
-  background-color: #fff;
-  line-height: 57px;
-}
-/* line 343, ../sass/core/jeet/_grid.scss */
-.main-menu__navigation-item__link:before, .main-menu__navigation-item__link:after {
-  content: '';
-  display: table;
-}
-/* line 348, ../sass/core/jeet/_grid.scss */
-.main-menu__navigation-item__link:after {
-  clear: both;
-}
-/* line 36, ../components/main_menu/clientlibs/main_menu.scss */
-.main-menu__navigation-item__link .fa-caret-right {
-  display: inline-block;
-}
-/* line 39, ../components/main_menu/clientlibs/main_menu.scss */
-.main-menu__navigation-item__link .fa-caret-down {
-  display: none;
-}
-/* line 42, ../components/main_menu/clientlibs/main_menu.scss */
-.main-menu__navigation-item__link:hover {
-  color: #fff;
-  background-color: #f99e1b;
-}
-/* line 46, ../components/main_menu/clientlibs/main_menu.scss */
-.main-menu__navigation-item__link--active {
-  color: #fff;
-  background-color: #f99e1b;
-}
-/* line 49, ../components/main_menu/clientlibs/main_menu.scss */
-.main-menu__navigation-item__link--active .fa-caret-right {
-  display: none;
-}
-/* line 52, ../components/main_menu/clientlibs/main_menu.scss */
-.main-menu__navigation-item__link--active .fa-caret-down {
-  display: inline-block;
-}
-/* line 56, ../components/main_menu/clientlibs/main_menu.scss */
-.main-menu__navigation-item__link .fa {
-  float: right;
-  line-height: 57px;
-}
-/* line 64, ../components/main_menu/clientlibs/main_menu.scss */
-.main-menu__sub-navigation {
-  display: none;
-}
-/* line 66, ../components/main_menu/clientlibs/main_menu.scss */
-.main-menu__sub-navigation--active {
-  display: block;
-}
-/* line 70, ../components/main_menu/clientlibs/main_menu.scss */
-.main-menu__sub-navigation-item__link {
+.main-menu-component {
   width: 100%;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  display: block;
-  height: 66px;
-  padding-left: 40px;
-  color: #fff;
-  border-bottom: 1px solid #404040;
-  background-color: #4A4A4A;
-  line-height: 66px;
+  position: absolute;
+  left: 50%;
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  *zoom: 1;
+  position: absolute;
+  z-index: 100;
+  height: 120px;
 }
-/* line 84, ../components/main_menu/clientlibs/main_menu.scss */
-.main-menu__sub-navigation-item__link:hover {
-  color: #fff;
-  background-color: #555;
+/* line 343, ../sass/core/jeet/_grid.scss */
+.main-menu-component:before, .main-menu-component:after {
+  content: '';
+  display: table;
+}
+/* line 348, ../sass/core/jeet/_grid.scss */
+.main-menu-component:after {
+  clear: both;
+}
+/* line 10, ../components/main_menu/clientlibs/main_menu.scss */
+.main-menu-component__inner {
+  *zoom: 1;
+  direction: rtl;
+  border-top: solid #93a33a 2px;
+}
+@media (min-width: 800px) and (max-width: 1139px) {
+  /* line 10, ../components/main_menu/clientlibs/main_menu.scss */
+  .main-menu-component__inner {
+    width: auto;
+    max-width: 98%;
+    float: none;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+  }
+}
+@media (min-width: 1140px) and (max-width: 1279px) {
+  /* line 10, ../components/main_menu/clientlibs/main_menu.scss */
+  .main-menu-component__inner {
+    width: auto;
+    max-width: 1140px;
+    float: none;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+  }
+}
+@media (min-width: 1280px) {
+  /* line 10, ../components/main_menu/clientlibs/main_menu.scss */
+  .main-menu-component__inner {
+    width: auto;
+    max-width: 1170px;
+    float: none;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+  }
+}
+/* line 343, ../sass/core/jeet/_grid.scss */
+.main-menu-component__inner:before, .main-menu-component__inner:after {
+  content: '';
+  display: table;
+}
+/* line 348, ../sass/core/jeet/_grid.scss */
+.main-menu-component__inner:after {
+  clear: both;
+}
+/* line 17, ../components/main_menu/clientlibs/main_menu.scss */
+.main-menu-component .main-logo-block {
+  float: right;
+  clear: none;
+  width: 11.66667%;
+  margin-right: 0%;
+  margin-left: 0%;
+  position: relative;
+  height: 180px;
+  background-color: #e5e5e5;
+}
+/* line 56, ../sass/core/jeet/_grid.scss */
+.main-menu-component .main-logo-block:last-child {
+  margin-left: 0%;
+}
+/* line 23, ../components/main_menu/clientlibs/main_menu.scss */
+.main-menu-component .main-logo-block .main-logo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -moz-transform: translateY(-50%) translateX(-50%);
+  -ms-transform: translateY(-50%) translateX(-50%);
+  -webkit-transform: translateY(-50%) translateX(-50%);
+  transform: translateY(-50%) translateX(-50%);
+  display: block;
+  text-align: center;
+}
+/* line 28, ../components/main_menu/clientlibs/main_menu.scss */
+.main-menu-component .main-logo-block .main-logo__img {
+  display: inline-block;
+  width: 66px;
+  height: 55px;
+  background-image: url("../img/main-logo.svg");
+  background-size: 100% 100%;
+}
+/* line 36, ../components/main_menu/clientlibs/main_menu.scss */
+.main-menu-component .main-logo-block .main-logo__text {
+  display: inline-block;
+  width: 58px;
+  height: 17px;
+  background-image: url("../img/main-logo-text.svg");
+  background-size: 100% 100%;
+}
+/* line 47, ../components/main_menu/clientlibs/main_menu.scss */
+.main-menu-component .main-menu-info {
+  float: right;
+  clear: none;
+  width: 88.33333%;
+  margin-right: 0%;
+  margin-left: 0%;
+}
+/* line 56, ../sass/core/jeet/_grid.scss */
+.main-menu-component .main-menu-info:last-child {
+  margin-left: 0%;
+}
+/* line 51, ../components/main_menu/clientlibs/main_menu.scss */
+.main-menu-component .main-menu-nav {
+  *zoom: 1;
+  background-color: #054770;
+}
+/* line 343, ../sass/core/jeet/_grid.scss */
+.main-menu-component .main-menu-nav:before, .main-menu-component .main-menu-nav:after {
+  content: '';
+  display: table;
+}
+/* line 348, ../sass/core/jeet/_grid.scss */
+.main-menu-component .main-menu-nav:after {
+  clear: both;
+}
+/* line 54, ../components/main_menu/clientlibs/main_menu.scss */
+.main-menu-component .main-menu-nav__item {
+  float: right;
+  clear: none;
+  width: 12.5%;
+  margin-right: 0%;
+  margin-left: 0%;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: table;
+  text-align: center;
+}
+/* line 56, ../sass/core/jeet/_grid.scss */
+.main-menu-component .main-menu-nav__item:last-child {
+  margin-left: 0%;
+}
+/* line 60, ../components/main_menu/clientlibs/main_menu.scss */
+.main-menu-component .main-menu-nav__item a {
+  font-family: "fbronibe", "Trebuchet MS", Ubuntu, serif;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 700;
+  display: table-cell;
+  height: 60px;
+  background-color: #054770;
+  color: #ffffff;
+  vertical-align: middle;
+}
+/* line 67, ../components/main_menu/clientlibs/main_menu.scss */
+.main-menu-component .main-menu-nav__item a:hover, .main-menu-component .main-menu-nav__item a.active {
+  background-color: #061d27;
+  color: #f99e1b;
+  text-decoration: none;
+}
+/* line 77, ../components/main_menu/clientlibs/main_menu.scss */
+.main-menu-component .search-block {
+  *zoom: 1;
+}
+/* line 343, ../sass/core/jeet/_grid.scss */
+.main-menu-component .search-block:before, .main-menu-component .search-block:after {
+  content: '';
+  display: table;
+}
+/* line 348, ../sass/core/jeet/_grid.scss */
+.main-menu-component .search-block:after {
+  clear: both;
+}
+/* line 79, ../components/main_menu/clientlibs/main_menu.scss */
+.main-menu-component .search-block .col {
+  float: right;
+  clear: none;
+  width: 25%;
+  margin-right: 0%;
+  margin-left: 0%;
+  height: 60px;
+  background-color: #ffffff;
+}
+/* line 56, ../sass/core/jeet/_grid.scss */
+.main-menu-component .search-block .col:last-child {
+  margin-left: 0%;
+}
+/* line 85, ../components/main_menu/clientlibs/main_menu.scss */
+.main-menu-component .search-block .search-btn, .main-menu-component .search-block .sign-btn, .main-menu-component .search-block .add-btn {
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+  font-family: "fbronibe", "Trebuchet MS", Ubuntu, serif;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 300;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  line-height: 125%;
+  padding: 0 0;
+  color: #ffffff;
+  border: 2px solid transparent;
+  background-color: #061d27;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  font-weight: 700;
+}
+/* line 93, ../components/main_menu/clientlibs/main_menu.scss */
+.main-menu-component .search-block .sign-btn {
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+  font-family: "fbronibe", "Trebuchet MS", Ubuntu, serif;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 300;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  line-height: 125%;
+  padding: 0 0;
+  color: #061d27;
+  border: 2px solid transparent;
+  background-color: #f99e1b;
+}
+/* line 97, ../components/main_menu/clientlibs/main_menu.scss */
+.main-menu-component .search-block .add-btn {
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+  font-family: "fbronibe", "Trebuchet MS", Ubuntu, serif;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 300;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  line-height: 125%;
+  padding: 0 0;
+  color: #061d27;
+  border: 2px solid transparent;
+  background-color: #93a33a;
+}
+/* line 101, ../components/main_menu/clientlibs/main_menu.scss */
+.main-menu-component .search-block .phone {
+  font-family: "fbronibe", "Trebuchet MS", Ubuntu, serif;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 700;
+  display: block;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  background-color: #061d27;
+  color: #ffffff;
+  text-align: center;
 }
 
-@media (min-width: 1140px) {
-  /* line 95, ../components/main_menu/clientlibs/main_menu.scss */
-  .main-menu {
-    font-family: "fbronibe", "Trebuchet MS", Ubuntu, serif;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 300;
-    position: relative;
-    display: block;
-  }
-  /* line 101, ../components/main_menu/clientlibs/main_menu.scss */
-  .main-menu__overlay {
-    display: none;
-  }
-  /* line 104, ../components/main_menu/clientlibs/main_menu.scss */
-  .main-menu__navigation {
-    width: 100%;
-    *zoom: 1;
-    position: relative;
-    text-align: center;
-  }
-  /* line 343, ../sass/core/jeet/_grid.scss */
-  .main-menu__navigation:before, .main-menu__navigation:after {
-    content: '';
-    display: table;
-  }
-  /* line 348, ../sass/core/jeet/_grid.scss */
-  .main-menu__navigation:after {
-    clear: both;
-  }
-  /* line 110, ../components/main_menu/clientlibs/main_menu.scss */
-  .main-menu__navigation-item {
-    display: inline-block;
-  }
-  /* line 112, ../components/main_menu/clientlibs/main_menu.scss */
-  .main-menu__navigation-item__link {
-    position: relative;
-    display: block;
-    float: none;
-    padding-right: 36px;
-    padding-left: 36px;
-    color: rgba(0, 0, 0, 0.2);
-    border-bottom: none;
-    background-color: #fff;
-    line-height: 81px;
-  }
-  /* line 126, ../components/main_menu/clientlibs/main_menu.scss */
-  .main-menu__navigation-item__link i {
-    position: absolute;
-    top: 50%;
-    -moz-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
-    right: 6px;
-    margin-right: 4px;
-  }
-  /* line 133, ../components/main_menu/clientlibs/main_menu.scss */
-  .main-menu__navigation-item__link .fa-caret-right, .main-menu__navigation-item__link .fa-caret-down {
-    display: none;
-  }
-  /* line 137, ../components/main_menu/clientlibs/main_menu.scss */
-  .main-menu__navigation-item__link:hover {
-    color: #fff;
-    background-color: #f99e1b;
-  }
-  /* line 141, ../components/main_menu/clientlibs/main_menu.scss */
-  .main-menu__navigation-item__link .fa {
-    float: right;
-    margin-left: 15px;
-    line-height: 81px;
-  }
-  /* line 148, ../components/main_menu/clientlibs/main_menu.scss */
-  .main-menu__navigation-item__link--active {
-    position: relative;
-    color: #fff;
-    background-color: #f99e1b;
-  }
-  /* line 157, ../components/main_menu/clientlibs/main_menu.scss */
-  .main-menu__sub-navigation {
-    position: absolute;
-    display: none;
-    text-align: left;
-  }
-  /* line 163, ../components/main_menu/clientlibs/main_menu.scss */
-  .main-menu__sub-navigation--active {
-    display: block;
-  }
-  /* line 167, ../components/main_menu/clientlibs/main_menu.scss */
-  .main-menu__sub-navigation-item__link {
-    width: 100%;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    display: block;
-    height: 66px;
-    padding-right: 42px;
-    padding-left: 42px;
-    color: #fff;
-    border-bottom: 1px solid #404040;
-    background-color: #4A4A4A;
-    line-height: 66px;
-  }
-  /* line 182, ../components/main_menu/clientlibs/main_menu.scss */
-  .main-menu__sub-navigation-item__link:hover {
-    background-color: #555;
-  }
-}
 /* line 1, ../components/hero_section/clientlibs/hero_section.scss */
 .hero-section {
   width: 100%;
