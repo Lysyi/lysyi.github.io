@@ -9,7 +9,7 @@
 
     <link type="text/css" rel="stylesheet" href="css/main.css">
     <script type="text/javascript" src="js/lib/modernizr.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC9uVtKPRj-uVD-KOOCwHLEgpDfLBVDOFE&callback=initMap"></script>
 </head>
 <body>
     <div class="page-container
@@ -20,13 +20,14 @@
 <div class="main-menu-component" data-component="MainMenu">
   <div class="main-menu-component__inner">
     <div class="main-logo-block">
+      <div class="js-main-menu-burger main-menu-burger"></div>
       <div class="main-logo">
         <a class="main-logo__img" href="/"></a>
         <a class="main-logo__text" href="/"></a>
       </div>
     </div>
     <div class="main-menu-info">
-      <nav class="main-menu-nav">
+      <nav class="js-main-menu-nav main-menu-nav">
         <ul>
           <li class="main-menu-nav__item"><a href="#">אודות</a></li>
           <li class="main-menu-nav__item"><a href="#">נכסים למגורים</a></li>
@@ -39,20 +40,44 @@
         </ul>
       </nav>
       <div class="search-block">
-        <div class="col">1</div>
-        <div class="col">2</div>
-        <div class="col">3</div>
         <div class="col">
-          <button class="search-btn">חפש<span class="zoom-ico"></span></button>
+          <div class="main-menu-select-block">
+            <select class="js-main-menu-select main-menu-select">
+              <option value="">עיר</option>
+              <option value="">עיר 2</option>
+              <option value="">עיר 3</option>
+            </select>
+          </div>
+        </div>
+        <div class="col">
+          <div class="main-menu-select-block">
+            <select class="js-main-menu-select main-menu-select">
+              <option value="">שכונה</option>
+              <option value="">שכונה 2</option>
+              <option value="">שכונה 3</option>
+            </select>
+          </div>
+        </div>
+        <div class="col">
+          <div class="main-menu-select-block">
+            <select class="js-main-menu-select main-menu-select">
+              <option value="">חדרים</option>
+              <option value="">חדרים 2</option>
+              <option value="">חדרים 3</option>
+            </select>
+          </div>
+        </div>
+        <div class="col">
+          <button class="search-btn" name="button" type="button">חפש<span class="zoom-ico"></span></button>
         </div>
         <div class="col">
           <a href="" class="phone">077-670-5959<span class="phone-ico"></span></a>
         </div>
         <div class="col">
-          <button class="sign-btn">הרשמה לעדכונים<span class="person-ico2"></span></button>
+          <button class="sign-btn" name="button" type="button">הרשמה לעדכונים<span class="person-ico2"></span></button>
         </div>
         <div class="col">
-          <button class="add-btn">נכסים שאהבתי<span class="star-ico3"></span></button>
+          <button class="js-add-btn add-btn" name="button" type="button">נכסים שאהבתי<span class="star-ico3"></span></button>
         </div>
       </div>
     </div>
@@ -60,11 +85,106 @@
   </div>
 </div>
 
+<div class="js-thumbs-slider thumbs-slider-component" data-component="ThumbsSliderComponent">
+	<div class="thumbs-slider-component__inner">
+		<div class="owl-thumbs-slider-navigation">
+		  <a class="js-thumbs-slider-prev prev left-icon"></a>
+		  <a class="js-thumbs-slider-next next left-icon"></a>
+		</div>
+		<div class="owl-thumbs-slider-carousel">
+			<div class="owl-thumbs-slider-carousel__item">
+				<div class="thumbs-slider__text">
+					<h3>
+						וילה בשכונת נאות לון
+						<span>1,650,0000 ₪</span>
+					</h3>
+				</div>
+				<div class="thumbs-slider__image">
+					<span class="arrow-label">להשכרה</span>
+					<img src="img/content/img2.jpg" alt="">
+				</div>
+			</div>
+			<div class="owl-thumbs-slider-carousel__item">
+				<div class="thumbs-slider__text">
+					<h3>
+						וילה בשכונת נאות לון
+						<span>1,650,0000 ₪</span>
+					</h3>
+				</div>
+				<div class="thumbs-slider__image">
+					<span class="arrow-label">להשכרה</span>
+					<img src="img/content/img2.jpg" alt="">
+				</div>
+			</div>
+			<div class="owl-thumbs-slider-carousel__item">
+				<div class="thumbs-slider__text">
+					<h3>
+						וילה בשכונת נאות לון
+						<span>1,650,0000 ₪</span>
+					</h3>
+				</div>
+				<div class="thumbs-slider__image">
+					<span class="arrow-label">להשכרה</span>
+					<img src="img/content/img1.jpg" alt="">
+				</div>
+			</div>
+			<div class="owl-thumbs-slider-carousel__item">
+				<div class="thumbs-slider__text">
+					<h3>
+						וילה בשכונת נאות לון
+						<span>1,650,0000 ₪</span>
+					</h3>
+				</div>
+				<div class="thumbs-slider__image">
+					<span class="arrow-label">להשכרה</span>
+					<img src="img/content/img2.jpg" alt="">
+				</div>
+			</div>
+			<div class="owl-thumbs-slider-carousel__item">
+				<div class="thumbs-slider__text">
+					<h3>
+						וילה בשכונת נאות לון
+						<span>1,650,0000 ₪</span>
+					</h3>
+				</div>
+				<div class="thumbs-slider__image">
+					<span class="arrow-label">להשכרה</span>
+					<img src="img/content/img1.jpg" alt="">
+				</div>
+			</div>
+			<div class="owl-thumbs-slider-carousel__item">
+				<div class="thumbs-slider__text">
+					<h3>
+						וילה בשכונת נאות לון
+						<span>1,650,0000 ₪</span>
+					</h3>
+				</div>
+				<div class="thumbs-slider__image">
+					<span class="arrow-label">להשכרה</span>
+					<img src="img/content/img2.jpg" alt="">
+				</div>
+			</div>
+			<div class="owl-thumbs-slider-carousel__item">
+				<div class="thumbs-slider__text">
+					<h3>
+						וילה בשכונת נאות לון
+						<span>1,650,0000 ₪</span>
+					</h3>
+				</div>
+				<div class="thumbs-slider__image">
+					<span class="arrow-label">להשכרה</span>
+					<img src="img/content/img3.jpg" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
 <div class="top-slider-component" data-component="TopSliderComponent">
 	<div class="top-slider-component__inner">
 		<div class="owl-top-slider-navigation">
-		  <a class="prev left-icon"></a>
-		  <a class="next left-icon"></a>
+		  <a class="js-top-slider-prev prev left-icon"></a>
+		  <a class="js-top-slider-next next left-icon"></a>
 		</div>
 		<div class="owl-top-slider-carousel">
 			<div class="owl-top-slider-carousel__item">
@@ -203,7 +323,6 @@
 	</div>
 </div>
  -->
-<!--% include ../../components/map_component/map_component.ejs %-->
 <div class="product-table-component" data-component="ProductTableComponent">
 	<div class="product-table-component__inner">
 
@@ -344,6 +463,7 @@
 
 <div class="product-list-component" data-component="ProductListComponent">
 	<div class="product-list-component__inner">
+    <!-- <h1>נכסים בבלעדיות הסוכן</h1> -->
 		<div class="product-list-item">
       <div class="js-product-list-item product-list-item__img">
         <img src="img/content/img1.jpg" alt="">
@@ -430,8 +550,8 @@
 			<h1>םינורחא םיסכנ</h1>
 		</div>
 		<div class="owl-bottom-slider-navigation">
-		  <a class="prev left-icon"></a>
-		  <a class="next left-icon"></a>
+		  <a class="js-bottom-slider-prev prev left-icon"></a>
+		  <a class="js-bottom-slider-next next left-icon"></a>
 		</div>
 		<div class="owl-bottom-slider-carousel">
 			<div class="owl-bottom-slider-carousel__item">
