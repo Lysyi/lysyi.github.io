@@ -29,7 +29,12 @@
 <div class="main-menu-component" data-component="MainMenu">
   <div class="main-menu-component__inner">
     <div class="main-logo-block">
-      <div class="js-main-menu-burger main-menu-burger"></div>
+      <div class="js-main-menu-burger main-menu-burger"  id="nav-icon4">
+        <!-- burger-icon -->
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
       <div class="main-logo">
         <a class="main-logo__img" href="/"></a>
         <a class="main-logo__text" href="/"></a>
@@ -38,10 +43,10 @@
     <div class="main-menu-info">
       <nav class="js-main-menu-nav main-menu-nav">
         <ul>
-          <li class="main-menu-nav__item"><a href="#">אודות</a></li>
+          <li class="main-menu-nav__item"><a href="#" class="js-success-popup-open">אודות</a></li>
           <li class="main-menu-nav__item"><a href="#">נכסים למגורים</a></li>
           <li class="main-menu-nav__item"><a href="#">נכסים להשקעה</a></li>
-          <li class="main-menu-nav__item"><a href="#" class="active">סוכנים</a></li>
+          <li class="main-menu-nav__item"><a href="#" class="active js-setting-popup-open">סוכנים</a></li>
           <li class="main-menu-nav__item"><a href="#">בלוג</a></li>
           <li class="main-menu-nav__item"><a href="#">קריירה</a></li>
           <li class="main-menu-nav__item"><a href="#">סיפורי הצלחה</a></li>
@@ -83,7 +88,7 @@
           <a href="" class="phone">077-670-5959<span class="phone-ico"></span></a>
         </div>
         <div class="col">
-          <button class="sign-btn" name="button" type="button">הרשמה לעדכונים<span class="person-ico2"></span></button>
+          <button class="js-signup-popup-open sign-btn" name="button" type="button">הרשמה לעדכונים<span class="person-ico2"></span></button>
         </div>
         <div class="col">
           <button class="js-add-btn add-btn" name="button" type="button">נכסים שאהבתי<span class="star-ico3"></span></button>
@@ -210,7 +215,56 @@
         <img src="img/content/img3.jpg" alt="">
         <div class="js-resident-property-list-info resident-property-list-info">
           <a href="#" class="star-icon2"></a>
-          <a href="#" class="lock-icon"></a>
+          <a href="#" class="lock-icon js-property-popup-open"></a>
+        </div>
+      </div>
+      <div class="resident-property-list-item__about">
+        <div class="center-y">
+          <h2>
+            דירה בנווה זאב
+          </h2>
+          <span class="arrow-label">להשכרה</span>
+          <div class="info bedrooms-ico">
+            חדרי שינה<i>5</i>
+          </div>
+          <div class="info surface-ico">
+            שטח<i>140 מ"ר שטח בנוי</i>
+          </div>
+          <div class="info info-img">
+            <div>
+              <img src="img/content/img-user1.jpg" alt="">
+            </div>
+            לסוכן<i>מתן בן-חמו</i>
+          </div>
+        </div>
+      </div>
+      <div class="resident-property-list-item__info">
+        <div class="center-y">
+          <h2>
+            בפרוייקט היוקרתי
+          </h2>
+          <p>
+            גנגלוס על המים, דירת 5 חדרים המשקיפה לנוף מרהיב, מרפסת שמש ו-3 כיווני אוויר.
+          </p>
+          <p>
+            מחיר
+          </p>
+          <h2>
+            1,650,0000 ₪
+          </h2>
+          <div class="btn-block">
+            <button class="btn js-apply-popup-open" name="button" type="button">לעמוד הנכס</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="resident-property-list-item">
+      <div class="js-resident-property-list-item resident-property-list-item__img">
+        <img src="img/content/img1.jpg" alt="">
+        <div class="js-resident-property-list-info resident-property-list-info">
+          <a href="#" class="star-icon2"></a>
+          <a href="#" class="lock-icon js-property-popup-open"></a>
         </div>
       </div>
       <div class="resident-property-list-item__about">
@@ -259,56 +313,7 @@
         <img src="img/content/img1.jpg" alt="">
         <div class="js-resident-property-list-info resident-property-list-info">
           <a href="#" class="star-icon2"></a>
-          <a href="#" class="lock-icon"></a>
-        </div>
-      </div>
-      <div class="resident-property-list-item__about">
-        <div class="center-y">
-          <h2>
-            דירה בנווה זאב
-          </h2>
-          <span class="arrow-label">להשכרה</span>
-          <div class="info bedrooms-ico">
-            חדרי שינה<i>5</i>
-          </div>
-          <div class="info surface-ico">
-            שטח<i>140 מ"ר שטח בנוי</i>
-          </div>
-          <div class="info info-img">
-            <div>
-              <img src="img/content/img-user1.jpg" alt="">
-            </div>
-            לסוכן<i>מתן בן-חמו</i>
-          </div>
-        </div>
-      </div>
-      <div class="resident-property-list-item__info">
-        <div class="center-y">
-          <h2>
-            בפרוייקט היוקרתי
-          </h2>
-          <p>
-            גנגלוס על המים, דירת 5 חדרים המשקיפה לנוף מרהיב, מרפסת שמש ו-3 כיווני אוויר.
-          </p>
-          <p>
-            מחיר
-          </p>
-          <h2>
-            1,650,0000 ₪
-          </h2>
-          <div class="btn-block">
-            <button class="btn" name="button" type="button">לעמוד הנכס</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="resident-property-list-item">
-      <div class="js-resident-property-list-item resident-property-list-item__img">
-        <img src="img/content/img1.jpg" alt="">
-        <div class="js-resident-property-list-info resident-property-list-info">
-          <a href="#" class="star-icon2"></a>
-          <a href="#" class="lock-icon"></a>
+          <a href="#" class="lock-icon js-property-popup-open"></a>
         </div>
       </div>
       <div class="resident-property-list-item__about">
@@ -351,6 +356,140 @@
         </div>
       </div>
     </div>
+
+	</div>
+</div>
+
+  <div class="js-property-popup property-popup-component" data-component="PropertyPopupComponent">
+	<div class="property-popup-component__inner">
+
+    <div class="js-close-popup-btn close-popup-btn close-x-ico"></div>
+
+		<div class="property-popup-info-container">
+      <div class="property-popup-info-container--text">
+        <h3>
+          באר שבע | שכונת רמות
+        </h3>
+        <p>
+          לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית צש בליא, מנסואלמנקום ניסי נון ניבאה. דס איאקו
+        </p>
+      </div>
+      <div class="property-popup-info-container--text2">
+        <ul class="property-popup-info-container--list">
+          <li>סום הנכס: וילה</li>
+          <li>ישוב: באר שבע</li>
+          <li>שכונה: רמות</li>
+          <li>מס' חדרים: 7</li>
+          <li>גודל במ"ר: 450</li>
+          <li>מחיר: 7,000000 ₪</li>
+        </ul>
+        <ul class="property-popup-info-container--list">
+          <li>
+            <label><input type="checkbox" value="first_checkbox">מרפסת שמש</label>
+          </li>
+          <li>
+            <label><input type="checkbox" value="first_checkbox">חניה</label>
+          </li>
+          <li>
+            <label><input type="checkbox" value="first_checkbox">מיזוג</label>
+          </li>
+          <li>
+            <label><input type="checkbox" value="first_checkbox">ממ"ד</label>
+          </li>
+          <li>
+            <label><input type="checkbox" value="first_checkbox">מעלית</label>
+          </li>
+          <li>
+            <label><input type="checkbox" value="first_checkbox">מחסן</label>
+          </li>
+          <li>
+            <label><input type="checkbox" value="first_checkbox">סורגים</label>
+          </li>
+          <li>
+            <label><input type="checkbox" value="first_checkbox">ריהוט</label>
+          </li>
+          <li>
+            <label><input type="checkbox" value="first_checkbox">משופצת</label>
+          </li>
+        </ul>
+      </div>
+		</div>
+		<div class="property-popup-slider-container">
+			<div class="property-popup-slider-navigation">
+			  <a class="js-property-popup-slider-prev prev left-icon"></a>
+			  <a class="js-property-popup-slider-next next left-icon"></a>
+			</div>
+			<div class="property-popup-slider-carousel">
+				<div class="owl-property-popup-slider-carousel__item">
+					<div class="property-popup-slider__image">
+						<img src="img/content/img1.jpg" alt="">
+            <ul class="slider-control-button">
+              <li><a href="#" class="turn-ico"></a></li>
+              <li><a href="#" class="cam-ico"></a></li>
+              <li><a href="#" class="lock-ico"></a></li>
+            </ul>
+					</div>
+				</div>
+				<div class="owl-property-popup-slider-carousel__item">
+					<div class="property-popup-slider__image">
+						<img src="img/content/img3.jpg" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+    <div class="property-popup-bottom-container">
+      <div class="property-popup-bottom-container--user-help">
+        <img src="img/content/img-user1.jpg" class="user-help-img" alt="">
+        <a href="#" class="user-help-link">רוצה לקבל פרטים נוספים?</a>
+      </div>
+      <div class="property-popup-bottom-container--button-list">
+        <button class="btn">שם מלא</button>
+        <button class="btn">טלפון</button>
+        <button class="btn">דוא"ל</button>
+        <button class="btn btn-blue">שלח ></button>
+      </div>
+    </div>
+
+	</div>
+</div>
+
+  <div class="js-apply-popup apply-popup-component" data-component="ApplyPopupComponent">
+	<div class="apply-popup-component__inner">
+
+    <div class="js-close-apply-popup-btn close-popup-btn close-x-ico"></div>
+
+		<div class="apply-popup-info-container">
+      <div class="apply-popup-info-container--header">
+        <h1>
+          סוכן נדל"ן
+        </h1>
+      </div>
+      <div class="apply-popup-info-container--text">
+        <p>
+          דרוש/ה סוכן נדל"ן עם רעב להצלחה, ויכולת מכירה <br>גבוהה<br>בלה בלה בלה בלה בלה בלה בלה
+        </p>
+        <h3>
+          דרישות התפקיד
+        </h3>
+        <ul class="apply-popup--list">
+          <li>- רישיון תיווך בתוקף</li>
+          <li>- יכולות מכירה מוכחות</li>
+          <li>- מוסר עבודה גבוה</li>
+          <li>- ניידות</li>
+        </ul>
+      </div>
+      <div class="apply-popup-info-container--form">
+        <input type="text" class="apply-popup-info-container--form--input" placeholder="שם מלא">
+        <input type="text" class="apply-popup-info-container--form--input" placeholder="דואר אלקטרוני">
+        <input type="text" class="apply-popup-info-container--form--input" placeholder="מספר טלפון">
+        <input type="file" name="file-3[]" id="file-3" class="inputfile inputfile-3" data-multiple-caption="{count} files selected" multiple />
+        <label for="file-3">
+          <span>קורות חיים &hellip;</span>
+        </label>
+        <textarea class="apply-popup-info-container--form--txtarea" placeholder="תוכן"></textarea>
+        <button class="apply-popup-info-container--form--btn" name="button" type="button">שלח הודעה</button>
+      </div>
+		</div>
 
 	</div>
 </div>

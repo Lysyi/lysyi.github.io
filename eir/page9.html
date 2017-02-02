@@ -29,7 +29,12 @@
 <div class="main-menu-component" data-component="MainMenu">
   <div class="main-menu-component__inner">
     <div class="main-logo-block">
-      <div class="js-main-menu-burger main-menu-burger"></div>
+      <div class="js-main-menu-burger main-menu-burger"  id="nav-icon4">
+        <!-- burger-icon -->
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
       <div class="main-logo">
         <a class="main-logo__img" href="/"></a>
         <a class="main-logo__text" href="/"></a>
@@ -38,10 +43,10 @@
     <div class="main-menu-info">
       <nav class="js-main-menu-nav main-menu-nav">
         <ul>
-          <li class="main-menu-nav__item"><a href="#">אודות</a></li>
+          <li class="main-menu-nav__item"><a href="#" class="js-success-popup-open">אודות</a></li>
           <li class="main-menu-nav__item"><a href="#">נכסים למגורים</a></li>
           <li class="main-menu-nav__item"><a href="#">נכסים להשקעה</a></li>
-          <li class="main-menu-nav__item"><a href="#" class="active">סוכנים</a></li>
+          <li class="main-menu-nav__item"><a href="#" class="active js-setting-popup-open">סוכנים</a></li>
           <li class="main-menu-nav__item"><a href="#">בלוג</a></li>
           <li class="main-menu-nav__item"><a href="#">קריירה</a></li>
           <li class="main-menu-nav__item"><a href="#">סיפורי הצלחה</a></li>
@@ -83,7 +88,7 @@
           <a href="" class="phone">077-670-5959<span class="phone-ico"></span></a>
         </div>
         <div class="col">
-          <button class="sign-btn" name="button" type="button">הרשמה לעדכונים<span class="person-ico2"></span></button>
+          <button class="js-signup-popup-open sign-btn" name="button" type="button">הרשמה לעדכונים<span class="person-ico2"></span></button>
         </div>
         <div class="col">
           <button class="js-add-btn add-btn" name="button" type="button">נכסים שאהבתי<span class="star-ico3"></span></button>
@@ -218,8 +223,8 @@
           <input type="text" class="contact-us-component--input" placeholder="שם מלא">
           <input type="text" class="contact-us-component--input" placeholder="דואר אלקטרוני">
           <input type="text" class="contact-us-component--input" placeholder="מספר טלפון">
-          <textarea class="contact-us-component--txtarea" placeholder="תוכן"></textarea>
-          <button class="contact-us-component--btn" name="button" type="button">שלח הודעה</button>
+          <textarea class="contact-us-component--txtarea" placeholder="רק על עצמי לספר ידעתי..."></textarea>
+          <button class="contact-us-component--btn" name="button" type="button">הגישו מועמדות </button>
         </div>
       </form>
     </div>

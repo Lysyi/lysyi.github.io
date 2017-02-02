@@ -19,7 +19,12 @@
 <div class="main-menu-component" data-component="MainMenu">
   <div class="main-menu-component__inner">
     <div class="main-logo-block">
-      <div class="js-main-menu-burger main-menu-burger"></div>
+      <div class="js-main-menu-burger main-menu-burger"  id="nav-icon4">
+        <!-- burger-icon -->
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
       <div class="main-logo">
         <a class="main-logo__img" href="/"></a>
         <a class="main-logo__text" href="/"></a>
@@ -28,10 +33,10 @@
     <div class="main-menu-info">
       <nav class="js-main-menu-nav main-menu-nav">
         <ul>
-          <li class="main-menu-nav__item"><a href="#">אודות</a></li>
+          <li class="main-menu-nav__item"><a href="#" class="js-success-popup-open">אודות</a></li>
           <li class="main-menu-nav__item"><a href="#">נכסים למגורים</a></li>
           <li class="main-menu-nav__item"><a href="#">נכסים להשקעה</a></li>
-          <li class="main-menu-nav__item"><a href="#" class="active">סוכנים</a></li>
+          <li class="main-menu-nav__item"><a href="#" class="active js-setting-popup-open">סוכנים</a></li>
           <li class="main-menu-nav__item"><a href="#">בלוג</a></li>
           <li class="main-menu-nav__item"><a href="#">קריירה</a></li>
           <li class="main-menu-nav__item"><a href="#">סיפורי הצלחה</a></li>
@@ -73,7 +78,7 @@
           <a href="" class="phone">077-670-5959<span class="phone-ico"></span></a>
         </div>
         <div class="col">
-          <button class="sign-btn" name="button" type="button">הרשמה לעדכונים<span class="person-ico2"></span></button>
+          <button class="js-signup-popup-open sign-btn" name="button" type="button">הרשמה לעדכונים<span class="person-ico2"></span></button>
         </div>
         <div class="col">
           <button class="js-add-btn add-btn" name="button" type="button">נכסים שאהבתי<span class="star-ico3"></span></button>
@@ -571,6 +576,113 @@
 					</p>
 				</div>
 			</div>
+		</div>
+	</div>
+</div>
+
+<div class="js-signup-popup signup-popup-component" data-component="SignupPopupComponent">
+	<div class="signup-popup-component__inner">
+    <div class="js-signup-close-popup-btn close-popup-btn close-x-ico2"></div>
+		<div class="signup-popup-info-container">
+      <div class="signup-popup-info-container--header">
+        <h3>
+          נרשמים
+        </h3>
+        <p>
+          זה פשוט ומהיר, אנחנו מבטיחים <br> לא לעשות שימוש לרעהבמידע שתתנו לנו
+        </p>
+      </div>
+      <form  class="signup-popup-info-container--form" action="">
+        <div class="input-block">
+          <input type="text" placeholder="אלמ םש">
+          <input type="text" placeholder="לאוד">
+          <input type="text" placeholder="דיינ ןופלט">
+        </div>
+        <button class="btn">
+          הבא >>
+        </button>
+      </form>
+		</div>
+	</div>
+</div>
+
+<div class="js-setting-popup setting-popup-component" data-component="SettingPopupComponent">
+	<div class="setting-popup-component__inner">
+    <div class="js-setting-close-popup-btn close-popup-btn close-x-ico2"></div>
+		<div class="setting-popup-info-container">
+      <div class="setting-popup-info-container--header">
+        <h3>
+          בוחרים העדפות
+        </h3>
+        <p>
+          מסמנים את הפרטים שהייתם רוצים בנכס, וסיימנו
+        </p>
+      </div>
+      <form  class="setting-popup-info-container--form" action="">
+        <div class="setting-popup-select-block">
+          <select class="js-setting-popup-select setting-popup-select">
+            <option value="">שכונה</option>
+            <option value="">שכונה 2</option>
+            <option value="">שכונה 3</option>
+          </select>
+        </div>
+        <div class="setting-popup-select-block">
+          <select class="js-setting-popup-select setting-popup-select">
+            <option value="">שכונה</option>
+            <option value="">שכונה 2</option>
+            <option value="">שכונה 3</option>
+          </select>
+        </div>
+        <div class="setting-popup-select-block">
+          <select class="js-setting-popup-select setting-popup-select">
+            <option value="">שכונה</option>
+            <option value="">שכונה 2</option>
+            <option value="">שכונה 3</option>
+          </select>
+        </div>
+        <div class="setting-popup-select-block">
+          <select class="js-setting-popup-select setting-popup-select">
+            <option value="">שכונה</option>
+            <option value="">שכונה 2</option>
+            <option value="">שכונה 3</option>
+          </select>
+        </div>
+        <div class="setting-popup-select-block">
+          <select class="js-setting-popup-select setting-popup-select">
+            <option value="">שכונה</option>
+            <option value="">שכונה 2</option>
+            <option value="">שכונה 3</option>
+          </select>
+        </div>
+        <button class="btn">
+          שלח
+        </button>
+      </form>
+		</div>
+	</div>
+</div>
+
+<div class="js-success-popup success-popup-component" data-component="SuccessPopupComponent">
+	<div class="success-popup-component__inner">
+    <div class="js-success-close-popup-btn close-popup-btn close-x-ico2"></div>
+		<div class="success-popup-info-container">
+      <div class="success-popup-info-container--header">
+        <h3>
+          סיימנו
+        </h3>
+        <p>
+          הפרטים שלך הועברו בהצלחה!
+        </p>
+      </div>
+      <div class="success-popup-info-container--text">
+        <p>
+          מעכשיו, תקבל התראות לכתובת הדוא"ל בכל<br>
+          שיעלה לאתר שלנו נכס המתאים <br>לפרופיל שהזנת.
+        </p>
+        <p>
+          תודה רבה :)
+        </p>
+      </div>
 		</div>
 	</div>
 </div>
