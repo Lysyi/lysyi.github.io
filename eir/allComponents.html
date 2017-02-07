@@ -195,6 +195,13 @@
 </div>
 
 <div class="inner-pages-global-container">
+  <div style="height: 200px">
+    <div class="js-property-popup-open" style="height: 20px; background: violet;">js-property-popup-open</div>
+    <div class="js-signup-popup-open" style="height: 20px; background: yellow;">js-signup-popup-open</div>
+    <div class="js-setting-popup-open" style="height: 20px; background: orange;">js-setting-popup-open</div>
+    <div class="js-success-popup-open" style="height: 20px; background: green;">js-success-popup-open</div>
+    <div class="js-apply-popup-open" style="height: 20px; background: blue;">js-apply-popup-open</div>
+  </div>
   <div class="about-component" data-component="AboutComponent">
 	<div class="about-component__inner">
     <div class="about-component-content">
@@ -598,7 +605,7 @@
     </div>
 
     <ul class="pagginator-list">
-      <li class="pagginator-list__item"><a href="#">1</a></li>
+      <li class="pagginator-list__item"><a href="#" class="active">1</a></li>
       <li class="pagginator-list__item"><a href="#">2</a></li>
     </ul>
 
@@ -935,6 +942,128 @@
         </button>
       </form>
 		</div>
+	</div>
+</div>
+
+  <div class="js-setting-popup setting-popup-component" data-component="SettingPopupComponent">
+	<div class="setting-popup-component__inner">
+    <div class="js-setting-close-popup-btn close-popup-btn close-x-ico2"></div>
+		<div class="setting-popup-info-container">
+      <div class="setting-popup-info-container--header">
+        <h3>
+          בוחרים העדפות
+        </h3>
+        <p>
+          מסמנים את הפרטים שהייתם רוצים בנכס, וסיימנו
+        </p>
+      </div>
+      <form  class="setting-popup-info-container--form" action="">
+        <div class="setting-popup-select-block">
+          <select class="js-setting-popup-select setting-popup-select">
+            <option value="">שכונה</option>
+            <option value="">שכונה 2</option>
+            <option value="">שכונה 3</option>
+          </select>
+        </div>
+        <div class="setting-popup-select-block">
+          <select class="js-setting-popup-select setting-popup-select">
+            <option value="">שכונה</option>
+            <option value="">שכונה 2</option>
+            <option value="">שכונה 3</option>
+          </select>
+        </div>
+        <div class="setting-popup-select-block">
+          <select class="js-setting-popup-select setting-popup-select">
+            <option value="">שכונה</option>
+            <option value="">שכונה 2</option>
+            <option value="">שכונה 3</option>
+          </select>
+        </div>
+        <div class="setting-popup-select-block">
+          <select class="js-setting-popup-select setting-popup-select">
+            <option value="">שכונה</option>
+            <option value="">שכונה 2</option>
+            <option value="">שכונה 3</option>
+          </select>
+        </div>
+        <div class="setting-popup-select-block">
+          <select class="js-setting-popup-select setting-popup-select">
+            <option value="">שכונה</option>
+            <option value="">שכונה 2</option>
+            <option value="">שכונה 3</option>
+          </select>
+        </div>
+        <button class="btn">
+          שלח
+        </button>
+      </form>
+		</div>
+	</div>
+</div>
+
+  <div class="js-success-popup success-popup-component" data-component="SuccessPopupComponent">
+	<div class="success-popup-component__inner">
+    <div class="js-success-close-popup-btn close-popup-btn close-x-ico2"></div>
+		<div class="success-popup-info-container">
+      <div class="success-popup-info-container--header">
+        <h3>
+          סיימנו
+        </h3>
+        <p>
+          הפרטים שלך הועברו בהצלחה!
+        </p>
+      </div>
+      <div class="success-popup-info-container--text">
+        <p>
+          מעכשיו, תקבל התראות לכתובת הדוא"ל בכל<br>
+          שיעלה לאתר שלנו נכס המתאים <br>לפרופיל שהזנת.
+        </p>
+        <p>
+          תודה רבה :)
+        </p>
+      </div>
+		</div>
+	</div>
+</div>
+
+  <div class="js-apply-popup apply-popup-component" data-component="ApplyPopupComponent">
+	<div class="apply-popup-component__inner">
+
+    <div class="js-close-apply-popup-btn close-popup-btn close-x-ico"></div>
+
+		<div class="apply-popup-info-container">
+      <div class="apply-popup-info-container--header">
+        <h1>
+          סוכן נדל"ן
+        </h1>
+      </div>
+      <div class="apply-popup-info-container--text">
+        <p>
+          דרוש/ה סוכן נדל"ן עם רעב להצלחה, ויכולת מכירה <br>גבוהה<br>בלה בלה בלה בלה בלה בלה בלה
+        </p>
+        <h3>
+          דרישות התפקיד
+        </h3>
+        <ul class="apply-popup--list">
+          <li>- רישיון תיווך בתוקף</li>
+          <li>- יכולות מכירה מוכחות</li>
+          <li>- מוסר עבודה גבוה</li>
+          <li>- ניידות</li>
+        </ul>
+      </div>
+      <div class="apply-popup-info-container--form">
+        <input type="text" class="apply-popup-info-container--form--input" placeholder="שם מלא">
+        <input type="text" class="apply-popup-info-container--form--input" placeholder="דואר אלקטרוני">
+        <input type="text" class="apply-popup-info-container--form--input" placeholder="מספר טלפון">
+        <input type="file" name="file-3[]" id="file-3" class="inputfile inputfile-3" data-multiple-caption="{count} files selected" multiple />
+        <label for="file-3">
+          <span>קורות חיים &hellip;</span>
+        </label>
+        <textarea class="apply-popup-info-container--form--txtarea" placeholder="תוכן"></textarea>
+        <button class="apply-popup-info-container--form--btn" name="button" type="button">שלח הודעה</button>
+      </div>
+		</div>
+
 	</div>
 </div>
 

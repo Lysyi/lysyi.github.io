@@ -5910,11 +5910,11 @@ EIR.define('MainMenu', ['jQuery', 'Response'], function($, Response) {
       $burgerBtn.on('click', function($el){
         $el.preventDefault();
         if ($mainMenu.hasClass($mainMenuActiveClass) && $burgerBtn.hasClass($burgerActiveClass)) {
-          $mainMenu.removeClass($mainMenuActiveClass);
+          $mainMenu.fadeOut("slow").removeClass($mainMenuActiveClass);
           $burgerBtn.removeClass($burgerActiveClass);
           $(window).disablescroll("undo");
         } else {
-          $mainMenu.addClass($mainMenuActiveClass);
+          $mainMenu.fadeIn("slow").addClass($mainMenuActiveClass);
           $burgerBtn.addClass($burgerActiveClass);
           $(window).disablescroll();
         }
@@ -5925,9 +5925,9 @@ EIR.define('MainMenu', ['jQuery', 'Response'], function($, Response) {
       $openSliderBtn.on('click', function($el){
         $el.preventDefault();
         if ($thumbsSlider.hasClass($thumbsSliderActiveClass)) {
-          $thumbsSlider.removeClass($thumbsSliderActiveClass);
+          $thumbsSlider.fadeOut("slow").removeClass($thumbsSliderActiveClass);
         } else {
-          $thumbsSlider.addClass($thumbsSliderActiveClass);
+          $thumbsSlider.fadeIn("slow").addClass($thumbsSliderActiveClass);
         }
       });
     }
@@ -6324,27 +6324,13 @@ EIR.define('PropertyPopupComponent', ['jQuery', 'Response'], function($, Respons
 
 	PropertyPopupComponent.prototype.popupToggleActions = function popupToggleActions() {
 		$closePopupBtn.on('click', function($el){
-
 	    $el.preventDefault();
-
-	    if ($propertyPopup.hasClass($propertyPopupActiveClass)) {
-	      $propertyPopup.removeClass($propertyPopupActiveClass);
-	    } else {
-	      $propertyPopup.addClass($propertyPopupActiveClass);
-	    }
-
+			$propertyPopup.fadeOut("fast").removeClass($propertyPopupActiveClass);
 	  });
 
 	  $propertyPopupOpen.on('click', function($el){
-
 	    $el.preventDefault();
-
-	    if ($propertyPopup.hasClass($propertyPopupActiveClass)) {
-	      $propertyPopup.removeClass($propertyPopupActiveClass);
-	    } else {
-	      $propertyPopup.addClass($propertyPopupActiveClass);
-	    }
-
+	    $propertyPopup.fadeIn("slow").addClass($propertyPopupActiveClass);
 	  });
 	}
 
@@ -6379,29 +6365,15 @@ EIR.define('SignupPopupComponent', ['jQuery', 'Response'], function($, Response)
 
 	SignupPopupComponent.prototype.popupToggleActions = function popupToggleActions() {
 		$closePopupBtn.on('click', function($el){
-
 	    $el.preventDefault();
-
-	    if ($signupPopup.hasClass($signupPopupActiveClass)) {
-	      $signupPopup.removeClass($signupPopupActiveClass);
-	      $(window).disablescroll("undo");
-	    } else {
-	      $signupPopup.addClass($signupPopupActiveClass);
-	    }
-
+			$signupPopup.fadeOut("fast").removeClass($signupPopupActiveClass);
+			$(window).disablescroll("undo");
 	  });
 
 	  $signupPopupOpen.on('click', function($el){
-
 	    $el.preventDefault();
-
-	    if ($signupPopup.hasClass($signupPopupActiveClass)) {
-	      $signupPopup.removeClass($signupPopupActiveClass);
-	    } else {
-	      $signupPopup.addClass($signupPopupActiveClass);
-	      $(window).disablescroll();
-	    }
-
+	    $signupPopup.fadeIn("slow").addClass($signupPopupActiveClass);
+	    $(window).disablescroll();
 	  });
 	}
 
@@ -6436,29 +6408,15 @@ EIR.define('SettingPopupComponent', ['jQuery', 'Response'], function($, Response
 
 	SettingPopupComponent.prototype.popupToggleActions = function popupToggleActions() {
 		$closePopupBtn.on('click', function($el){
-
 	    $el.preventDefault();
-
-	    if ($settingPopup.hasClass($settingPopupActiveClass)) {
-	      $settingPopup.removeClass($settingPopupActiveClass);
-	      $(window).disablescroll("undo");
-	    } else {
-	      $settingPopup.addClass($settingPopupActiveClass);
-	    }
-
+			$settingPopup.fadeOut("fast").removeClass($settingPopupActiveClass);
+			$(window).disablescroll("undo");
 	  });
 
 	  $settingPopupOpen.on('click', function($el){
-
 	    $el.preventDefault();
-
-	    if ($settingPopup.hasClass($settingPopupActiveClass)) {
-	      $settingPopup.removeClass($settingPopupActiveClass);
-	    } else {
-	      $settingPopup.addClass($settingPopupActiveClass);
-	      $(window).disablescroll();
-	    }
-
+	    $settingPopup.fadeIn("slow").addClass($settingPopupActiveClass);
+	    $(window).disablescroll();
 	  });
 	}
 
@@ -6495,29 +6453,15 @@ EIR.define('SuccessPopupComponent', ['jQuery', 'Response'], function($, Response
 
 	SuccessPopupComponent.prototype.popupToggleActions = function popupToggleActions() {
 		$closePopupBtn.on('click', function($el){
-
 	    $el.preventDefault();
-
-	    if ($successPopup.hasClass($successPopupActiveClass)) {
-	      $successPopup.removeClass($successPopupActiveClass);
-	      $(window).disablescroll("undo");
-	    } else {
-	      $successPopup.addClass($successPopupActiveClass);
-	    }
-
+			$successPopup.fadeOut("fast").removeClass($successPopupActiveClass);
+			$(window).disablescroll("undo");
 	  });
 
 	  $successPopupOpen.on('click', function($el){
-
 	    $el.preventDefault();
-
-	    if ($successPopup.hasClass($successPopupActiveClass)) {
-	      $successPopup.removeClass($successPopupActiveClass);
-	    } else {
-	      $successPopup.addClass($successPopupActiveClass);
-	      $(window).disablescroll();
-	    }
-
+	    $successPopup.fadeIn("slow").addClass($successPopupActiveClass);
+	    $(window).disablescroll();
 	  });
 	}
 
@@ -6540,32 +6484,6 @@ EIR.define('ApplyPopupComponent', ['jQuery', 'Response'], function($, Response) 
 	// constructor
 	function ApplyPopupComponent ($el) {
 		console.log('*** ApplyPopupComponent ***');
-
-		var inputs = document.querySelectorAll( '.inputfile' );
-		Array.prototype.forEach.call( inputs, function( input )
-		{
-			var label	 = input.nextElementSibling,
-				labelVal = label.innerHTML;
-
-			input.addEventListener( 'change', function( e )
-			{
-				var fileName = '';
-				if( this.files && this.files.length > 1 )
-					fileName = ( this.getAttribute( 'data-multiple-caption' ) || '' ).replace( '{count}', this.files.length );
-				else
-					fileName = e.target.value.split( '\\' ).pop();
-
-				if( fileName )
-					label.querySelector( 'span' ).innerHTML = fileName;
-				else
-					label.innerHTML = labelVal;
-			});
-
-			// Firefox bug fix
-			input.addEventListener( 'focus', function(){ input.classList.add( 'has-focus' ); });
-			input.addEventListener( 'blur', function(){ input.classList.remove( 'has-focus' ); });
-		});
-
 		this.initialize();
 	}
 
@@ -6576,30 +6494,15 @@ EIR.define('ApplyPopupComponent', ['jQuery', 'Response'], function($, Response) 
 
 	ApplyPopupComponent.prototype.popupToggleActions = function popupToggleActions() {
 		$closePopupBtn.on('click', function($el){
-
 	    $el.preventDefault();
-
-	    if ($applyPopup.hasClass($applyPopupActiveClass)) {
-	      $applyPopup.removeClass($applyPopupActiveClass);
-	    } else {
-	      $applyPopup.addClass($applyPopupActiveClass);
-	    }
-
+			$applyPopup.fadeOut("fast").removeClass($applyPopupActiveClass);
 	  });
 
 	  $applyPopupOpen.on('click', function($el){
-
 	    $el.preventDefault();
-
-	    if ($applyPopup.hasClass($applyPopupActiveClass)) {
-	      $applyPopup.removeClass($applyPopupActiveClass);
-	    } else {
-	      $applyPopup.addClass($applyPopupActiveClass);
-	    }
-
+	    $applyPopup.fadeIn("slow").addClass($applyPopupActiveClass);
 	  });
 	}
-
 
 
 	// register as view
