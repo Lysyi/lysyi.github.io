@@ -1682,7 +1682,7 @@
   position: relative;
   width: 21px;
   height: 21px;
-  top: 6px;
+  top: 4px;
   margin: 0 10px 0 0;
   background-image: url("../img/star-ico-white.svg");
   background-size: 100%;
@@ -1695,7 +1695,7 @@
   position: relative;
   width: 21px;
   height: 21px;
-  top: 6px;
+  top: 4px;
   margin: 0 10px 0 0;
   background-image: url("../img/star-ico3.svg");
   background-size: 100%;
@@ -2619,13 +2619,24 @@ a:hover {
 h1, h2, h3, h4, h5, h6 {
   line-height: 100%;
 }
+/* line 26, ../sass/core/_general.scss */
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  display: inline-block;
+  color: inherit;
+}
+/* line 29, ../sass/core/_general.scss */
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.6;
+}
 
-/* line 27, ../sass/core/_general.scss */
+/* line 37, ../sass/core/_general.scss */
 h1, h2, h3, h4, h5, h6, p {
   margin-top: 0;
 }
 
-/* line 31, ../sass/core/_general.scss */
+/* line 41, ../sass/core/_general.scss */
 h1 {
   font-family: "fbronibe", "Trebuchet MS", Ubuntu, serif;
   font-size: 36px;
@@ -2634,7 +2645,7 @@ h1 {
   letter-spacing: -0.5px;
 }
 @media (min-width: 800px) and (max-width: 1139px) {
-  /* line 31, ../sass/core/_general.scss */
+  /* line 41, ../sass/core/_general.scss */
   h1 {
     font-family: "fbronibe", "Trebuchet MS", Ubuntu, serif;
     font-size: 40px;
@@ -2643,7 +2654,7 @@ h1 {
   }
 }
 @media (min-width: 1140px) {
-  /* line 31, ../sass/core/_general.scss */
+  /* line 41, ../sass/core/_general.scss */
   h1 {
     font-family: "fbronibe", "Trebuchet MS", Ubuntu, serif;
     font-size: 46px;
@@ -2652,7 +2663,7 @@ h1 {
   }
 }
 
-/* line 42, ../sass/core/_general.scss */
+/* line 52, ../sass/core/_general.scss */
 h2 {
   font-family: "fbronibe", "Trebuchet MS", Ubuntu, serif;
   font-size: 30px;
@@ -2661,7 +2672,7 @@ h2 {
   letter-spacing: -0.5px;
 }
 
-/* line 47, ../sass/core/_general.scss */
+/* line 57, ../sass/core/_general.scss */
 h3 {
   font-family: "fbronibe", "Trebuchet MS", Ubuntu, serif;
   font-size: 20px;
@@ -2669,7 +2680,7 @@ h3 {
   font-weight: 700;
   letter-spacing: -0.5px;
 }
-/* line 50, ../sass/core/_general.scss */
+/* line 60, ../sass/core/_general.scss */
 h3 span {
   font-family: "fbronibe", "Trebuchet MS", Ubuntu, serif;
   font-size: 14px;
@@ -2679,12 +2690,12 @@ h3 span {
   color: rgba(0, 0, 0, 0.6);
 }
 
-/* line 57, ../sass/core/_general.scss */
+/* line 67, ../sass/core/_general.scss */
 p {
   line-height: 130%;
 }
 
-/* line 61, ../sass/core/_general.scss */
+/* line 71, ../sass/core/_general.scss */
 ul, nav {
   list-style: none;
   margin-top: 0;
@@ -2692,16 +2703,16 @@ ul, nav {
   padding: 0;
 }
 
-/* line 68, ../sass/core/_general.scss */
+/* line 78, ../sass/core/_general.scss */
 input[type=text]::-ms-clear {
   display: none;
 }
-/* line 70, ../sass/core/_general.scss */
+/* line 80, ../sass/core/_general.scss */
 input[type=text]::-ms-clear:focus {
   outline: none;
 }
 
-/* line 75, ../sass/core/_general.scss */
+/* line 85, ../sass/core/_general.scss */
 input[type="search"], input[type="text"], input[type="submit"], textarea {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -2720,39 +2731,44 @@ input[type="search"], input[type="text"], input[type="submit"], textarea {
   color: #000000;
   border: none;
 }
-/* line 82, ../sass/core/_general.scss */
+/* line 92, ../sass/core/_general.scss */
 input[type="search"]::-ms-clear, input[type="text"]::-ms-clear, input[type="submit"]::-ms-clear, textarea::-ms-clear {
   display: none;
 }
-/* line 86, ../sass/core/_general.scss */
+/* line 96, ../sass/core/_general.scss */
 input[type="search"]:focus, input[type="text"]:focus, input[type="submit"]:focus, textarea:focus {
   outline: none;
 }
 
-/* line 97, ../sass/core/_general.scss */
+/* line 107, ../sass/core/_general.scss */
 input[type="text"], input[type="submit"] {
   -moz-border-radius: 0px;
   -webkit-border-radius: 0px;
   border-radius: 0px;
 }
-/* line 100, ../sass/core/_general.scss */
+/* line 110, ../sass/core/_general.scss */
 input[type="text"]:focus, input[type="submit"]:focus {
   outline: none;
 }
 
-/* line 106, ../sass/core/_general.scss */
+/* line 116, ../sass/core/_general.scss */
 button:focus, select:focus, textarea:focus {
   outline: none;
 }
 
-/* line 111, ../sass/core/_general.scss */
+/* line 122, ../sass/core/_general.scss */
+button:hover {
+  transition: background-color 0.5s ease-out;
+}
+
+/* line 127, ../sass/core/_general.scss */
 .inner-pages-global-container {
   height: 100%;
   padding: 115px 0 0 0;
   background-color: rgba(0, 0, 0, 0.1);
 }
 
-/* line 117, ../sass/core/_general.scss */
+/* line 133, ../sass/core/_general.scss */
 .page-container {
   width: 100%;
   min-height: 100%;
@@ -2760,7 +2776,7 @@ button:focus, select:focus, textarea:focus {
   position: relative;
 }
 
-/* line 124, ../sass/core/_general.scss */
+/* line 140, ../sass/core/_general.scss */
 .clear {
   *zoom: 1;
 }
@@ -2774,17 +2790,17 @@ button:focus, select:focus, textarea:focus {
   clear: both;
 }
 
-/* line 128, ../sass/core/_general.scss */
+/* line 144, ../sass/core/_general.scss */
 .bold {
   font-weight: 700;
 }
 
-/* line 132, ../sass/core/_general.scss */
+/* line 148, ../sass/core/_general.scss */
 .text-decoration-none {
   text-decoration: none;
 }
 
-/* line 136, ../sass/core/_general.scss */
+/* line 152, ../sass/core/_general.scss */
 .center-xy {
   position: absolute;
   transform-style: preserve-3d;
@@ -2793,19 +2809,19 @@ button:focus, select:focus, textarea:focus {
   transform: translate(-50%, -50%);
 }
 
-/* line 140, ../sass/core/_general.scss */
+/* line 156, ../sass/core/_general.scss */
 .center-y {
   display: table-cell;
   vertical-align: middle;
   padding: 0 10%;
 }
 
-/* line 146, ../sass/core/_general.scss */
+/* line 162, ../sass/core/_general.scss */
 .popup__active {
   display: block !important;
 }
 
-/* line 151, ../sass/core/_general.scss */
+/* line 167, ../sass/core/_general.scss */
 select::-ms-expand {
   display: none;
 }
@@ -2859,23 +2875,24 @@ select::-ms-expand {
 
 /* line 50, ../sass/core/_select2-custom.scss */
 .select2-dropdown {
-  background-color: white;
-  border: 0px solid transparent;
+  border: 1px solid white;
+  margin: 0 0 0 -1px;
   border-radius: 0px;
+  box-sizing: content-box;
 }
 
-/* line 56, ../sass/core/_select2-custom.scss */
+/* line 57, ../sass/core/_select2-custom.scss */
 .select2-search--dropdown {
   padding: 14px 10px 0 10px;
 }
-/* line 58, ../sass/core/_select2-custom.scss */
+/* line 59, ../sass/core/_select2-custom.scss */
 .select2-search--dropdown .select2-search__field {
   padding: 10px;
 }
 
 /* line 64, ../sass/core/_select2-custom.scss */
 .select2-results__option {
-  padding: 15px;
+  padding: 17px 15px 12px 15px;
 }
 
 /* line 68, ../sass/core/_select2-custom.scss */
@@ -2887,6 +2904,15 @@ select::-ms-expand {
 .select2-container--default .select2-results__option--highlighted[aria-selected] {
   background-color: #054770;
   color: #ffffff;
+}
+
+/* line 78, ../sass/core/_select2-custom.scss */
+.select2-container--focus:focus {
+  outline: none !important;
+}
+/* line 82, ../sass/core/_select2-custom.scss */
+.select2-container--focus span:focus {
+  outline: none !important;
 }
 
 /* line 1, ../components/main_header/clientlibs/main_header.scss */
@@ -3093,18 +3119,15 @@ select::-ms-expand {
 }
 /* line 22, ../components/main_menu/clientlibs/main_menu.scss */
 .main-menu-component .main-logo-block .main-menu-burger {
-  cursor: pointer;
   float: left;
-  width: 45px;
-  height: 45px;
-  margin: 0 0 0 5px;
+  margin: 7px 0 0 5px;
 }
-/* line 30, ../components/main_menu/clientlibs/main_menu.scss */
+/* line 27, ../components/main_menu/clientlibs/main_menu.scss */
 .main-menu-component .main-logo-block .main-logo {
   display: block;
   text-align: center;
 }
-/* line 34, ../components/main_menu/clientlibs/main_menu.scss */
+/* line 31, ../components/main_menu/clientlibs/main_menu.scss */
 .main-menu-component .main-logo-block .main-logo__img {
   display: block;
   width: 56px;
@@ -3112,13 +3135,13 @@ select::-ms-expand {
   background-image: url("../img/main-logo.svg");
   background-size: 100% 100%;
 }
-/* line 42, ../components/main_menu/clientlibs/main_menu.scss */
+/* line 39, ../components/main_menu/clientlibs/main_menu.scss */
 .main-menu-component .main-logo-block .main-logo__text {
   display: none;
   background-image: url("../img/main-logo-text.svg");
   background-size: 100% 100%;
 }
-/* line 52, ../components/main_menu/clientlibs/main_menu.scss */
+/* line 49, ../components/main_menu/clientlibs/main_menu.scss */
 .main-menu-component .main-menu-info .main-menu-nav {
   width: 100%;
   *zoom: 1;
@@ -3137,11 +3160,11 @@ select::-ms-expand {
 .main-menu-component .main-menu-info .main-menu-nav:after {
   clear: both;
 }
-/* line 61, ../components/main_menu/clientlibs/main_menu.scss */
+/* line 58, ../components/main_menu/clientlibs/main_menu.scss */
 .main-menu-component .main-menu-info .main-menu-nav__active {
   display: block;
 }
-/* line 65, ../components/main_menu/clientlibs/main_menu.scss */
+/* line 62, ../components/main_menu/clientlibs/main_menu.scss */
 .main-menu-component .main-menu-info .main-menu-nav__item {
   float: right;
   clear: none;
@@ -3158,7 +3181,7 @@ select::-ms-expand {
 .main-menu-component .main-menu-info .main-menu-nav__item:last-child {
   margin-left: 0%;
 }
-/* line 71, ../components/main_menu/clientlibs/main_menu.scss */
+/* line 68, ../components/main_menu/clientlibs/main_menu.scss */
 .main-menu-component .main-menu-info .main-menu-nav__item a {
   font-family: "fbronibe", "Trebuchet MS", Ubuntu, serif;
   font-size: 18px;
@@ -3174,13 +3197,13 @@ select::-ms-expand {
   color: #ffffff;
   vertical-align: middle;
 }
-/* line 80, ../components/main_menu/clientlibs/main_menu.scss */
+/* line 77, ../components/main_menu/clientlibs/main_menu.scss */
 .main-menu-component .main-menu-info .main-menu-nav__item a:hover, .main-menu-component .main-menu-info .main-menu-nav__item a.active {
   background-color: #061d27;
   color: #f99e1b;
   text-decoration: none;
 }
-/* line 92, ../components/main_menu/clientlibs/main_menu.scss */
+/* line 89, ../components/main_menu/clientlibs/main_menu.scss */
 .main-menu-component .search-block {
   *zoom: 1;
 }
@@ -3193,20 +3216,19 @@ select::-ms-expand {
 .main-menu-component .search-block:after {
   clear: both;
 }
-/* line 94, ../components/main_menu/clientlibs/main_menu.scss */
+/* line 91, ../components/main_menu/clientlibs/main_menu.scss */
 .main-menu-component .search-block .col {
   float: right;
   clear: none;
   width: 50%;
   margin-right: 0%;
   margin-left: 0%;
-  height: 60px;
 }
 /* line 56, ../sass/core/jeet/_grid.scss */
 .main-menu-component .search-block .col:last-child {
   margin-left: 0%;
 }
-/* line 99, ../components/main_menu/clientlibs/main_menu.scss */
+/* line 95, ../components/main_menu/clientlibs/main_menu.scss */
 .main-menu-component .search-block .search-btn, .main-menu-component .search-block .sign-btn, .main-menu-component .search-block .add-btn {
   -moz-border-radius: 0px;
   -webkit-border-radius: 0px;
@@ -3234,15 +3256,15 @@ select::-ms-expand {
   height: 60px;
   line-height: 60px;
 }
-/* line 107, ../components/main_menu/clientlibs/main_menu.scss */
+/* line 103, ../components/main_menu/clientlibs/main_menu.scss */
 .main-menu-component .search-block .search-btn:hover, .main-menu-component .search-block .sign-btn:hover, .main-menu-component .search-block .add-btn:hover {
   color: #ffffff;
 }
-/* line 113, ../components/main_menu/clientlibs/main_menu.scss */
+/* line 109, ../components/main_menu/clientlibs/main_menu.scss */
 .main-menu-component .search-block .search-btn:hover {
   background-color: #f99e1b;
 }
-/* line 118, ../components/main_menu/clientlibs/main_menu.scss */
+/* line 114, ../components/main_menu/clientlibs/main_menu.scss */
 .main-menu-component .search-block .sign-btn {
   -moz-border-radius: 0px;
   -webkit-border-radius: 0px;
@@ -3264,7 +3286,7 @@ select::-ms-expand {
   font-style: normal;
   font-weight: 700;
 }
-/* line 129, ../components/main_menu/clientlibs/main_menu.scss */
+/* line 125, ../components/main_menu/clientlibs/main_menu.scss */
 .main-menu-component .search-block .add-btn {
   -moz-border-radius: 0px;
   -webkit-border-radius: 0px;
@@ -3287,7 +3309,7 @@ select::-ms-expand {
   font-weight: 700;
   display: none;
 }
-/* line 141, ../components/main_menu/clientlibs/main_menu.scss */
+/* line 137, ../components/main_menu/clientlibs/main_menu.scss */
 .main-menu-component .search-block .phone {
   font-family: "fbronibe", "Trebuchet MS", Ubuntu, serif;
   font-size: 18px;
@@ -3305,12 +3327,12 @@ select::-ms-expand {
   color: #ffffff;
   text-align: center;
 }
-/* line 153, ../components/main_menu/clientlibs/main_menu.scss */
+/* line 149, ../components/main_menu/clientlibs/main_menu.scss */
 .main-menu-component .search-block .phone:hover {
   text-decoration: none;
   color: #f99e1b;
 }
-/* line 162, ../components/main_menu/clientlibs/main_menu.scss */
+/* line 158, ../components/main_menu/clientlibs/main_menu.scss */
 .main-menu-component .search-block .main-menu-select-block {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -3321,7 +3343,11 @@ select::-ms-expand {
 }
 
 @media (min-width: 800px) and (max-width: 1139px) {
-  /* line 178, ../components/main_menu/clientlibs/main_menu.scss */
+  /* line 172, ../components/main_menu/clientlibs/main_menu.scss */
+  .main-menu-component {
+    position: fixed;
+  }
+  /* line 175, ../components/main_menu/clientlibs/main_menu.scss */
   .main-menu-component .main-logo-block {
     float: right;
     clear: none;
@@ -3335,11 +3361,11 @@ select::-ms-expand {
   .main-menu-component .main-logo-block:last-child {
     margin-left: 0%;
   }
-  /* line 183, ../components/main_menu/clientlibs/main_menu.scss */
+  /* line 180, ../components/main_menu/clientlibs/main_menu.scss */
   .main-menu-component .main-logo-block .main-menu-burger {
     display: none;
   }
-  /* line 187, ../components/main_menu/clientlibs/main_menu.scss */
+  /* line 184, ../components/main_menu/clientlibs/main_menu.scss */
   .main-menu-component .main-logo-block .main-logo {
     position: absolute;
     left: 50%;
@@ -3349,19 +3375,19 @@ select::-ms-expand {
     -webkit-transform: translateY(-50%) translateX(-50%);
     transform: translateY(-50%) translateX(-50%);
   }
-  /* line 190, ../components/main_menu/clientlibs/main_menu.scss */
+  /* line 187, ../components/main_menu/clientlibs/main_menu.scss */
   .main-menu-component .main-logo-block .main-logo__img {
     display: inline-block;
     width: 66px;
     height: 55px;
   }
-  /* line 196, ../components/main_menu/clientlibs/main_menu.scss */
+  /* line 193, ../components/main_menu/clientlibs/main_menu.scss */
   .main-menu-component .main-logo-block .main-logo__text {
     display: inline-block;
     width: 58px;
     height: 17px;
   }
-  /* line 205, ../components/main_menu/clientlibs/main_menu.scss */
+  /* line 202, ../components/main_menu/clientlibs/main_menu.scss */
   .main-menu-component .main-menu-info {
     float: right;
     clear: none;
@@ -3373,13 +3399,13 @@ select::-ms-expand {
   .main-menu-component .main-menu-info:last-child {
     margin-left: 0%;
   }
-  /* line 208, ../components/main_menu/clientlibs/main_menu.scss */
+  /* line 205, ../components/main_menu/clientlibs/main_menu.scss */
   .main-menu-component .main-menu-info .main-menu-nav {
     display: block !important;
     position: inherit;
     height: auto;
   }
-  /* line 213, ../components/main_menu/clientlibs/main_menu.scss */
+  /* line 210, ../components/main_menu/clientlibs/main_menu.scss */
   .main-menu-component .main-menu-info .main-menu-nav__item {
     float: right;
     clear: none;
@@ -3391,7 +3417,7 @@ select::-ms-expand {
   .main-menu-component .main-menu-info .main-menu-nav__item:last-child {
     margin-left: 0%;
   }
-  /* line 220, ../components/main_menu/clientlibs/main_menu.scss */
+  /* line 217, ../components/main_menu/clientlibs/main_menu.scss */
   .main-menu-component .search-block .col {
     float: right;
     clear: none;
@@ -3403,21 +3429,21 @@ select::-ms-expand {
   .main-menu-component .search-block .col:last-child {
     margin-left: 0%;
   }
-  /* line 224, ../components/main_menu/clientlibs/main_menu.scss */
+  /* line 221, ../components/main_menu/clientlibs/main_menu.scss */
   .main-menu-component .search-block .add-btn {
     display: block;
   }
 }
 @media (min-width: 1140px) {
-  /* line 237, ../components/main_menu/clientlibs/main_menu.scss */
+  /* line 234, ../components/main_menu/clientlibs/main_menu.scss */
   .main-menu-component {
     position: fixed;
   }
-  /* line 240, ../components/main_menu/clientlibs/main_menu.scss */
+  /* line 237, ../components/main_menu/clientlibs/main_menu.scss */
   .main-menu-component .main-menu-burger {
     display: none;
   }
-  /* line 244, ../components/main_menu/clientlibs/main_menu.scss */
+  /* line 241, ../components/main_menu/clientlibs/main_menu.scss */
   .main-menu-component .main-logo-block {
     float: right;
     clear: none;
@@ -3431,7 +3457,7 @@ select::-ms-expand {
   .main-menu-component .main-logo-block:last-child {
     margin-left: 0%;
   }
-  /* line 249, ../components/main_menu/clientlibs/main_menu.scss */
+  /* line 246, ../components/main_menu/clientlibs/main_menu.scss */
   .main-menu-component .main-logo-block .main-logo {
     position: absolute;
     left: 50%;
@@ -3441,19 +3467,19 @@ select::-ms-expand {
     -webkit-transform: translateY(-50%) translateX(-50%);
     transform: translateY(-50%) translateX(-50%);
   }
-  /* line 252, ../components/main_menu/clientlibs/main_menu.scss */
+  /* line 249, ../components/main_menu/clientlibs/main_menu.scss */
   .main-menu-component .main-logo-block .main-logo__img {
     display: inline-block;
     width: 66px;
     height: 55px;
   }
-  /* line 258, ../components/main_menu/clientlibs/main_menu.scss */
+  /* line 255, ../components/main_menu/clientlibs/main_menu.scss */
   .main-menu-component .main-logo-block .main-logo__text {
     display: inline-block;
     width: 58px;
     height: 17px;
   }
-  /* line 267, ../components/main_menu/clientlibs/main_menu.scss */
+  /* line 264, ../components/main_menu/clientlibs/main_menu.scss */
   .main-menu-component .main-menu-info {
     float: right;
     clear: none;
@@ -3465,13 +3491,13 @@ select::-ms-expand {
   .main-menu-component .main-menu-info:last-child {
     margin-left: 0%;
   }
-  /* line 270, ../components/main_menu/clientlibs/main_menu.scss */
+  /* line 267, ../components/main_menu/clientlibs/main_menu.scss */
   .main-menu-component .main-menu-info .main-menu-nav {
     display: block !important;
     position: inherit;
     height: auto;
   }
-  /* line 275, ../components/main_menu/clientlibs/main_menu.scss */
+  /* line 272, ../components/main_menu/clientlibs/main_menu.scss */
   .main-menu-component .main-menu-info .main-menu-nav__item {
     float: right;
     clear: none;
@@ -3483,7 +3509,7 @@ select::-ms-expand {
   .main-menu-component .main-menu-info .main-menu-nav__item:last-child {
     margin-left: 0%;
   }
-  /* line 282, ../components/main_menu/clientlibs/main_menu.scss */
+  /* line 279, ../components/main_menu/clientlibs/main_menu.scss */
   .main-menu-component .search-block .col {
     float: right;
     clear: none;
@@ -3495,18 +3521,17 @@ select::-ms-expand {
   .main-menu-component .search-block .col:last-child {
     margin-left: 0%;
   }
-  /* line 286, ../components/main_menu/clientlibs/main_menu.scss */
+  /* line 283, ../components/main_menu/clientlibs/main_menu.scss */
   .main-menu-component .search-block .add-btn {
     display: block;
   }
 }
-/* line 299, ../components/main_menu/clientlibs/main_menu.scss */
-#nav-icon1, #nav-icon2, #nav-icon3, #nav-icon4 {
+/* line 294, ../components/main_menu/clientlibs/main_menu.scss */
+.menu-burger-icon {
+  cursor: pointer;
+  position: relative;
   width: 30px;
   height: 30px;
-  position: relative;
-  left: 5px;
-  margin: 7px auto;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
   -o-transform: rotate(0deg);
@@ -3517,9 +3542,8 @@ select::-ms-expand {
   transition: .5s ease-in-out;
   cursor: pointer;
 }
-
-/* line 316, ../components/main_menu/clientlibs/main_menu.scss */
-#nav-icon1 span, #nav-icon3 span, #nav-icon4 span {
+/* line 309, ../components/main_menu/clientlibs/main_menu.scss */
+.menu-burger-icon span {
   display: block;
   position: absolute;
   height: 6px;
@@ -3536,58 +3560,41 @@ select::-ms-expand {
   -o-transition: .25s ease-in-out;
   transition: .25s ease-in-out;
 }
-
-/* line 337, ../components/main_menu/clientlibs/main_menu.scss */
-#nav-icon4 span:nth-child(1) {
+/* line 326, ../components/main_menu/clientlibs/main_menu.scss */
+.menu-burger-icon span:nth-child(1), .menu-burger-icon span:nth-child(2), .menu-burger-icon span:nth-child(3) {
   top: 0px;
   -webkit-transform-origin: left center;
   -moz-transform-origin: left center;
   -o-transform-origin: left center;
   transform-origin: left center;
 }
-
-/* line 345, ../components/main_menu/clientlibs/main_menu.scss */
-#nav-icon4 span:nth-child(2) {
+/* line 334, ../components/main_menu/clientlibs/main_menu.scss */
+.menu-burger-icon span:nth-child(2) {
   top: 12px;
-  -webkit-transform-origin: left center;
-  -moz-transform-origin: left center;
-  -o-transform-origin: left center;
-  transform-origin: left center;
 }
-
-/* line 353, ../components/main_menu/clientlibs/main_menu.scss */
-#nav-icon4 span:nth-child(3) {
+/* line 339, ../components/main_menu/clientlibs/main_menu.scss */
+.menu-burger-icon span:nth-child(3) {
   top: 24px;
-  -webkit-transform-origin: left center;
-  -moz-transform-origin: left center;
-  -o-transform-origin: left center;
-  transform-origin: left center;
 }
-
-/* line 361, ../components/main_menu/clientlibs/main_menu.scss */
-#nav-icon4.burger-active span:nth-child(1) {
+/* line 347, ../components/main_menu/clientlibs/main_menu.scss */
+.menu-burger-icon.burger-active span:nth-child(1) {
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   -o-transform: rotate(45deg);
   transform: rotate(45deg);
-  top: 7px;
-  left: 8px;
 }
-
-/* line 370, ../components/main_menu/clientlibs/main_menu.scss */
-#nav-icon4.burger-active span:nth-child(2) {
+/* line 354, ../components/main_menu/clientlibs/main_menu.scss */
+.menu-burger-icon.burger-active span:nth-child(2) {
   width: 0%;
   opacity: 0;
 }
-
-/* line 375, ../components/main_menu/clientlibs/main_menu.scss */
-#nav-icon4.burger-active span:nth-child(3) {
+/* line 359, ../components/main_menu/clientlibs/main_menu.scss */
+.menu-burger-icon.burger-active span:nth-child(3) {
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
   -o-transform: rotate(-45deg);
   transform: rotate(-45deg);
-  top: 29px;
-  left: 8px;
+  top: 22px;
 }
 
 /* line 1, ../components/map_component/clientlibs/map_component.scss */
@@ -4312,21 +4319,22 @@ select::-ms-expand {
   width: 100%;
   position: absolute;
   left: 50%;
-  top: 50%;
-  -moz-transform: translateY(-50%) translateX(-50%);
-  -ms-transform: translateY(-50%) translateX(-50%);
-  -webkit-transform: translateY(-50%) translateX(-50%);
-  transform: translateY(-50%) translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  height: 0px;
+  top: 49%;
   z-index: 10;
 }
-/* line 15, ../components/top_slider_component/clientlibs/top_slider_component.scss */
+/* line 17, ../components/top_slider_component/clientlibs/top_slider_component.scss */
 .top-slider-component .owl-top-slider-navigation .prev, .top-slider-component .owl-top-slider-navigation .next {
   display: inline-block;
   width: 23px;
   height: 44px;
   margin-left: 0;
 }
-/* line 21, ../components/top_slider_component/clientlibs/top_slider_component.scss */
+/* line 23, ../components/top_slider_component/clientlibs/top_slider_component.scss */
 .top-slider-component .owl-top-slider-navigation .next {
   -moz-transform: rotate(-180deg);
   -ms-transform: rotate(-180deg);
@@ -4334,11 +4342,11 @@ select::-ms-expand {
   transform: rotate(-180deg);
   float: right;
 }
-/* line 27, ../components/top_slider_component/clientlibs/top_slider_component.scss */
+/* line 29, ../components/top_slider_component/clientlibs/top_slider_component.scss */
 .top-slider-component .owl-top-slider-carousel {
   overflow: hidden;
 }
-/* line 30, ../components/top_slider_component/clientlibs/top_slider_component.scss */
+/* line 32, ../components/top_slider_component/clientlibs/top_slider_component.scss */
 .top-slider-component .owl-top-slider-carousel__item {
   *zoom: 1;
   position: relative;
@@ -4353,16 +4361,16 @@ select::-ms-expand {
 .top-slider-component .owl-top-slider-carousel__item:after {
   clear: both;
 }
-/* line 37, ../components/top_slider_component/clientlibs/top_slider_component.scss */
+/* line 39, ../components/top_slider_component/clientlibs/top_slider_component.scss */
 .top-slider-component .top-slider__image {
   position: relative;
   height: 100vh;
 }
-/* line 40, ../components/top_slider_component/clientlibs/top_slider_component.scss */
+/* line 42, ../components/top_slider_component/clientlibs/top_slider_component.scss */
 .top-slider-component .top-slider__image img {
   height: 100%;
 }
-/* line 45, ../components/top_slider_component/clientlibs/top_slider_component.scss */
+/* line 47, ../components/top_slider_component/clientlibs/top_slider_component.scss */
 .top-slider-component .top-slider__text {
   width: 100%;
   position: absolute;
@@ -4377,12 +4385,12 @@ select::-ms-expand {
   bottom: 0;
   background-color: rgba(6, 29, 39, 0.8);
 }
-/* line 54, ../components/top_slider_component/clientlibs/top_slider_component.scss */
+/* line 56, ../components/top_slider_component/clientlibs/top_slider_component.scss */
 .top-slider-component .top-slider__text h3 {
   margin-bottom: 0;
   color: #f99e1b;
 }
-/* line 57, ../components/top_slider_component/clientlibs/top_slider_component.scss */
+/* line 59, ../components/top_slider_component/clientlibs/top_slider_component.scss */
 .top-slider-component .top-slider__text h3 span {
   color: #ffffff;
   font-family: "fbronibe", "Trebuchet MS", Ubuntu, serif;
@@ -4390,7 +4398,7 @@ select::-ms-expand {
   font-style: normal;
   font-weight: 700;
 }
-/* line 63, ../components/top_slider_component/clientlibs/top_slider_component.scss */
+/* line 65, ../components/top_slider_component/clientlibs/top_slider_component.scss */
 .top-slider-component .top-slider__text .arrow-label {
   -moz-border-radius: 0px;
   -webkit-border-radius: 0px;
@@ -4427,7 +4435,7 @@ select::-ms-expand {
   top: -2px;
   left: -14px;
 }
-/* line 67, ../components/top_slider_component/clientlibs/top_slider_component.scss */
+/* line 69, ../components/top_slider_component/clientlibs/top_slider_component.scss */
 .top-slider-component .top-slider__text .name {
   float: right;
   clear: none;
@@ -4439,7 +4447,7 @@ select::-ms-expand {
 .top-slider-component .top-slider__text .name:last-child {
   margin-left: 0%;
 }
-/* line 71, ../components/top_slider_component/clientlibs/top_slider_component.scss */
+/* line 73, ../components/top_slider_component/clientlibs/top_slider_component.scss */
 .top-slider-component .top-slider__text .info {
   float: right;
   clear: none;
@@ -4452,18 +4460,18 @@ select::-ms-expand {
 .top-slider-component .top-slider__text .info:last-child {
   margin-left: 0%;
 }
-/* line 75, ../components/top_slider_component/clientlibs/top_slider_component.scss */
+/* line 77, ../components/top_slider_component/clientlibs/top_slider_component.scss */
 .top-slider-component .top-slider__text .info h3 {
   color: #ffffff;
 }
-/* line 77, ../components/top_slider_component/clientlibs/top_slider_component.scss */
+/* line 79, ../components/top_slider_component/clientlibs/top_slider_component.scss */
 .top-slider-component .top-slider__text .info h3 span {
   font-family: "fbronibe", "Trebuchet MS", Ubuntu, serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 300;
 }
-/* line 82, ../components/top_slider_component/clientlibs/top_slider_component.scss */
+/* line 84, ../components/top_slider_component/clientlibs/top_slider_component.scss */
 .top-slider-component .top-slider__text .info__item {
   float: right;
   clear: none;
@@ -4479,13 +4487,13 @@ select::-ms-expand {
 .top-slider-component .top-slider__text .info__item:last-child {
   margin-left: 0%;
 }
-/* line 86, ../components/top_slider_component/clientlibs/top_slider_component.scss */
+/* line 88, ../components/top_slider_component/clientlibs/top_slider_component.scss */
 .top-slider-component .top-slider__text .info__item:before {
   display: none;
 }
 
 @media (min-width: 800px) and (max-width: 1139px) and (min-width: 800px) and (max-width: 1139px) {
-  /* line 100, ../components/top_slider_component/clientlibs/top_slider_component.scss */
+  /* line 102, ../components/top_slider_component/clientlibs/top_slider_component.scss */
   .top-slider-component .owl-top-slider-navigation {
     width: auto;
     max-width: 98%;
@@ -4498,7 +4506,7 @@ select::-ms-expand {
   }
 }
 @media (min-width: 800px) and (max-width: 1139px) and (min-width: 1140px) and (max-width: 1279px) {
-  /* line 100, ../components/top_slider_component/clientlibs/top_slider_component.scss */
+  /* line 102, ../components/top_slider_component/clientlibs/top_slider_component.scss */
   .top-slider-component .owl-top-slider-navigation {
     width: auto;
     max-width: 1140px;
@@ -4511,7 +4519,7 @@ select::-ms-expand {
   }
 }
 @media (min-width: 800px) and (max-width: 1139px) and (min-width: 1280px) {
-  /* line 100, ../components/top_slider_component/clientlibs/top_slider_component.scss */
+  /* line 102, ../components/top_slider_component/clientlibs/top_slider_component.scss */
   .top-slider-component .owl-top-slider-navigation {
     width: auto;
     max-width: 1170px;
@@ -4524,7 +4532,7 @@ select::-ms-expand {
   }
 }
 @media (min-width: 800px) and (max-width: 1139px) and (min-width: 800px) and (max-width: 1139px) {
-  /* line 104, ../components/top_slider_component/clientlibs/top_slider_component.scss */
+  /* line 106, ../components/top_slider_component/clientlibs/top_slider_component.scss */
   .top-slider-component .top-slider__text {
     width: auto;
     max-width: 98%;
@@ -4537,7 +4545,7 @@ select::-ms-expand {
   }
 }
 @media (min-width: 800px) and (max-width: 1139px) and (min-width: 1140px) and (max-width: 1279px) {
-  /* line 104, ../components/top_slider_component/clientlibs/top_slider_component.scss */
+  /* line 106, ../components/top_slider_component/clientlibs/top_slider_component.scss */
   .top-slider-component .top-slider__text {
     width: auto;
     max-width: 1140px;
@@ -4550,7 +4558,7 @@ select::-ms-expand {
   }
 }
 @media (min-width: 800px) and (max-width: 1139px) and (min-width: 1280px) {
-  /* line 104, ../components/top_slider_component/clientlibs/top_slider_component.scss */
+  /* line 106, ../components/top_slider_component/clientlibs/top_slider_component.scss */
   .top-slider-component .top-slider__text {
     width: auto;
     max-width: 1170px;
@@ -4563,7 +4571,7 @@ select::-ms-expand {
   }
 }
 @media (min-width: 800px) and (max-width: 1139px) {
-  /* line 107, ../components/top_slider_component/clientlibs/top_slider_component.scss */
+  /* line 109, ../components/top_slider_component/clientlibs/top_slider_component.scss */
   .top-slider-component .top-slider__text .name {
     float: right;
     clear: none;
@@ -4575,7 +4583,7 @@ select::-ms-expand {
   .top-slider-component .top-slider__text .name:last-child {
     margin-left: 0%;
   }
-  /* line 111, ../components/top_slider_component/clientlibs/top_slider_component.scss */
+  /* line 113, ../components/top_slider_component/clientlibs/top_slider_component.scss */
   .top-slider-component .top-slider__text .info {
     float: right;
     clear: none;
@@ -4587,14 +4595,14 @@ select::-ms-expand {
   .top-slider-component .top-slider__text .info:last-child {
     margin-left: 0%;
   }
-  /* line 115, ../components/top_slider_component/clientlibs/top_slider_component.scss */
+  /* line 117, ../components/top_slider_component/clientlibs/top_slider_component.scss */
   .top-slider-component .top-slider__text .info h3 span {
     font-family: "fbronibe", "Trebuchet MS", Ubuntu, serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 300;
   }
-  /* line 120, ../components/top_slider_component/clientlibs/top_slider_component.scss */
+  /* line 122, ../components/top_slider_component/clientlibs/top_slider_component.scss */
   .top-slider-component .top-slider__text .info__item {
     float: right;
     clear: none;
@@ -4610,13 +4618,13 @@ select::-ms-expand {
   .top-slider-component .top-slider__text .info__item:last-child {
     margin-left: 0%;
   }
-  /* line 124, ../components/top_slider_component/clientlibs/top_slider_component.scss */
+  /* line 126, ../components/top_slider_component/clientlibs/top_slider_component.scss */
   .top-slider-component .top-slider__text .info__item:before {
     display: block;
   }
 }
 @media (min-width: 1140px) and (min-width: 800px) and (max-width: 1139px) {
-  /* line 141, ../components/top_slider_component/clientlibs/top_slider_component.scss */
+  /* line 143, ../components/top_slider_component/clientlibs/top_slider_component.scss */
   .top-slider-component .owl-top-slider-navigation {
     width: auto;
     max-width: 98%;
@@ -4629,7 +4637,7 @@ select::-ms-expand {
   }
 }
 @media (min-width: 1140px) and (min-width: 1140px) and (max-width: 1279px) {
-  /* line 141, ../components/top_slider_component/clientlibs/top_slider_component.scss */
+  /* line 143, ../components/top_slider_component/clientlibs/top_slider_component.scss */
   .top-slider-component .owl-top-slider-navigation {
     width: auto;
     max-width: 1140px;
@@ -4642,7 +4650,7 @@ select::-ms-expand {
   }
 }
 @media (min-width: 1140px) and (min-width: 1280px) {
-  /* line 141, ../components/top_slider_component/clientlibs/top_slider_component.scss */
+  /* line 143, ../components/top_slider_component/clientlibs/top_slider_component.scss */
   .top-slider-component .owl-top-slider-navigation {
     width: auto;
     max-width: 1170px;
@@ -4655,14 +4663,14 @@ select::-ms-expand {
   }
 }
 @media (min-width: 1140px) {
-  /* line 143, ../components/top_slider_component/clientlibs/top_slider_component.scss */
+  /* line 145, ../components/top_slider_component/clientlibs/top_slider_component.scss */
   .top-slider-component .owl-top-slider-navigation .prev, .top-slider-component .owl-top-slider-navigation .next {
     width: 46px;
     height: 88px;
   }
 }
 @media (min-width: 1140px) and (min-width: 800px) and (max-width: 1139px) {
-  /* line 149, ../components/top_slider_component/clientlibs/top_slider_component.scss */
+  /* line 151, ../components/top_slider_component/clientlibs/top_slider_component.scss */
   .top-slider-component .top-slider__text {
     width: auto;
     max-width: 98%;
@@ -4675,7 +4683,7 @@ select::-ms-expand {
   }
 }
 @media (min-width: 1140px) and (min-width: 1140px) and (max-width: 1279px) {
-  /* line 149, ../components/top_slider_component/clientlibs/top_slider_component.scss */
+  /* line 151, ../components/top_slider_component/clientlibs/top_slider_component.scss */
   .top-slider-component .top-slider__text {
     width: auto;
     max-width: 1140px;
@@ -4688,7 +4696,7 @@ select::-ms-expand {
   }
 }
 @media (min-width: 1140px) and (min-width: 1280px) {
-  /* line 149, ../components/top_slider_component/clientlibs/top_slider_component.scss */
+  /* line 151, ../components/top_slider_component/clientlibs/top_slider_component.scss */
   .top-slider-component .top-slider__text {
     width: auto;
     max-width: 1170px;
@@ -4701,14 +4709,14 @@ select::-ms-expand {
   }
 }
 @media (min-width: 1140px) {
-  /* line 152, ../components/top_slider_component/clientlibs/top_slider_component.scss */
+  /* line 154, ../components/top_slider_component/clientlibs/top_slider_component.scss */
   .top-slider-component .top-slider__text h3 {
     font-family: "fbronibe", "Trebuchet MS", Ubuntu, serif;
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
   }
-  /* line 154, ../components/top_slider_component/clientlibs/top_slider_component.scss */
+  /* line 156, ../components/top_slider_component/clientlibs/top_slider_component.scss */
   .top-slider-component .top-slider__text h3 span {
     font-family: "fbronibe", "Trebuchet MS", Ubuntu, serif;
     font-size: 24px;
@@ -4716,7 +4724,7 @@ select::-ms-expand {
     font-weight: 700;
     color: #ffffff;
   }
-  /* line 160, ../components/top_slider_component/clientlibs/top_slider_component.scss */
+  /* line 162, ../components/top_slider_component/clientlibs/top_slider_component.scss */
   .top-slider-component .top-slider__text .name {
     float: right;
     clear: none;
@@ -4728,7 +4736,7 @@ select::-ms-expand {
   .top-slider-component .top-slider__text .name:last-child {
     margin-left: 0%;
   }
-  /* line 164, ../components/top_slider_component/clientlibs/top_slider_component.scss */
+  /* line 166, ../components/top_slider_component/clientlibs/top_slider_component.scss */
   .top-slider-component .top-slider__text .info {
     float: right;
     clear: none;
@@ -4740,14 +4748,14 @@ select::-ms-expand {
   .top-slider-component .top-slider__text .info:last-child {
     margin-left: 0%;
   }
-  /* line 168, ../components/top_slider_component/clientlibs/top_slider_component.scss */
+  /* line 170, ../components/top_slider_component/clientlibs/top_slider_component.scss */
   .top-slider-component .top-slider__text .info h3 span {
     font-family: "fbronibe", "Trebuchet MS", Ubuntu, serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 300;
   }
-  /* line 173, ../components/top_slider_component/clientlibs/top_slider_component.scss */
+  /* line 175, ../components/top_slider_component/clientlibs/top_slider_component.scss */
   .top-slider-component .top-slider__text .info__item {
     float: right;
     clear: none;
@@ -4763,7 +4771,7 @@ select::-ms-expand {
   .top-slider-component .top-slider__text .info__item:last-child {
     margin-left: 0%;
   }
-  /* line 177, ../components/top_slider_component/clientlibs/top_slider_component.scss */
+  /* line 179, ../components/top_slider_component/clientlibs/top_slider_component.scss */
   .top-slider-component .top-slider__text .info__item:before {
     display: block;
   }
@@ -4869,10 +4877,9 @@ select::-ms-expand {
 }
 /* line 24, ../components/product_table_component/clientlibs/product_table_component.scss */
 .product-table-component .product-table-item__img img {
-  width: auto;
-  height: auto;
+  width: 100%;
 }
-/* line 30, ../components/product_table_component/clientlibs/product_table_component.scss */
+/* line 29, ../components/product_table_component/clientlibs/product_table_component.scss */
 .product-table-component .product-table-item__text {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -4883,12 +4890,12 @@ select::-ms-expand {
   height: 285px;
   overflow: hidden;
 }
-/* line 39, ../components/product_table_component/clientlibs/product_table_component.scss */
+/* line 38, ../components/product_table_component/clientlibs/product_table_component.scss */
 .product-table-component .product-table-item h3 {
   margin-bottom: 5px;
   color: #054770;
 }
-/* line 42, ../components/product_table_component/clientlibs/product_table_component.scss */
+/* line 41, ../components/product_table_component/clientlibs/product_table_component.scss */
 .product-table-component .product-table-item h3 span {
   font-family: "fbronibe", "Trebuchet MS", Ubuntu, serif;
   font-size: 20px;
@@ -4896,7 +4903,7 @@ select::-ms-expand {
   font-weight: 700;
   color: rgba(0, 0, 0, 0.8);
 }
-/* line 48, ../components/product_table_component/clientlibs/product_table_component.scss */
+/* line 47, ../components/product_table_component/clientlibs/product_table_component.scss */
 .product-table-component .product-table-item .arrow-label {
   -moz-border-radius: 0px;
   -webkit-border-radius: 0px;
@@ -4933,7 +4940,7 @@ select::-ms-expand {
   top: -2px;
   left: -14px;
 }
-/* line 52, ../components/product_table_component/clientlibs/product_table_component.scss */
+/* line 51, ../components/product_table_component/clientlibs/product_table_component.scss */
 .product-table-component .product-table-item .info {
   font-family: "fbronibe", "Trebuchet MS", Ubuntu, serif;
   font-size: 17px;
@@ -4943,7 +4950,7 @@ select::-ms-expand {
   margin-bottom: 5px;
   line-height: 20px;
 }
-/* line 57, ../components/product_table_component/clientlibs/product_table_component.scss */
+/* line 56, ../components/product_table_component/clientlibs/product_table_component.scss */
 .product-table-component .product-table-item .info i {
   font-family: "fbronibe", "Trebuchet MS", Ubuntu, serif;
   font-size: 14px;
@@ -4953,11 +4960,11 @@ select::-ms-expand {
 }
 
 @media (min-width: 800px) and (max-width: 1139px) {
-  /* line 73, ../components/product_table_component/clientlibs/product_table_component.scss */
+  /* line 72, ../components/product_table_component/clientlibs/product_table_component.scss */
   .product-table-component .product-table-item__img {
     float: right;
     clear: none;
-    width: 41.66667%;
+    width: 50%;
     margin-right: 0%;
     margin-left: 0%;
     position: relative;
@@ -4968,16 +4975,15 @@ select::-ms-expand {
   .product-table-component .product-table-item__img:last-child {
     margin-left: 0%;
   }
-  /* line 78, ../components/product_table_component/clientlibs/product_table_component.scss */
+  /* line 77, ../components/product_table_component/clientlibs/product_table_component.scss */
   .product-table-component .product-table-item__img img {
-    width: auto;
-    height: auto;
+    width: 130%;
   }
-  /* line 84, ../components/product_table_component/clientlibs/product_table_component.scss */
+  /* line 82, ../components/product_table_component/clientlibs/product_table_component.scss */
   .product-table-component .product-table-item__text {
     float: right;
     clear: none;
-    width: 58.33333%;
+    width: 50%;
     margin-right: 0%;
     margin-left: 0%;
   }
@@ -4987,7 +4993,7 @@ select::-ms-expand {
   }
 }
 @media (min-width: 1140px) {
-  /* line 97, ../components/product_table_component/clientlibs/product_table_component.scss */
+  /* line 95, ../components/product_table_component/clientlibs/product_table_component.scss */
   .product-table-component .product-table-item {
     float: right;
     clear: none;
@@ -5000,7 +5006,7 @@ select::-ms-expand {
   .product-table-component .product-table-item:last-child {
     margin-left: 0%;
   }
-  /* line 101, ../components/product_table_component/clientlibs/product_table_component.scss */
+  /* line 99, ../components/product_table_component/clientlibs/product_table_component.scss */
   .product-table-component .product-table-item .col {
     float: right;
     clear: none;
@@ -5012,7 +5018,7 @@ select::-ms-expand {
   .product-table-component .product-table-item .col:last-child {
     margin-left: 0%;
   }
-  /* line 105, ../components/product_table_component/clientlibs/product_table_component.scss */
+  /* line 103, ../components/product_table_component/clientlibs/product_table_component.scss */
   .product-table-component .product-table-item__img {
     float: right;
     clear: none;
@@ -5027,12 +5033,11 @@ select::-ms-expand {
   .product-table-component .product-table-item__img:last-child {
     margin-left: 0%;
   }
-  /* line 110, ../components/product_table_component/clientlibs/product_table_component.scss */
+  /* line 108, ../components/product_table_component/clientlibs/product_table_component.scss */
   .product-table-component .product-table-item__img img {
-    width: auto;
-    height: auto;
+    width: 160%;
   }
-  /* line 116, ../components/product_table_component/clientlibs/product_table_component.scss */
+  /* line 113, ../components/product_table_component/clientlibs/product_table_component.scss */
   .product-table-component .product-table-item__text {
     float: right;
     clear: none;
@@ -5376,10 +5381,9 @@ select::-ms-expand {
 }
 /* line 28, ../components/product_list_component/clientlibs/product_list_component.scss */
 .product-list-component .product-list-item__img img {
-  width: auto;
-  height: auto;
+  width: 100%;
 }
-/* line 34, ../components/product_list_component/clientlibs/product_list_component.scss */
+/* line 33, ../components/product_list_component/clientlibs/product_list_component.scss */
 .product-list-component .product-list-item .product-list-info {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -5393,7 +5397,7 @@ select::-ms-expand {
   background-color: rgba(6, 29, 39, 0.8);
   text-align: left;
 }
-/* line 46, ../components/product_list_component/clientlibs/product_list_component.scss */
+/* line 45, ../components/product_list_component/clientlibs/product_list_component.scss */
 .product-list-component .product-list-item__text {
   float: right;
   clear: none;
@@ -5411,11 +5415,11 @@ select::-ms-expand {
 .product-list-component .product-list-item__text:last-child {
   margin-left: 0%;
 }
-/* line 54, ../components/product_list_component/clientlibs/product_list_component.scss */
+/* line 53, ../components/product_list_component/clientlibs/product_list_component.scss */
 .product-list-component .product-list-item h3 {
   margin-bottom: 5px;
 }
-/* line 56, ../components/product_list_component/clientlibs/product_list_component.scss */
+/* line 55, ../components/product_list_component/clientlibs/product_list_component.scss */
 .product-list-component .product-list-item h3 span {
   font-family: "fbronibe", "Trebuchet MS", Ubuntu, serif;
   font-size: 20px;
@@ -5423,7 +5427,7 @@ select::-ms-expand {
   font-weight: 700;
   color: rgba(0, 0, 0, 0.8);
 }
-/* line 62, ../components/product_list_component/clientlibs/product_list_component.scss */
+/* line 61, ../components/product_list_component/clientlibs/product_list_component.scss */
 .product-list-component .product-list-item .arrow-label {
   -moz-border-radius: 0px;
   -webkit-border-radius: 0px;
@@ -5462,7 +5466,7 @@ select::-ms-expand {
 }
 
 @media (min-width: 800px) and (max-width: 1139px) {
-  /* line 74, ../components/product_list_component/clientlibs/product_list_component.scss */
+  /* line 73, ../components/product_list_component/clientlibs/product_list_component.scss */
   .product-list-component .product-list-item {
     float: right;
     clear: none;
@@ -5476,7 +5480,7 @@ select::-ms-expand {
   }
 }
 @media (min-width: 1140px) {
-  /* line 86, ../components/product_list_component/clientlibs/product_list_component.scss */
+  /* line 85, ../components/product_list_component/clientlibs/product_list_component.scss */
   .product-list-component .product-list-item {
     float: right;
     clear: none;
@@ -5488,11 +5492,15 @@ select::-ms-expand {
   .product-list-component .product-list-item:last-child {
     margin-left: 0%;
   }
-  /* line 89, ../components/product_list_component/clientlibs/product_list_component.scss */
+  /* line 88, ../components/product_list_component/clientlibs/product_list_component.scss */
   .product-list-component .product-list-item__img {
     height: 285px;
   }
-  /* line 93, ../components/product_list_component/clientlibs/product_list_component.scss */
+  /* line 90, ../components/product_list_component/clientlibs/product_list_component.scss */
+  .product-list-component .product-list-item__img img {
+    width: 160%;
+  }
+  /* line 95, ../components/product_list_component/clientlibs/product_list_component.scss */
   .product-list-component .product-list-item__text {
     float: right;
     clear: none;
@@ -6391,7 +6399,7 @@ select::-ms-expand {
 /* line 38, ../components/contact_agent_component/clientlibs/contact_agent_component.scss */
 .contact-agent-component--agent-block .agent-title {
   float: left;
-  width: 50%;
+  width: calc(100% - 180px);
 }
 /* line 41, ../components/contact_agent_component/clientlibs/contact_agent_component.scss */
 .contact-agent-component--agent-block .agent-title span {
@@ -6691,7 +6699,12 @@ select::-ms-expand {
 /* line 25, ../components/resident_property_component/clientlibs/resident_property_component.scss */
 .resident-property-component .resident-property-breadcrumbs {
   *zoom: 1;
-  margin-top: 15px;
+  float: right;
+  clear: none;
+  width: 91.66667%;
+  margin-right: 4.16667%;
+  margin-left: 0%;
+  text-align: center;
 }
 /* line 343, ../sass/core/jeet/_grid.scss */
 .resident-property-component .resident-property-breadcrumbs:before, .resident-property-component .resident-property-breadcrumbs:after {
@@ -6702,32 +6715,37 @@ select::-ms-expand {
 .resident-property-component .resident-property-breadcrumbs:after {
   clear: both;
 }
-/* line 28, ../components/resident_property_component/clientlibs/resident_property_component.scss */
+/* line 56, ../sass/core/jeet/_grid.scss */
+.resident-property-component .resident-property-breadcrumbs:last-child {
+  margin-left: 0%;
+}
+/* line 29, ../components/resident_property_component/clientlibs/resident_property_component.scss */
 .resident-property-component .resident-property-breadcrumbs__item {
   font-family: "fbronibe", "Trebuchet MS", Ubuntu, serif;
   font-size: 19px;
   font-style: normal;
   font-weight: 300;
-  float: left;
-  height: 22px;
+  display: inline-block;
+  height: 16px;
   margin: 0 0 0 10px;
   border-left: solid #000000 1px;
+  line-height: 19px;
 }
-/* line 35, ../components/resident_property_component/clientlibs/resident_property_component.scss */
-.resident-property-component .resident-property-breadcrumbs__item:first-child {
+/* line 37, ../components/resident_property_component/clientlibs/resident_property_component.scss */
+.resident-property-component .resident-property-breadcrumbs__item:last-child {
   border-left: none;
 }
-/* line 39, ../components/resident_property_component/clientlibs/resident_property_component.scss */
+/* line 41, ../components/resident_property_component/clientlibs/resident_property_component.scss */
 .resident-property-component .resident-property-breadcrumbs__item a {
   margin: 0 0 0 10px;
   color: #000000;
 }
-/* line 42, ../components/resident_property_component/clientlibs/resident_property_component.scss */
+/* line 44, ../components/resident_property_component/clientlibs/resident_property_component.scss */
 .resident-property-component .resident-property-breadcrumbs__item a:hover {
   text-decoration: none;
   color: #93a33a;
 }
-/* line 50, ../components/resident_property_component/clientlibs/resident_property_component.scss */
+/* line 52, ../components/resident_property_component/clientlibs/resident_property_component.scss */
 .resident-property-component .resident-property-list-item {
   *zoom: 1;
   background-color: rgba(0, 0, 0, 0.1);
@@ -6741,16 +6759,16 @@ select::-ms-expand {
 .resident-property-component .resident-property-list-item:after {
   clear: both;
 }
-/* line 54, ../components/resident_property_component/clientlibs/resident_property_component.scss */
+/* line 56, ../components/resident_property_component/clientlibs/resident_property_component.scss */
 .resident-property-component .resident-property-list-item__img, .resident-property-component .resident-property-list-item__about, .resident-property-component .resident-property-list-item__info {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   position: relative;
-  height: 396px;
+  height: 400px;
   overflow: hidden;
 }
-/* line 61, ../components/resident_property_component/clientlibs/resident_property_component.scss */
+/* line 63, ../components/resident_property_component/clientlibs/resident_property_component.scss */
 .resident-property-component .resident-property-list-item__about, .resident-property-component .resident-property-list-item__info {
   float: right;
   clear: none;
@@ -6762,17 +6780,20 @@ select::-ms-expand {
 .resident-property-component .resident-property-list-item__about:last-child, .resident-property-component .resident-property-list-item__info:last-child {
   margin-left: 0%;
 }
-/* line 66, ../components/resident_property_component/clientlibs/resident_property_component.scss */
-.resident-property-component .resident-property-list-item__img img {
-  width: auto;
+/* line 67, ../components/resident_property_component/clientlibs/resident_property_component.scss */
+.resident-property-component .resident-property-list-item__img {
   height: auto;
 }
-/* line 72, ../components/resident_property_component/clientlibs/resident_property_component.scss */
+/* line 69, ../components/resident_property_component/clientlibs/resident_property_component.scss */
+.resident-property-component .resident-property-list-item__img img {
+  width: 100%;
+}
+/* line 74, ../components/resident_property_component/clientlibs/resident_property_component.scss */
 .resident-property-component .resident-property-list-item__about {
   display: table;
   background-color: #ffffff;
 }
-/* line 76, ../components/resident_property_component/clientlibs/resident_property_component.scss */
+/* line 78, ../components/resident_property_component/clientlibs/resident_property_component.scss */
 .resident-property-component .resident-property-list-item__about h2 {
   font-family: "fbronibe", "Trebuchet MS", Ubuntu, serif;
   font-size: 38px;
@@ -6781,7 +6802,7 @@ select::-ms-expand {
   margin-bottom: 5px;
   color: #054770;
 }
-/* line 80, ../components/resident_property_component/clientlibs/resident_property_component.scss */
+/* line 82, ../components/resident_property_component/clientlibs/resident_property_component.scss */
 .resident-property-component .resident-property-list-item__about h2 span {
   font-family: "fbronibe", "Trebuchet MS", Ubuntu, serif;
   font-size: 20px;
@@ -6789,7 +6810,7 @@ select::-ms-expand {
   font-weight: 700;
   color: rgba(0, 0, 0, 0.8);
 }
-/* line 86, ../components/resident_property_component/clientlibs/resident_property_component.scss */
+/* line 88, ../components/resident_property_component/clientlibs/resident_property_component.scss */
 .resident-property-component .resident-property-list-item__about .arrow-label {
   -moz-border-radius: 0px;
   -webkit-border-radius: 0px;
@@ -6826,7 +6847,7 @@ select::-ms-expand {
   top: -2px;
   left: -14px;
 }
-/* line 90, ../components/resident_property_component/clientlibs/resident_property_component.scss */
+/* line 92, ../components/resident_property_component/clientlibs/resident_property_component.scss */
 .resident-property-component .resident-property-list-item__about .info {
   font-family: "fbronibe", "Trebuchet MS", Ubuntu, serif;
   font-size: 21px;
@@ -6838,7 +6859,7 @@ select::-ms-expand {
   padding: 0 75px 0 0;
   line-height: 20px;
 }
-/* line 97, ../components/resident_property_component/clientlibs/resident_property_component.scss */
+/* line 99, ../components/resident_property_component/clientlibs/resident_property_component.scss */
 .resident-property-component .resident-property-list-item__about .info i {
   font-family: "fbronibe", "Trebuchet MS", Ubuntu, serif;
   font-size: 17px;
@@ -6846,11 +6867,11 @@ select::-ms-expand {
   font-weight: 300;
   display: block;
 }
-/* line 102, ../components/resident_property_component/clientlibs/resident_property_component.scss */
+/* line 104, ../components/resident_property_component/clientlibs/resident_property_component.scss */
 .resident-property-component .resident-property-list-item__about .info-img {
   margin-top: 25px;
 }
-/* line 104, ../components/resident_property_component/clientlibs/resident_property_component.scss */
+/* line 106, ../components/resident_property_component/clientlibs/resident_property_component.scss */
 .resident-property-component .resident-property-list-item__about .info-img div {
   -moz-border-radius: 150px;
   -webkit-border-radius: 150px;
@@ -6867,19 +6888,19 @@ select::-ms-expand {
   padding: 2px;
   border: solid #061d27 2px;
 }
-/* line 112, ../components/resident_property_component/clientlibs/resident_property_component.scss */
+/* line 114, ../components/resident_property_component/clientlibs/resident_property_component.scss */
 .resident-property-component .resident-property-list-item__about .info-img div img {
   -moz-border-radius: 150px;
   -webkit-border-radius: 150px;
   border-radius: 150px;
   width: 100%;
 }
-/* line 120, ../components/resident_property_component/clientlibs/resident_property_component.scss */
+/* line 122, ../components/resident_property_component/clientlibs/resident_property_component.scss */
 .resident-property-component .resident-property-list-item__info {
   display: table;
   background-color: #061d27;
 }
-/* line 124, ../components/resident_property_component/clientlibs/resident_property_component.scss */
+/* line 126, ../components/resident_property_component/clientlibs/resident_property_component.scss */
 .resident-property-component .resident-property-list-item__info h2 {
   font-family: "fbronibe", "Trebuchet MS", Ubuntu, serif;
   font-size: 38px;
@@ -6888,7 +6909,7 @@ select::-ms-expand {
   margin-bottom: 5px;
   color: #f99e1b;
 }
-/* line 130, ../components/resident_property_component/clientlibs/resident_property_component.scss */
+/* line 132, ../components/resident_property_component/clientlibs/resident_property_component.scss */
 .resident-property-component .resident-property-list-item__info p {
   font-family: "fbronibe", "Trebuchet MS", Ubuntu, serif;
   font-size: 24px;
@@ -6897,11 +6918,11 @@ select::-ms-expand {
   margin-bottom: 15px;
   color: #ffffff;
 }
-/* line 136, ../components/resident_property_component/clientlibs/resident_property_component.scss */
+/* line 138, ../components/resident_property_component/clientlibs/resident_property_component.scss */
 .resident-property-component .resident-property-list-item__info .btn-block {
   text-align: center;
 }
-/* line 140, ../components/resident_property_component/clientlibs/resident_property_component.scss */
+/* line 142, ../components/resident_property_component/clientlibs/resident_property_component.scss */
 .resident-property-component .resident-property-list-item__info .btn {
   -moz-border-radius: 0px;
   -webkit-border-radius: 0px;
@@ -6924,7 +6945,7 @@ select::-ms-expand {
   font-weight: 700;
   padding-top: 15px;
 }
-/* line 144, ../components/resident_property_component/clientlibs/resident_property_component.scss */
+/* line 146, ../components/resident_property_component/clientlibs/resident_property_component.scss */
 .resident-property-component .resident-property-list-item__info .btn:hover {
   -moz-border-radius: 0px;
   -webkit-border-radius: 0px;
@@ -6947,28 +6968,28 @@ select::-ms-expand {
   font-weight: 700;
   padding-top: 15px;
 }
-/* line 154, ../components/resident_property_component/clientlibs/resident_property_component.scss */
+/* line 156, ../components/resident_property_component/clientlibs/resident_property_component.scss */
 .resident-property-component .resident-property-list-item:nth-child(2n) .resident-property-list-item__about {
   background-color: #e0e0e0;
 }
-/* line 158, ../components/resident_property_component/clientlibs/resident_property_component.scss */
+/* line 160, ../components/resident_property_component/clientlibs/resident_property_component.scss */
 .resident-property-component .resident-property-list-item:nth-child(2n) .resident-property-list-item__info {
   background-color: #93a33a;
 }
-/* line 161, ../components/resident_property_component/clientlibs/resident_property_component.scss */
+/* line 163, ../components/resident_property_component/clientlibs/resident_property_component.scss */
 .resident-property-component .resident-property-list-item:nth-child(2n) .resident-property-list-item__info h2 {
   color: #061d27;
 }
-/* line 165, ../components/resident_property_component/clientlibs/resident_property_component.scss */
+/* line 167, ../components/resident_property_component/clientlibs/resident_property_component.scss */
 .resident-property-component .resident-property-list-item:nth-child(2n) .resident-property-list-item__info .btn {
   background-color: #061d27;
 }
-/* line 167, ../components/resident_property_component/clientlibs/resident_property_component.scss */
+/* line 169, ../components/resident_property_component/clientlibs/resident_property_component.scss */
 .resident-property-component .resident-property-list-item:nth-child(2n) .resident-property-list-item__info .btn:hover {
   background-color: #ffffff;
   color: #061d27;
 }
-/* line 178, ../components/resident_property_component/clientlibs/resident_property_component.scss */
+/* line 180, ../components/resident_property_component/clientlibs/resident_property_component.scss */
 .resident-property-component .resident-property-list-info {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -6984,7 +7005,7 @@ select::-ms-expand {
 }
 
 @media (min-width: 800px) and (max-width: 1139px) {
-  /* line 197, ../components/resident_property_component/clientlibs/resident_property_component.scss */
+  /* line 199, ../components/resident_property_component/clientlibs/resident_property_component.scss */
   .resident-property-component .resident-property-select-block {
     float: right;
     clear: none;
@@ -6993,16 +7014,27 @@ select::-ms-expand {
     margin-left: 0%;
     float: left;
     margin-bottom: 0;
+    text-align: right;
   }
   /* line 56, ../sass/core/jeet/_grid.scss */
   .resident-property-component .resident-property-select-block:last-child {
     margin-left: 0%;
   }
-  /* line 203, ../components/resident_property_component/clientlibs/resident_property_component.scss */
+  /* line 206, ../components/resident_property_component/clientlibs/resident_property_component.scss */
   .resident-property-component .resident-property-breadcrumbs {
     float: right;
+    clear: none;
+    width: 50%;
+    margin-right: 0%;
+    margin-left: 0%;
+    padding-top: 15px;
+    text-align: right;
   }
-  /* line 208, ../components/resident_property_component/clientlibs/resident_property_component.scss */
+  /* line 56, ../sass/core/jeet/_grid.scss */
+  .resident-property-component .resident-property-breadcrumbs:last-child {
+    margin-left: 0%;
+  }
+  /* line 213, ../components/resident_property_component/clientlibs/resident_property_component.scss */
   .resident-property-component .resident-property-list-item__about, .resident-property-component .resident-property-list-item__info {
     float: right;
     clear: none;
@@ -7014,13 +7046,9 @@ select::-ms-expand {
   .resident-property-component .resident-property-list-item__about:last-child, .resident-property-component .resident-property-list-item__info:last-child {
     margin-left: 0%;
   }
-  /* line 213, ../components/resident_property_component/clientlibs/resident_property_component.scss */
-  .resident-property-component .resident-property-list-item__img img {
-    width: 100%;
-  }
 }
 @media (min-width: 1140px) {
-  /* line 228, ../components/resident_property_component/clientlibs/resident_property_component.scss */
+  /* line 226, ../components/resident_property_component/clientlibs/resident_property_component.scss */
   .resident-property-component .resident-property-select-block {
     float: right;
     clear: none;
@@ -7034,9 +7062,19 @@ select::-ms-expand {
   .resident-property-component .resident-property-select-block:last-child {
     margin-left: 0%;
   }
-  /* line 234, ../components/resident_property_component/clientlibs/resident_property_component.scss */
+  /* line 232, ../components/resident_property_component/clientlibs/resident_property_component.scss */
   .resident-property-component .resident-property-breadcrumbs {
     float: right;
+    clear: none;
+    width: 58.33333%;
+    margin-right: 0%;
+    margin-left: 0%;
+    padding-top: 15px;
+    text-align: right;
+  }
+  /* line 56, ../sass/core/jeet/_grid.scss */
+  .resident-property-component .resident-property-breadcrumbs:last-child {
+    margin-left: 0%;
   }
   /* line 239, ../components/resident_property_component/clientlibs/resident_property_component.scss */
   .resident-property-component .resident-property-list-item__img, .resident-property-component .resident-property-list-item__about, .resident-property-component .resident-property-list-item__info {
@@ -7049,6 +7087,14 @@ select::-ms-expand {
   /* line 56, ../sass/core/jeet/_grid.scss */
   .resident-property-component .resident-property-list-item__img:last-child, .resident-property-component .resident-property-list-item__about:last-child, .resident-property-component .resident-property-list-item__info:last-child {
     margin-left: 0%;
+  }
+  /* line 243, ../components/resident_property_component/clientlibs/resident_property_component.scss */
+  .resident-property-component .resident-property-list-item__img {
+    height: 400px;
+  }
+  /* line 246, ../components/resident_property_component/clientlibs/resident_property_component.scss */
+  .resident-property-component .resident-property-list-item__img img {
+    width: 160%;
   }
 }
 /* line 1, ../components/property_component/clientlibs/property_component.scss */
@@ -7342,13 +7388,12 @@ select::-ms-expand {
 /* line 114, ../components/property_component/clientlibs/property_component.scss */
 .property-component .property-slider-container .property-slider__image {
   position: relative;
-  height: 510px;
 }
-/* line 117, ../components/property_component/clientlibs/property_component.scss */
+/* line 116, ../components/property_component/clientlibs/property_component.scss */
 .property-component .property-slider-container .property-slider__image img {
-  width: auto;
+  width: 100%;
 }
-/* line 123, ../components/property_component/clientlibs/property_component.scss */
+/* line 122, ../components/property_component/clientlibs/property_component.scss */
 .property-component__content {
   *zoom: 1;
   width: 100%;
@@ -7364,7 +7409,7 @@ select::-ms-expand {
 .property-component__content:after {
   clear: both;
 }
-/* line 129, ../components/property_component/clientlibs/property_component.scss */
+/* line 128, ../components/property_component/clientlibs/property_component.scss */
 .property-component__content--user {
   *zoom: 1;
   background-color: #054770;
@@ -7378,7 +7423,7 @@ select::-ms-expand {
 .property-component__content--user:after {
   clear: both;
 }
-/* line 133, ../components/property_component/clientlibs/property_component.scss */
+/* line 132, ../components/property_component/clientlibs/property_component.scss */
 .property-component__content--user--agent-block {
   float: right;
   clear: none;
@@ -7392,9 +7437,10 @@ select::-ms-expand {
 .property-component__content--user--agent-block:last-child {
   margin-left: 0%;
 }
-/* line 138, ../components/property_component/clientlibs/property_component.scss */
+/* line 137, ../components/property_component/clientlibs/property_component.scss */
 .property-component__content--user--agent-block .agent-title {
   float: left;
+  width: calc(100% - 180px);
   color: #ffffff;
 }
 /* line 141, ../components/property_component/clientlibs/property_component.scss */
@@ -7565,7 +7611,7 @@ select::-ms-expand {
 }
 
 @media (min-width: 800px) and (max-width: 1139px) {
-  /* line 238, ../components/property_component/clientlibs/property_component.scss */
+  /* line 237, ../components/property_component/clientlibs/property_component.scss */
   .property-component__info {
     float: right;
     clear: none;
@@ -7578,7 +7624,7 @@ select::-ms-expand {
   .property-component__info:last-child {
     margin-left: 0%;
   }
-  /* line 242, ../components/property_component/clientlibs/property_component.scss */
+  /* line 241, ../components/property_component/clientlibs/property_component.scss */
   .property-component__info--btn-block .btn {
     float: right;
     clear: none;
@@ -7591,7 +7637,7 @@ select::-ms-expand {
   .property-component__info--btn-block .btn:last-child {
     margin-left: 0%;
   }
-  /* line 249, ../components/property_component/clientlibs/property_component.scss */
+  /* line 248, ../components/property_component/clientlibs/property_component.scss */
   .property-component .property-slider-container {
     float: right;
     clear: none;
@@ -7644,7 +7690,16 @@ select::-ms-expand {
   }
 }
 @media (min-width: 800px) and (max-width: 1139px) {
-  /* line 257, ../components/property_component/clientlibs/property_component.scss */
+  /* line 255, ../components/property_component/clientlibs/property_component.scss */
+  .property-component .property-slider-container .property-slider__image {
+    position: relative;
+    height: 510px;
+  }
+  /* line 258, ../components/property_component/clientlibs/property_component.scss */
+  .property-component .property-slider-container .property-slider__image img {
+    width: 150%;
+  }
+  /* line 265, ../components/property_component/clientlibs/property_component.scss */
   .property-component__content--user {
     float: right;
     clear: none;
@@ -7656,7 +7711,7 @@ select::-ms-expand {
   .property-component__content--user:last-child {
     margin-left: 0%;
   }
-  /* line 261, ../components/property_component/clientlibs/property_component.scss */
+  /* line 269, ../components/property_component/clientlibs/property_component.scss */
   .property-component__content--text {
     float: right;
     clear: none;
@@ -7670,7 +7725,7 @@ select::-ms-expand {
   }
 }
 @media (min-width: 1140px) {
-  /* line 274, ../components/property_component/clientlibs/property_component.scss */
+  /* line 282, ../components/property_component/clientlibs/property_component.scss */
   .property-component__info {
     float: right;
     clear: none;
@@ -7683,7 +7738,7 @@ select::-ms-expand {
   .property-component__info:last-child {
     margin-left: 0%;
   }
-  /* line 279, ../components/property_component/clientlibs/property_component.scss */
+  /* line 287, ../components/property_component/clientlibs/property_component.scss */
   .property-component .property-slider-container {
     float: right;
     clear: none;
@@ -7695,12 +7750,21 @@ select::-ms-expand {
   .property-component .property-slider-container:last-child {
     margin-left: 0%;
   }
-  /* line 282, ../components/property_component/clientlibs/property_component.scss */
+  /* line 292, ../components/property_component/clientlibs/property_component.scss */
   .property-component .property-slider-container .property-slider-navigation .prev, .property-component .property-slider-container .property-slider-navigation .next {
     width: 46px;
     height: 88px;
   }
-  /* line 290, ../components/property_component/clientlibs/property_component.scss */
+  /* line 298, ../components/property_component/clientlibs/property_component.scss */
+  .property-component .property-slider-container .property-slider__image {
+    position: relative;
+    height: 510px;
+  }
+  /* line 301, ../components/property_component/clientlibs/property_component.scss */
+  .property-component .property-slider-container .property-slider__image img {
+    width: 120%;
+  }
+  /* line 308, ../components/property_component/clientlibs/property_component.scss */
   .property-component__content--user {
     float: right;
     clear: none;
@@ -7712,7 +7776,7 @@ select::-ms-expand {
   .property-component__content--user:last-child {
     margin-left: 0%;
   }
-  /* line 294, ../components/property_component/clientlibs/property_component.scss */
+  /* line 312, ../components/property_component/clientlibs/property_component.scss */
   .property-component__content--text {
     float: right;
     clear: none;
@@ -7999,13 +8063,13 @@ select::-ms-expand {
 /* line 124, ../components/property_popup_component/clientlibs/property_popup_component.scss */
 .property-popup-component .property-popup-slider-container .property-popup-slider__image {
   position: relative;
-  height: 655px;
+  overflow: hidden;
 }
-/* line 127, ../components/property_popup_component/clientlibs/property_popup_component.scss */
+/* line 128, ../components/property_popup_component/clientlibs/property_popup_component.scss */
 .property-popup-component .property-popup-slider-container .property-popup-slider__image img {
-  height: 100%;
+  width: 100%;
 }
-/* line 133, ../components/property_popup_component/clientlibs/property_popup_component.scss */
+/* line 134, ../components/property_popup_component/clientlibs/property_popup_component.scss */
 .property-popup-component .property-popup-bottom-container {
   *zoom: 1;
   -moz-box-sizing: border-box;
@@ -8026,14 +8090,14 @@ select::-ms-expand {
 .property-popup-component .property-popup-bottom-container:after {
   clear: both;
 }
-/* line 142, ../components/property_popup_component/clientlibs/property_popup_component.scss */
+/* line 143, ../components/property_popup_component/clientlibs/property_popup_component.scss */
 .property-popup-component .property-popup-bottom-container--user-help {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 15px 25px 0 0;
 }
-/* line 147, ../components/property_popup_component/clientlibs/property_popup_component.scss */
+/* line 148, ../components/property_popup_component/clientlibs/property_popup_component.scss */
 .property-popup-component .property-popup-bottom-container--button-list {
   *zoom: 1;
   -moz-box-sizing: border-box;
@@ -8050,7 +8114,7 @@ select::-ms-expand {
 .property-popup-component .property-popup-bottom-container--button-list:after {
   clear: both;
 }
-/* line 153, ../components/property_popup_component/clientlibs/property_popup_component.scss */
+/* line 154, ../components/property_popup_component/clientlibs/property_popup_component.scss */
 .property-popup-component .property-popup-bottom-container .btn {
   -moz-border-radius: 0px;
   -webkit-border-radius: 0px;
@@ -8081,12 +8145,12 @@ select::-ms-expand {
   padding-top: 13px;
   padding-bottom: 9px;
 }
-/* line 163, ../components/property_popup_component/clientlibs/property_popup_component.scss */
+/* line 164, ../components/property_popup_component/clientlibs/property_popup_component.scss */
 .property-popup-component .property-popup-bottom-container .btn:hover {
   background-color: #003559;
   color: #ffffff;
 }
-/* line 169, ../components/property_popup_component/clientlibs/property_popup_component.scss */
+/* line 170, ../components/property_popup_component/clientlibs/property_popup_component.scss */
 .property-popup-component .property-popup-bottom-container .btn-blue {
   font-family: "fbronibe", "Trebuchet MS", Ubuntu, serif;
   font-size: 24px;
@@ -8095,12 +8159,12 @@ select::-ms-expand {
   background-color: #003559;
   color: #ffffff;
 }
-/* line 173, ../components/property_popup_component/clientlibs/property_popup_component.scss */
+/* line 174, ../components/property_popup_component/clientlibs/property_popup_component.scss */
 .property-popup-component .property-popup-bottom-container .btn-blue:hover {
   background-color: #ffffff;
   color: #003559;
 }
-/* line 179, ../components/property_popup_component/clientlibs/property_popup_component.scss */
+/* line 180, ../components/property_popup_component/clientlibs/property_popup_component.scss */
 .property-popup-component .property-popup-bottom-container .user-help-link {
   font-family: "fbronibe", "Trebuchet MS", Ubuntu, serif;
   font-size: 22px;
@@ -8108,7 +8172,7 @@ select::-ms-expand {
   font-weight: 700;
   color: #f99e1b;
 }
-/* line 184, ../components/property_popup_component/clientlibs/property_popup_component.scss */
+/* line 185, ../components/property_popup_component/clientlibs/property_popup_component.scss */
 .property-popup-component .property-popup-bottom-container .user-help-img {
   -moz-border-radius: 150px;
   -webkit-border-radius: 150px;
@@ -8121,7 +8185,7 @@ select::-ms-expand {
 }
 
 @media (min-width: 800px) and (max-width: 1139px) {
-  /* line 201, ../components/property_popup_component/clientlibs/property_popup_component.scss */
+  /* line 202, ../components/property_popup_component/clientlibs/property_popup_component.scss */
   .property-popup-component__inner {
     position: absolute;
     left: 50%;
@@ -8130,7 +8194,7 @@ select::-ms-expand {
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
   }
-  /* line 205, ../components/property_popup_component/clientlibs/property_popup_component.scss */
+  /* line 206, ../components/property_popup_component/clientlibs/property_popup_component.scss */
   .property-popup-component .property-popup-info-container {
     float: right;
     clear: none;
@@ -8143,12 +8207,12 @@ select::-ms-expand {
   .property-popup-component .property-popup-info-container:last-child {
     margin-left: 0%;
   }
-  /* line 210, ../components/property_popup_component/clientlibs/property_popup_component.scss */
+  /* line 211, ../components/property_popup_component/clientlibs/property_popup_component.scss */
   .property-popup-component .property-popup-info-container--list li {
     float: none;
     margin: 0 0 0 0;
   }
-  /* line 217, ../components/property_popup_component/clientlibs/property_popup_component.scss */
+  /* line 218, ../components/property_popup_component/clientlibs/property_popup_component.scss */
   .property-popup-component .property-popup-slider-container {
     float: right;
     clear: none;
@@ -8162,7 +8226,7 @@ select::-ms-expand {
   }
 }
 @media (min-width: 800px) and (max-width: 1139px) and (min-width: 800px) and (max-width: 1139px) {
-  /* line 219, ../components/property_popup_component/clientlibs/property_popup_component.scss */
+  /* line 221, ../components/property_popup_component/clientlibs/property_popup_component.scss */
   .property-popup-component .property-popup-slider-container .property-popup-slider-navigation {
     width: auto;
     max-width: 98%;
@@ -8175,7 +8239,7 @@ select::-ms-expand {
   }
 }
 @media (min-width: 800px) and (max-width: 1139px) and (min-width: 1140px) and (max-width: 1279px) {
-  /* line 219, ../components/property_popup_component/clientlibs/property_popup_component.scss */
+  /* line 221, ../components/property_popup_component/clientlibs/property_popup_component.scss */
   .property-popup-component .property-popup-slider-container .property-popup-slider-navigation {
     width: auto;
     max-width: 1140px;
@@ -8188,7 +8252,7 @@ select::-ms-expand {
   }
 }
 @media (min-width: 800px) and (max-width: 1139px) and (min-width: 1280px) {
-  /* line 219, ../components/property_popup_component/clientlibs/property_popup_component.scss */
+  /* line 221, ../components/property_popup_component/clientlibs/property_popup_component.scss */
   .property-popup-component .property-popup-slider-container .property-popup-slider-navigation {
     width: auto;
     max-width: 1170px;
@@ -8202,6 +8266,15 @@ select::-ms-expand {
 }
 @media (min-width: 800px) and (max-width: 1139px) {
   /* line 225, ../components/property_popup_component/clientlibs/property_popup_component.scss */
+  .property-popup-component .property-popup-slider-container .property-popup-slider__image {
+    position: relative;
+    height: 655px;
+  }
+  /* line 229, ../components/property_popup_component/clientlibs/property_popup_component.scss */
+  .property-popup-component .property-popup-slider-container .property-popup-slider__image img {
+    width: 250%;
+  }
+  /* line 236, ../components/property_popup_component/clientlibs/property_popup_component.scss */
   .property-popup-component .property-popup-bottom-container--user-help {
     float: right;
     clear: none;
@@ -8213,7 +8286,7 @@ select::-ms-expand {
   .property-popup-component .property-popup-bottom-container--user-help:last-child {
     margin-left: 0%;
   }
-  /* line 229, ../components/property_popup_component/clientlibs/property_popup_component.scss */
+  /* line 240, ../components/property_popup_component/clientlibs/property_popup_component.scss */
   .property-popup-component .property-popup-bottom-container--button-list {
     float: right;
     clear: none;
@@ -8228,7 +8301,7 @@ select::-ms-expand {
   }
 }
 @media (min-width: 1140px) {
-  /* line 243, ../components/property_popup_component/clientlibs/property_popup_component.scss */
+  /* line 254, ../components/property_popup_component/clientlibs/property_popup_component.scss */
   .property-popup-component__inner {
     position: absolute;
     left: 50%;
@@ -8237,7 +8310,7 @@ select::-ms-expand {
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
   }
-  /* line 247, ../components/property_popup_component/clientlibs/property_popup_component.scss */
+  /* line 258, ../components/property_popup_component/clientlibs/property_popup_component.scss */
   .property-popup-component .property-popup-info-container {
     float: right;
     clear: none;
@@ -8250,12 +8323,12 @@ select::-ms-expand {
   .property-popup-component .property-popup-info-container:last-child {
     margin-left: 0%;
   }
-  /* line 252, ../components/property_popup_component/clientlibs/property_popup_component.scss */
+  /* line 263, ../components/property_popup_component/clientlibs/property_popup_component.scss */
   .property-popup-component .property-popup-info-container--list li {
     float: none;
     margin: 0 0 0 0;
   }
-  /* line 259, ../components/property_popup_component/clientlibs/property_popup_component.scss */
+  /* line 270, ../components/property_popup_component/clientlibs/property_popup_component.scss */
   .property-popup-component .property-popup-slider-container {
     float: right;
     clear: none;
@@ -8267,7 +8340,16 @@ select::-ms-expand {
   .property-popup-component .property-popup-slider-container:last-child {
     margin-left: 0%;
   }
-  /* line 264, ../components/property_popup_component/clientlibs/property_popup_component.scss */
+  /* line 273, ../components/property_popup_component/clientlibs/property_popup_component.scss */
+  .property-popup-component .property-popup-slider-container .property-popup-slider__image {
+    position: relative;
+    height: 655px;
+  }
+  /* line 277, ../components/property_popup_component/clientlibs/property_popup_component.scss */
+  .property-popup-component .property-popup-slider-container .property-popup-slider__image img {
+    width: 150%;
+  }
+  /* line 284, ../components/property_popup_component/clientlibs/property_popup_component.scss */
   .property-popup-component .property-popup-bottom-container--user-help {
     float: right;
     clear: none;
@@ -8279,7 +8361,7 @@ select::-ms-expand {
   .property-popup-component .property-popup-bottom-container--user-help:last-child {
     margin-left: 0%;
   }
-  /* line 268, ../components/property_popup_component/clientlibs/property_popup_component.scss */
+  /* line 288, ../components/property_popup_component/clientlibs/property_popup_component.scss */
   .property-popup-component .property-popup-bottom-container--button-list {
     float: right;
     clear: none;
@@ -9933,9 +10015,10 @@ select::-ms-expand {
 /* line 36, ../components/our_agents_component/clientlibs/our_agents_component.scss */
 .our-agents-component .our-agents-list-item__agent-block .agent-title {
   float: left;
+  width: calc(100% - 160px);
   color: #ffffff;
 }
-/* line 39, ../components/our_agents_component/clientlibs/our_agents_component.scss */
+/* line 40, ../components/our_agents_component/clientlibs/our_agents_component.scss */
 .our-agents-component .our-agents-list-item__agent-block .agent-title span {
   font-family: "fbronibe", "Trebuchet MS", Ubuntu, serif;
   font-size: 18px;
@@ -9944,7 +10027,7 @@ select::-ms-expand {
   margin-bottom: 10px;
   color: #f99e1b;
 }
-/* line 46, ../components/our_agents_component/clientlibs/our_agents_component.scss */
+/* line 47, ../components/our_agents_component/clientlibs/our_agents_component.scss */
 .our-agents-component .our-agents-list-item__agent-block .agent-fbook {
   -moz-border-radius: 20px;
   -webkit-border-radius: 20px;
@@ -9954,7 +10037,7 @@ select::-ms-expand {
   background-color: transparent;
   display: inline-block;
 }
-/* line 51, ../components/our_agents_component/clientlibs/our_agents_component.scss */
+/* line 52, ../components/our_agents_component/clientlibs/our_agents_component.scss */
 .our-agents-component .our-agents-list-item__agent-block .agent-img {
   -moz-border-radius: 150px;
   -webkit-border-radius: 150px;
@@ -9966,15 +10049,15 @@ select::-ms-expand {
   right: -20px;
   border: solid #ffffff 2px;
 }
-/* line 61, ../components/our_agents_component/clientlibs/our_agents_component.scss */
+/* line 62, ../components/our_agents_component/clientlibs/our_agents_component.scss */
 .our-agents-component .our-agents-list-item__agent-block .agent-phone, .our-agents-component .our-agents-list-item__agent-block .agent-location {
   display: block;
 }
-/* line 63, ../components/our_agents_component/clientlibs/our_agents_component.scss */
+/* line 64, ../components/our_agents_component/clientlibs/our_agents_component.scss */
 .our-agents-component .our-agents-list-item__agent-block .agent-phone:hover, .our-agents-component .our-agents-list-item__agent-block .agent-location:hover {
   text-decoration: none;
 }
-/* line 66, ../components/our_agents_component/clientlibs/our_agents_component.scss */
+/* line 67, ../components/our_agents_component/clientlibs/our_agents_component.scss */
 .our-agents-component .our-agents-list-item__agent-block .agent-phone:before, .our-agents-component .our-agents-list-item__agent-block .agent-location:before {
   content: '';
   display: block;
@@ -9989,7 +10072,7 @@ select::-ms-expand {
   top: 5px;
   margin: 0 0 0 10px;
 }
-/* line 76, ../components/our_agents_component/clientlibs/our_agents_component.scss */
+/* line 77, ../components/our_agents_component/clientlibs/our_agents_component.scss */
 .our-agents-component .our-agents-list-item__agent-block .agent-fbook, .our-agents-component .our-agents-list-item__agent-block .agent-phone, .our-agents-component .our-agents-list-item__agent-block .agent-location {
   font-family: "fbronibe", "Trebuchet MS", Ubuntu, serif;
   font-size: 18px;
@@ -9998,12 +10081,12 @@ select::-ms-expand {
   position: relative;
   color: #ffffff;
 }
-/* line 82, ../components/our_agents_component/clientlibs/our_agents_component.scss */
+/* line 83, ../components/our_agents_component/clientlibs/our_agents_component.scss */
 .our-agents-component .our-agents-list-item__agent-block .btn-block {
   padding-top: 20px;
   text-align: center;
 }
-/* line 87, ../components/our_agents_component/clientlibs/our_agents_component.scss */
+/* line 88, ../components/our_agents_component/clientlibs/our_agents_component.scss */
 .our-agents-component .our-agents-list-item__agent-block .btn {
   -moz-border-radius: 0px;
   -webkit-border-radius: 0px;
@@ -10026,14 +10109,14 @@ select::-ms-expand {
   font-weight: 700;
   padding-top: 15px;
 }
-/* line 91, ../components/our_agents_component/clientlibs/our_agents_component.scss */
+/* line 92, ../components/our_agents_component/clientlibs/our_agents_component.scss */
 .our-agents-component .our-agents-list-item__agent-block .btn:hover {
   background-color: #ffffff;
   color: #93a33a;
 }
 
 @media (min-width: 800px) and (max-width: 1139px) {
-  /* line 106, ../components/our_agents_component/clientlibs/our_agents_component.scss */
+  /* line 107, ../components/our_agents_component/clientlibs/our_agents_component.scss */
   .our-agents-component .our-agents-list-item__info {
     float: right;
     clear: none;
@@ -10051,7 +10134,7 @@ select::-ms-expand {
   }
 }
 @media (min-width: 1140px) {
-  /* line 125, ../components/our_agents_component/clientlibs/our_agents_component.scss */
+  /* line 126, ../components/our_agents_component/clientlibs/our_agents_component.scss */
   .our-agents-component .our-agents-list-item__info {
     height: 396px;
     padding-top: 0;
@@ -10183,7 +10266,7 @@ select::-ms-expand {
 /* line 42, ../components/career_component/clientlibs/career_component.scss */
 .career-component .career-component-header-block {
   *zoom: 1;
-  padding: 0 35px 0 35px;
+  padding: 0 20px 0 20px;
   margin-bottom: 70px;
   border-bottom: solid #061d27 1px;
 }

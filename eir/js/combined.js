@@ -5994,7 +5994,7 @@ EIR.define('TopSliderComponent', ['jQuery', 'Response'], function($, Response) {
 			itemsDesktopSmall : [800,1], // betweem 900px and 601px
 			itemsTablet: [799,1], //1 items between 600 and 0
 			itemsMobile : false, // itemsMobile disabled - inherit from itemsTablet option
-			autoPlay : false,
+			autoPlay : true,
 			stopOnHover : true,
 			autoHeight : true
 		});
@@ -6260,7 +6260,7 @@ EIR.define('PropertyComponent', ['jQuery', 'Response'], function($, Response) {
 			itemsMobile : false, // itemsMobile disabled - inherit from itemsTablet option
 			autoPlay : false,
 			stopOnHover : true,
-			autoHeight : true
+			autoHeight : false
 		});
 
 		// Custom Navigation Events
