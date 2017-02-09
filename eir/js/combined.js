@@ -5996,7 +5996,7 @@ EIR.define('TopSliderComponent', ['jQuery', 'Response'], function($, Response) {
 			itemsMobile : false, // itemsMobile disabled - inherit from itemsTablet option
 			autoPlay : true,
 			stopOnHover : true,
-			autoHeight : true
+			autoHeight : false
 		});
 
 		// Custom Navigation Events
