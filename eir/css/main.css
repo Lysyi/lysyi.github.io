@@ -9067,8 +9067,9 @@ select::-ms-expand {
   z-index: 3000;
   position: absolute;
   width: 100%;
-  height: 100vh;
+  height: 100vmin;
   top: 0;
+  bottom: 0;
   background-color: rgba(0, 0, 0, 0.6);
 }
 /* line 343, ../sass/core/jeet/_grid.scss */
@@ -9080,7 +9081,7 @@ select::-ms-expand {
 .success-popup-component:after {
   clear: both;
 }
-/* line 12, ../components/success_popup_component/clientlibs/success_popup_component.scss */
+/* line 13, ../components/success_popup_component/clientlibs/success_popup_component.scss */
 .success-popup-component__inner {
   *zoom: 1;
   position: absolute;
@@ -9108,7 +9109,7 @@ select::-ms-expand {
 .success-popup-component__inner:after {
   clear: both;
 }
-/* line 23, ../components/success_popup_component/clientlibs/success_popup_component.scss */
+/* line 24, ../components/success_popup_component/clientlibs/success_popup_component.scss */
 .success-popup-component .close-popup-btn {
   cursor: pointer;
   z-index: 20;
@@ -9116,7 +9117,7 @@ select::-ms-expand {
   margin: 20px;
   left: 0;
 }
-/* line 31, ../components/success_popup_component/clientlibs/success_popup_component.scss */
+/* line 32, ../components/success_popup_component/clientlibs/success_popup_component.scss */
 .success-popup-component .success-popup-info-container {
   *zoom: 1;
   -moz-box-sizing: border-box;
@@ -9134,7 +9135,7 @@ select::-ms-expand {
 .success-popup-component .success-popup-info-container:after {
   clear: both;
 }
-/* line 37, ../components/success_popup_component/clientlibs/success_popup_component.scss */
+/* line 38, ../components/success_popup_component/clientlibs/success_popup_component.scss */
 .success-popup-component .success-popup-info-container--header {
   position: relative;
   margin: 0 0 78px 0;
@@ -9142,7 +9143,7 @@ select::-ms-expand {
   border-bottom: solid #f99e1b 1px;
   text-align: center;
 }
-/* line 44, ../components/success_popup_component/clientlibs/success_popup_component.scss */
+/* line 45, ../components/success_popup_component/clientlibs/success_popup_component.scss */
 .success-popup-component .success-popup-info-container--header:after {
   content: '';
   display: block;
@@ -9156,7 +9157,7 @@ select::-ms-expand {
   background-size: 100%;
   background-repeat: no-repeat;
 }
-/* line 57, ../components/success_popup_component/clientlibs/success_popup_component.scss */
+/* line 58, ../components/success_popup_component/clientlibs/success_popup_component.scss */
 .success-popup-component .success-popup-info-container--header h3 {
   font-family: "fbronibe", "Trebuchet MS", Ubuntu, serif;
   font-size: 30px;
@@ -9165,7 +9166,7 @@ select::-ms-expand {
   margin-bottom: 10px;
   color: #ffffff;
 }
-/* line 63, ../components/success_popup_component/clientlibs/success_popup_component.scss */
+/* line 64, ../components/success_popup_component/clientlibs/success_popup_component.scss */
 .success-popup-component .success-popup-info-container--header p {
   font-family: "fbronibe", "Trebuchet MS", Ubuntu, serif;
   font-size: 20px;
@@ -9176,14 +9177,14 @@ select::-ms-expand {
   line-height: 22px;
   color: #ffffff;
 }
-/* line 72, ../components/success_popup_component/clientlibs/success_popup_component.scss */
+/* line 73, ../components/success_popup_component/clientlibs/success_popup_component.scss */
 .success-popup-component .success-popup-info-container--text {
   padding: 0 30px;
   text-align: center;
 }
 
 @media (min-width: 800px) and (max-width: 1139px) {
-  /* line 85, ../components/success_popup_component/clientlibs/success_popup_component.scss */
+  /* line 86, ../components/success_popup_component/clientlibs/success_popup_component.scss */
   .success-popup-component__inner {
     position: absolute;
     left: 50%;
@@ -9194,12 +9195,12 @@ select::-ms-expand {
     transform: translateY(-50%) translateX(-50%);
     width: auto;
   }
-  /* line 90, ../components/success_popup_component/clientlibs/success_popup_component.scss */
+  /* line 91, ../components/success_popup_component/clientlibs/success_popup_component.scss */
   .success-popup-component .success-popup-info-container {
     width: 750px;
     height: 566px;
   }
-  /* line 95, ../components/success_popup_component/clientlibs/success_popup_component.scss */
+  /* line 96, ../components/success_popup_component/clientlibs/success_popup_component.scss */
   .success-popup-component .success-popup-info-container--header:after {
     width: 72px;
     height: 64px;
@@ -9209,7 +9210,7 @@ select::-ms-expand {
   }
 }
 @media (min-width: 1140px) {
-  /* line 113, ../components/success_popup_component/clientlibs/success_popup_component.scss */
+  /* line 114, ../components/success_popup_component/clientlibs/success_popup_component.scss */
   .success-popup-component__inner {
     position: absolute;
     left: 50%;
@@ -9220,12 +9221,12 @@ select::-ms-expand {
     transform: translateY(-50%) translateX(-50%);
     width: auto;
   }
-  /* line 118, ../components/success_popup_component/clientlibs/success_popup_component.scss */
+  /* line 119, ../components/success_popup_component/clientlibs/success_popup_component.scss */
   .success-popup-component .success-popup-info-container {
     width: 750px;
     height: 566px;
   }
-  /* line 124, ../components/success_popup_component/clientlibs/success_popup_component.scss */
+  /* line 125, ../components/success_popup_component/clientlibs/success_popup_component.scss */
   .success-popup-component .success-popup-info-container--header:after {
     width: 72px;
     height: 64px;
@@ -9239,7 +9240,7 @@ select::-ms-expand {
   *zoom: 1;
   direction: rtl;
   display: none;
-  z-index: 1000;
+  z-index: 3000;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -10667,6 +10668,7 @@ select::-ms-expand {
 }
 /* line 106, ../components/career_component/clientlibs/career_component.scss */
 .career-component .career-component-accordion .accordion-content {
+  display: none;
   *zoom: 1;
   font-family: "fbronibe", "Trebuchet MS", Ubuntu, serif;
   font-size: 18px;
