@@ -2701,15 +2701,20 @@ ul, nav {
 }
 
 /* line 77, ../sass/core/_general.scss */
+dl, dt, dd {
+  margin: 0;
+}
+
+/* line 81, ../sass/core/_general.scss */
 input[type=text]::-ms-clear {
   display: none;
 }
-/* line 79, ../sass/core/_general.scss */
+/* line 83, ../sass/core/_general.scss */
 input[type=text]::-ms-clear:focus {
   outline: none;
 }
 
-/* line 84, ../sass/core/_general.scss */
+/* line 88, ../sass/core/_general.scss */
 input[type="search"], input[type="text"], input[type="submit"], textarea {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -2728,44 +2733,44 @@ input[type="search"], input[type="text"], input[type="submit"], textarea {
   color: #000000;
   border: none;
 }
-/* line 91, ../sass/core/_general.scss */
+/* line 95, ../sass/core/_general.scss */
 input[type="search"]::-ms-clear, input[type="text"]::-ms-clear, input[type="submit"]::-ms-clear, textarea::-ms-clear {
   display: none;
 }
-/* line 95, ../sass/core/_general.scss */
+/* line 99, ../sass/core/_general.scss */
 input[type="search"]:focus, input[type="text"]:focus, input[type="submit"]:focus, textarea:focus {
   outline: none;
 }
 
-/* line 106, ../sass/core/_general.scss */
+/* line 110, ../sass/core/_general.scss */
 input[type="text"], input[type="submit"] {
   -moz-border-radius: 0px;
   -webkit-border-radius: 0px;
   border-radius: 0px;
 }
-/* line 109, ../sass/core/_general.scss */
+/* line 113, ../sass/core/_general.scss */
 input[type="text"]:focus, input[type="submit"]:focus {
   outline: none;
 }
 
-/* line 115, ../sass/core/_general.scss */
+/* line 119, ../sass/core/_general.scss */
 button:focus, select:focus, textarea:focus {
   outline: none;
 }
 
-/* line 121, ../sass/core/_general.scss */
+/* line 125, ../sass/core/_general.scss */
 button:hover {
   transition: background-color 0.5s ease-out;
 }
 
-/* line 126, ../sass/core/_general.scss */
+/* line 130, ../sass/core/_general.scss */
 .inner-pages-global-container {
   height: 100%;
   padding: 120px 0 0 0;
   background-color: rgba(0, 0, 0, 0.1);
 }
 
-/* line 132, ../sass/core/_general.scss */
+/* line 136, ../sass/core/_general.scss */
 .page-container {
   width: 100%;
   min-height: 100%;
@@ -2773,7 +2778,7 @@ button:hover {
   position: relative;
 }
 
-/* line 139, ../sass/core/_general.scss */
+/* line 143, ../sass/core/_general.scss */
 .clear {
   *zoom: 1;
 }
@@ -2787,17 +2792,17 @@ button:hover {
   clear: both;
 }
 
-/* line 143, ../sass/core/_general.scss */
+/* line 147, ../sass/core/_general.scss */
 .bold {
   font-weight: 700;
 }
 
-/* line 147, ../sass/core/_general.scss */
+/* line 151, ../sass/core/_general.scss */
 .text-decoration-none {
   text-decoration: none;
 }
 
-/* line 151, ../sass/core/_general.scss */
+/* line 155, ../sass/core/_general.scss */
 .center-xy {
   position: absolute;
   transform-style: preserve-3d;
@@ -2806,33 +2811,63 @@ button:hover {
   transform: translate(-50%, -50%);
 }
 
-/* line 155, ../sass/core/_general.scss */
+/* line 159, ../sass/core/_general.scss */
 .center-y {
   display: table-cell;
   vertical-align: middle;
   padding: 0 10%;
 }
 
-/* line 161, ../sass/core/_general.scss */
+/* line 165, ../sass/core/_general.scss */
 .popup__active {
   display: block !important;
 }
 
-/* line 166, ../sass/core/_general.scss */
+/* line 170, ../sass/core/_general.scss */
 select::-ms-expand {
   display: none;
 }
 
+/* line 175, ../sass/core/_general.scss */
+.mobile-hide {
+  display: none;
+}
+
+/* line 179, ../sass/core/_general.scss */
+.mobile-show {
+  display: block;
+}
+
 @media (min-width: 800px) and (max-width: 1139px) {
-  /* line 173, ../sass/core/_general.scss */
+  /* line 186, ../sass/core/_general.scss */
+  .tablet-hide {
+    display: none;
+  }
+
+  /* line 190, ../sass/core/_general.scss */
+  .tablet-show {
+    display: block;
+  }
+
+  /* line 194, ../sass/core/_general.scss */
   .inner-pages-global-container {
-    padding: 80px 0 0 0;
+    padding: 60px 0 0 0;
   }
 }
 @media (min-width: 1140px) {
-  /* line 181, ../sass/core/_general.scss */
+  /* line 203, ../sass/core/_general.scss */
+  .desktop-hide {
+    display: none;
+  }
+
+  /* line 207, ../sass/core/_general.scss */
+  .desktop-show {
+    display: block;
+  }
+
+  /* line 211, ../sass/core/_general.scss */
   .inner-pages-global-container {
-    padding: 80px 0 0 0;
+    padding: 60px 0 0 0;
   }
 }
 /* line 3, ../sass/core/_select2-custom.scss */
@@ -6068,7 +6103,6 @@ select::-ms-expand {
   font-weight: 300;
   direction: rtl;
   background-color: rgba(0, 0, 0, 0.1);
-  margin: 0 0 40px 0;
 }
 /* line 343, ../sass/core/jeet/_grid.scss */
 .about-component:before, .about-component:after {
@@ -6183,12 +6217,13 @@ select::-ms-expand {
     font-size: 21px;
     font-style: normal;
     font-weight: 300;
+    margin-top: 50px;
   }
-  /* line 47, ../components/about_component/clientlibs/about_component.scss */
+  /* line 48, ../components/about_component/clientlibs/about_component.scss */
   .about-component .about-component-content {
     padding-bottom: 90px;
   }
-  /* line 49, ../components/about_component/clientlibs/about_component.scss */
+  /* line 50, ../components/about_component/clientlibs/about_component.scss */
   .about-component .about-component-content--title {
     position: absolute;
     left: 50%;
@@ -6197,24 +6232,25 @@ select::-ms-expand {
     margin-top: -50px;
     padding: 30px 0 25px 0;
   }
-  /* line 55, ../components/about_component/clientlibs/about_component.scss */
+  /* line 56, ../components/about_component/clientlibs/about_component.scss */
   .about-component .about-component-content--img {
     margin-bottom: 100px;
   }
 }
 @media (min-width: 1140px) {
-  /* line 66, ../components/about_component/clientlibs/about_component.scss */
+  /* line 67, ../components/about_component/clientlibs/about_component.scss */
   .about-component {
     font-family: "fbronibe", "Trebuchet MS", Ubuntu, serif;
     font-size: 21px;
     font-style: normal;
     font-weight: 300;
+    margin-top: 50px;
   }
-  /* line 69, ../components/about_component/clientlibs/about_component.scss */
+  /* line 71, ../components/about_component/clientlibs/about_component.scss */
   .about-component .about-component-content {
     padding-bottom: 90px;
   }
-  /* line 71, ../components/about_component/clientlibs/about_component.scss */
+  /* line 73, ../components/about_component/clientlibs/about_component.scss */
   .about-component .about-component-content--title {
     position: absolute;
     left: 50%;
@@ -6223,7 +6259,7 @@ select::-ms-expand {
     margin-top: -50px;
     padding: 30px 0 25px 0;
   }
-  /* line 77, ../components/about_component/clientlibs/about_component.scss */
+  /* line 79, ../components/about_component/clientlibs/about_component.scss */
   .about-component .about-component-content--img {
     margin-bottom: 100px;
   }
@@ -6236,7 +6272,7 @@ select::-ms-expand {
   font-style: normal;
   font-weight: 300;
   direction: rtl;
-  margin: 0 0 25px 0;
+  margin: 0 0 40px 0;
 }
 /* line 343, ../sass/core/jeet/_grid.scss */
 .success-stories-component:before, .success-stories-component:after {
@@ -6306,7 +6342,7 @@ select::-ms-expand {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   position: relative;
-  margin-bottom: 25px;
+  margin-bottom: 40px;
   padding-bottom: 25px;
   background-color: rgba(0, 0, 0, 0.1);
   text-align: center;
@@ -6395,13 +6431,14 @@ select::-ms-expand {
     font-size: 21px;
     font-style: normal;
     font-weight: 300;
+    margin-top: 50px;
   }
-  /* line 75, ../components/success_stories_component/clientlibs/success_stories_component.scss */
+  /* line 76, ../components/success_stories_component/clientlibs/success_stories_component.scss */
   .success-stories-component .success-stories-component-content {
     padding-top: 80px;
     padding-bottom: 60px;
   }
-  /* line 79, ../components/success_stories_component/clientlibs/success_stories_component.scss */
+  /* line 80, ../components/success_stories_component/clientlibs/success_stories_component.scss */
   .success-stories-component .success-stories-component-content--title {
     position: absolute;
     left: 50%;
@@ -6410,39 +6447,40 @@ select::-ms-expand {
     margin-top: -130px;
     padding: 30px 0 25px 0;
   }
-  /* line 85, ../components/success_stories_component/clientlibs/success_stories_component.scss */
+  /* line 86, ../components/success_stories_component/clientlibs/success_stories_component.scss */
   .success-stories-component .success-stories-component-content--img {
     float: right;
     margin: 0 0 0 0;
   }
-  /* line 90, ../components/success_stories_component/clientlibs/success_stories_component.scss */
+  /* line 91, ../components/success_stories_component/clientlibs/success_stories_component.scss */
   .success-stories-component .success-stories-component-content--text {
     margin: 0 250px 0 0;
   }
-  /* line 95, ../components/success_stories_component/clientlibs/success_stories_component.scss */
+  /* line 96, ../components/success_stories_component/clientlibs/success_stories_component.scss */
   .success-stories-component .pagginator-list {
     text-align: right;
   }
-  /* line 98, ../components/success_stories_component/clientlibs/success_stories_component.scss */
+  /* line 99, ../components/success_stories_component/clientlibs/success_stories_component.scss */
   .success-stories-component .pagginator-list__item a {
     width: 60px;
     padding: 12px 0 10px 0;
   }
 }
 @media (min-width: 1140px) {
-  /* line 111, ../components/success_stories_component/clientlibs/success_stories_component.scss */
+  /* line 112, ../components/success_stories_component/clientlibs/success_stories_component.scss */
   .success-stories-component {
     font-family: "fbronibe", "Trebuchet MS", Ubuntu, serif;
     font-size: 21px;
     font-style: normal;
     font-weight: 300;
+    margin-top: 50px;
   }
-  /* line 114, ../components/success_stories_component/clientlibs/success_stories_component.scss */
+  /* line 116, ../components/success_stories_component/clientlibs/success_stories_component.scss */
   .success-stories-component .success-stories-component-content {
     padding-top: 80px;
     padding-bottom: 60px;
   }
-  /* line 118, ../components/success_stories_component/clientlibs/success_stories_component.scss */
+  /* line 120, ../components/success_stories_component/clientlibs/success_stories_component.scss */
   .success-stories-component .success-stories-component-content--title {
     position: absolute;
     left: 50%;
@@ -6451,21 +6489,21 @@ select::-ms-expand {
     margin-top: -130px;
     padding: 30px 0 25px 0;
   }
-  /* line 124, ../components/success_stories_component/clientlibs/success_stories_component.scss */
+  /* line 126, ../components/success_stories_component/clientlibs/success_stories_component.scss */
   .success-stories-component .success-stories-component-content--img {
     float: right;
     margin: 0 0 0 0;
   }
-  /* line 129, ../components/success_stories_component/clientlibs/success_stories_component.scss */
+  /* line 131, ../components/success_stories_component/clientlibs/success_stories_component.scss */
   .success-stories-component .success-stories-component-content--text {
     margin: 0 250px 0 0;
     padding-top: 30px;
   }
-  /* line 135, ../components/success_stories_component/clientlibs/success_stories_component.scss */
+  /* line 137, ../components/success_stories_component/clientlibs/success_stories_component.scss */
   .success-stories-component .pagginator-list {
     text-align: right;
   }
-  /* line 138, ../components/success_stories_component/clientlibs/success_stories_component.scss */
+  /* line 140, ../components/success_stories_component/clientlibs/success_stories_component.scss */
   .success-stories-component .pagginator-list__item a {
     width: 60px;
     padding: 12px 0 10px 0;
@@ -6925,7 +6963,6 @@ select::-ms-expand {
 /* line 52, ../components/resident_property_component/clientlibs/resident_property_component.scss */
 .resident-property-component .resident-property-list-item {
   *zoom: 1;
-  background-color: rgba(0, 0, 0, 0.1);
 }
 /* line 343, ../sass/core/jeet/_grid.scss */
 .resident-property-component .resident-property-list-item:before, .resident-property-component .resident-property-list-item:after {
@@ -6936,7 +6973,7 @@ select::-ms-expand {
 .resident-property-component .resident-property-list-item:after {
   clear: both;
 }
-/* line 56, ../components/resident_property_component/clientlibs/resident_property_component.scss */
+/* line 55, ../components/resident_property_component/clientlibs/resident_property_component.scss */
 .resident-property-component .resident-property-list-item__img, .resident-property-component .resident-property-list-item__about, .resident-property-component .resident-property-list-item__info {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -6944,7 +6981,7 @@ select::-ms-expand {
   position: relative;
   overflow: hidden;
 }
-/* line 62, ../components/resident_property_component/clientlibs/resident_property_component.scss */
+/* line 61, ../components/resident_property_component/clientlibs/resident_property_component.scss */
 .resident-property-component .resident-property-list-item__about, .resident-property-component .resident-property-list-item__info {
   float: right;
   clear: none;
@@ -6957,20 +6994,20 @@ select::-ms-expand {
 .resident-property-component .resident-property-list-item__about:last-child, .resident-property-component .resident-property-list-item__info:last-child {
   margin-left: 0%;
 }
-/* line 67, ../components/resident_property_component/clientlibs/resident_property_component.scss */
+/* line 66, ../components/resident_property_component/clientlibs/resident_property_component.scss */
 .resident-property-component .resident-property-list-item__img {
   height: auto;
 }
-/* line 69, ../components/resident_property_component/clientlibs/resident_property_component.scss */
+/* line 68, ../components/resident_property_component/clientlibs/resident_property_component.scss */
 .resident-property-component .resident-property-list-item__img img {
   width: 100%;
 }
-/* line 74, ../components/resident_property_component/clientlibs/resident_property_component.scss */
+/* line 73, ../components/resident_property_component/clientlibs/resident_property_component.scss */
 .resident-property-component .resident-property-list-item__about {
   display: table;
   background-color: #ffffff;
 }
-/* line 78, ../components/resident_property_component/clientlibs/resident_property_component.scss */
+/* line 77, ../components/resident_property_component/clientlibs/resident_property_component.scss */
 .resident-property-component .resident-property-list-item__about h2 {
   font-family: "fbronibe", "Trebuchet MS", Ubuntu, serif;
   font-size: 38px;
@@ -6979,7 +7016,7 @@ select::-ms-expand {
   margin-bottom: 5px;
   color: #054770;
 }
-/* line 82, ../components/resident_property_component/clientlibs/resident_property_component.scss */
+/* line 81, ../components/resident_property_component/clientlibs/resident_property_component.scss */
 .resident-property-component .resident-property-list-item__about h2 span {
   font-family: "fbronibe", "Trebuchet MS", Ubuntu, serif;
   font-size: 20px;
@@ -6987,7 +7024,7 @@ select::-ms-expand {
   font-weight: 700;
   color: rgba(0, 0, 0, 0.8);
 }
-/* line 88, ../components/resident_property_component/clientlibs/resident_property_component.scss */
+/* line 87, ../components/resident_property_component/clientlibs/resident_property_component.scss */
 .resident-property-component .resident-property-list-item__about .arrow-label {
   -moz-border-radius: 0px;
   -webkit-border-radius: 0px;
@@ -7024,7 +7061,7 @@ select::-ms-expand {
   top: -2px;
   left: -14px;
 }
-/* line 92, ../components/resident_property_component/clientlibs/resident_property_component.scss */
+/* line 91, ../components/resident_property_component/clientlibs/resident_property_component.scss */
 .resident-property-component .resident-property-list-item__about .info {
   font-family: "fbronibe", "Trebuchet MS", Ubuntu, serif;
   font-size: 21px;
@@ -7036,7 +7073,7 @@ select::-ms-expand {
   padding: 0 75px 0 0;
   line-height: 20px;
 }
-/* line 99, ../components/resident_property_component/clientlibs/resident_property_component.scss */
+/* line 98, ../components/resident_property_component/clientlibs/resident_property_component.scss */
 .resident-property-component .resident-property-list-item__about .info i {
   font-family: "fbronibe", "Trebuchet MS", Ubuntu, serif;
   font-size: 17px;
@@ -7044,11 +7081,11 @@ select::-ms-expand {
   font-weight: 300;
   display: block;
 }
-/* line 104, ../components/resident_property_component/clientlibs/resident_property_component.scss */
+/* line 103, ../components/resident_property_component/clientlibs/resident_property_component.scss */
 .resident-property-component .resident-property-list-item__about .info-img {
   margin-top: 25px;
 }
-/* line 106, ../components/resident_property_component/clientlibs/resident_property_component.scss */
+/* line 105, ../components/resident_property_component/clientlibs/resident_property_component.scss */
 .resident-property-component .resident-property-list-item__about .info-img div {
   -moz-border-radius: 150px;
   -webkit-border-radius: 150px;
@@ -7065,19 +7102,19 @@ select::-ms-expand {
   padding: 2px;
   border: solid #061d27 2px;
 }
-/* line 114, ../components/resident_property_component/clientlibs/resident_property_component.scss */
+/* line 113, ../components/resident_property_component/clientlibs/resident_property_component.scss */
 .resident-property-component .resident-property-list-item__about .info-img div img {
   -moz-border-radius: 150px;
   -webkit-border-radius: 150px;
   border-radius: 150px;
   width: 100%;
 }
-/* line 122, ../components/resident_property_component/clientlibs/resident_property_component.scss */
+/* line 121, ../components/resident_property_component/clientlibs/resident_property_component.scss */
 .resident-property-component .resident-property-list-item__info {
   display: table;
   background-color: #061d27;
 }
-/* line 126, ../components/resident_property_component/clientlibs/resident_property_component.scss */
+/* line 125, ../components/resident_property_component/clientlibs/resident_property_component.scss */
 .resident-property-component .resident-property-list-item__info h2 {
   font-family: "fbronibe", "Trebuchet MS", Ubuntu, serif;
   font-size: 38px;
@@ -7086,7 +7123,7 @@ select::-ms-expand {
   margin-bottom: 5px;
   color: #f99e1b;
 }
-/* line 132, ../components/resident_property_component/clientlibs/resident_property_component.scss */
+/* line 131, ../components/resident_property_component/clientlibs/resident_property_component.scss */
 .resident-property-component .resident-property-list-item__info p {
   font-family: "fbronibe", "Trebuchet MS", Ubuntu, serif;
   font-size: 24px;
@@ -7095,11 +7132,11 @@ select::-ms-expand {
   margin-bottom: 15px;
   color: #ffffff;
 }
-/* line 138, ../components/resident_property_component/clientlibs/resident_property_component.scss */
+/* line 137, ../components/resident_property_component/clientlibs/resident_property_component.scss */
 .resident-property-component .resident-property-list-item__info .btn-block {
   text-align: center;
 }
-/* line 142, ../components/resident_property_component/clientlibs/resident_property_component.scss */
+/* line 141, ../components/resident_property_component/clientlibs/resident_property_component.scss */
 .resident-property-component .resident-property-list-item__info .btn {
   -moz-border-radius: 0px;
   -webkit-border-radius: 0px;
@@ -7122,7 +7159,7 @@ select::-ms-expand {
   font-weight: 700;
   padding-top: 15px;
 }
-/* line 146, ../components/resident_property_component/clientlibs/resident_property_component.scss */
+/* line 145, ../components/resident_property_component/clientlibs/resident_property_component.scss */
 .resident-property-component .resident-property-list-item__info .btn:hover {
   -moz-border-radius: 0px;
   -webkit-border-radius: 0px;
@@ -7145,28 +7182,28 @@ select::-ms-expand {
   font-weight: 700;
   padding-top: 15px;
 }
-/* line 156, ../components/resident_property_component/clientlibs/resident_property_component.scss */
+/* line 155, ../components/resident_property_component/clientlibs/resident_property_component.scss */
 .resident-property-component .resident-property-list-item:nth-child(2n) .resident-property-list-item__about {
   background-color: #e0e0e0;
 }
-/* line 160, ../components/resident_property_component/clientlibs/resident_property_component.scss */
+/* line 159, ../components/resident_property_component/clientlibs/resident_property_component.scss */
 .resident-property-component .resident-property-list-item:nth-child(2n) .resident-property-list-item__info {
   background-color: #93a33a;
 }
-/* line 163, ../components/resident_property_component/clientlibs/resident_property_component.scss */
+/* line 162, ../components/resident_property_component/clientlibs/resident_property_component.scss */
 .resident-property-component .resident-property-list-item:nth-child(2n) .resident-property-list-item__info h2 {
   color: #061d27;
 }
-/* line 167, ../components/resident_property_component/clientlibs/resident_property_component.scss */
+/* line 166, ../components/resident_property_component/clientlibs/resident_property_component.scss */
 .resident-property-component .resident-property-list-item:nth-child(2n) .resident-property-list-item__info .btn {
   background-color: #061d27;
 }
-/* line 169, ../components/resident_property_component/clientlibs/resident_property_component.scss */
+/* line 168, ../components/resident_property_component/clientlibs/resident_property_component.scss */
 .resident-property-component .resident-property-list-item:nth-child(2n) .resident-property-list-item__info .btn:hover {
   background-color: #ffffff;
   color: #061d27;
 }
-/* line 180, ../components/resident_property_component/clientlibs/resident_property_component.scss */
+/* line 179, ../components/resident_property_component/clientlibs/resident_property_component.scss */
 .resident-property-component .resident-property-list-info {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -7182,7 +7219,7 @@ select::-ms-expand {
 }
 
 @media (min-width: 800px) and (max-width: 1139px) {
-  /* line 199, ../components/resident_property_component/clientlibs/resident_property_component.scss */
+  /* line 198, ../components/resident_property_component/clientlibs/resident_property_component.scss */
   .resident-property-component .resident-property-select-block {
     float: right;
     clear: none;
@@ -7197,7 +7234,7 @@ select::-ms-expand {
   .resident-property-component .resident-property-select-block:last-child {
     margin-left: 0%;
   }
-  /* line 206, ../components/resident_property_component/clientlibs/resident_property_component.scss */
+  /* line 205, ../components/resident_property_component/clientlibs/resident_property_component.scss */
   .resident-property-component .resident-property-breadcrumbs {
     float: right;
     clear: none;
@@ -7211,7 +7248,7 @@ select::-ms-expand {
   .resident-property-component .resident-property-breadcrumbs:last-child {
     margin-left: 0%;
   }
-  /* line 213, ../components/resident_property_component/clientlibs/resident_property_component.scss */
+  /* line 212, ../components/resident_property_component/clientlibs/resident_property_component.scss */
   .resident-property-component .resident-property-list-item__about, .resident-property-component .resident-property-list-item__info {
     float: right;
     clear: none;
@@ -7227,7 +7264,7 @@ select::-ms-expand {
   }
 }
 @media (min-width: 1140px) {
-  /* line 228, ../components/resident_property_component/clientlibs/resident_property_component.scss */
+  /* line 227, ../components/resident_property_component/clientlibs/resident_property_component.scss */
   .resident-property-component .resident-property-select-block {
     float: right;
     clear: none;
@@ -7241,7 +7278,7 @@ select::-ms-expand {
   .resident-property-component .resident-property-select-block:last-child {
     margin-left: 0%;
   }
-  /* line 234, ../components/resident_property_component/clientlibs/resident_property_component.scss */
+  /* line 233, ../components/resident_property_component/clientlibs/resident_property_component.scss */
   .resident-property-component .resident-property-breadcrumbs {
     float: right;
     clear: none;
@@ -7255,13 +7292,14 @@ select::-ms-expand {
   .resident-property-component .resident-property-breadcrumbs:last-child {
     margin-left: 0%;
   }
-  /* line 241, ../components/resident_property_component/clientlibs/resident_property_component.scss */
+  /* line 240, ../components/resident_property_component/clientlibs/resident_property_component.scss */
   .resident-property-component .resident-property-list-item__img, .resident-property-component .resident-property-list-item__about, .resident-property-component .resident-property-list-item__info {
     float: right;
     clear: none;
     width: 33.33333%;
     margin-right: 0%;
     margin-left: 0%;
+    width: 33.3333333333333333%;
     height: 400px;
     padding: 0;
   }
@@ -7597,7 +7635,7 @@ select::-ms-expand {
   width: 80%;
   margin-right: 10%;
   margin-left: 0%;
-  padding-top: 80px;
+  padding-top: 40px;
   padding-bottom: 40px;
 }
 /* line 56, ../sass/core/jeet/_grid.scss */
@@ -7608,9 +7646,11 @@ select::-ms-expand {
 .property-component__content--user--agent-block .agent-title {
   float: left;
   width: calc(100% - 110px);
+  margin-bottom: 40px;
+  padding-top: 15px;
   color: #ffffff;
 }
-/* line 139, ../components/property_component/clientlibs/property_component.scss */
+/* line 141, ../components/property_component/clientlibs/property_component.scss */
 .property-component__content--user--agent-block .agent-title span {
   font-family: "fbronibe", "Trebuchet MS", Ubuntu, serif;
   font-size: 18px;
@@ -7619,7 +7659,7 @@ select::-ms-expand {
   margin-bottom: 10px;
   color: #f99e1b;
 }
-/* line 146, ../components/property_component/clientlibs/property_component.scss */
+/* line 148, ../components/property_component/clientlibs/property_component.scss */
 .property-component__content--user--agent-block .agent-fbook {
   -moz-border-radius: 20px;
   -webkit-border-radius: 20px;
@@ -7629,7 +7669,7 @@ select::-ms-expand {
   background-color: transparent;
   display: inline-block;
 }
-/* line 151, ../components/property_component/clientlibs/property_component.scss */
+/* line 153, ../components/property_component/clientlibs/property_component.scss */
 .property-component__content--user--agent-block .agent-img {
   -moz-border-radius: 150px;
   -webkit-border-radius: 150px;
@@ -7637,19 +7677,18 @@ select::-ms-expand {
   position: relative;
   width: 90px;
   height: 90px;
-  top: -40px;
-  margin-bottom: 10px;
+  margin-bottom: 40px;
   border: solid #ffffff 2px;
 }
-/* line 161, ../components/property_component/clientlibs/property_component.scss */
+/* line 162, ../components/property_component/clientlibs/property_component.scss */
 .property-component__content--user--agent-block .agent-phone, .property-component__content--user--agent-block .agent-location {
   display: block;
 }
-/* line 163, ../components/property_component/clientlibs/property_component.scss */
+/* line 164, ../components/property_component/clientlibs/property_component.scss */
 .property-component__content--user--agent-block .agent-phone:hover, .property-component__content--user--agent-block .agent-location:hover {
   text-decoration: none;
 }
-/* line 166, ../components/property_component/clientlibs/property_component.scss */
+/* line 167, ../components/property_component/clientlibs/property_component.scss */
 .property-component__content--user--agent-block .agent-phone:before, .property-component__content--user--agent-block .agent-location:before {
   content: '';
   display: block;
@@ -7664,7 +7703,7 @@ select::-ms-expand {
   top: 5px;
   margin: 0 0 0 10px;
 }
-/* line 176, ../components/property_component/clientlibs/property_component.scss */
+/* line 177, ../components/property_component/clientlibs/property_component.scss */
 .property-component__content--user--agent-block .agent-fbook, .property-component__content--user--agent-block .agent-phone, .property-component__content--user--agent-block .agent-location {
   font-family: "fbronibe", "Trebuchet MS", Ubuntu, serif;
   font-size: 18px;
@@ -7674,12 +7713,12 @@ select::-ms-expand {
   margin-bottom: 5px;
   color: #ffffff;
 }
-/* line 183, ../components/property_component/clientlibs/property_component.scss */
+/* line 184, ../components/property_component/clientlibs/property_component.scss */
 .property-component__content--user--agent-block .btn-block {
   padding-top: 10px;
   text-align: center;
 }
-/* line 188, ../components/property_component/clientlibs/property_component.scss */
+/* line 189, ../components/property_component/clientlibs/property_component.scss */
 .property-component__content--user--agent-block .btn {
   -moz-border-radius: 0px;
   -webkit-border-radius: 0px;
@@ -7702,7 +7741,7 @@ select::-ms-expand {
   font-weight: 700;
   padding-top: 15px;
 }
-/* line 192, ../components/property_component/clientlibs/property_component.scss */
+/* line 193, ../components/property_component/clientlibs/property_component.scss */
 .property-component__content--user--agent-block .btn:hover {
   -moz-border-radius: 0px;
   -webkit-border-radius: 0px;
@@ -7725,7 +7764,7 @@ select::-ms-expand {
   font-weight: 700;
   padding-top: 15px;
 }
-/* line 201, ../components/property_component/clientlibs/property_component.scss */
+/* line 202, ../components/property_component/clientlibs/property_component.scss */
 .property-component__content--text {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -7742,7 +7781,7 @@ select::-ms-expand {
 .property-component__content--text:after {
   clear: both;
 }
-/* line 206, ../components/property_component/clientlibs/property_component.scss */
+/* line 207, ../components/property_component/clientlibs/property_component.scss */
 .property-component__content--text---block {
   float: right;
   clear: none;
@@ -7756,7 +7795,7 @@ select::-ms-expand {
 .property-component__content--text---block:last-child {
   margin-left: 0%;
 }
-/* line 212, ../components/property_component/clientlibs/property_component.scss */
+/* line 213, ../components/property_component/clientlibs/property_component.scss */
 .property-component__content--text h3 {
   font-family: "fbronibe", "Trebuchet MS", Ubuntu, serif;
   font-size: 25px;
@@ -7765,7 +7804,7 @@ select::-ms-expand {
   margin-bottom: 20px;
   color: #054770;
 }
-/* line 218, ../components/property_component/clientlibs/property_component.scss */
+/* line 219, ../components/property_component/clientlibs/property_component.scss */
 .property-component__content--text p {
   font-family: "fbronibe", "Trebuchet MS", Ubuntu, serif;
   font-size: 16px;
@@ -7777,7 +7816,7 @@ select::-ms-expand {
 }
 
 @media (min-width: 800px) and (max-width: 1139px) {
-  /* line 234, ../components/property_component/clientlibs/property_component.scss */
+  /* line 235, ../components/property_component/clientlibs/property_component.scss */
   .property-component__info {
     float: right;
     clear: none;
@@ -7789,11 +7828,11 @@ select::-ms-expand {
   .property-component__info:last-child {
     margin-left: 0%;
   }
-  /* line 237, ../components/property_component/clientlibs/property_component.scss */
+  /* line 238, ../components/property_component/clientlibs/property_component.scss */
   .property-component__info--bg {
     height: 480px;
   }
-  /* line 242, ../components/property_component/clientlibs/property_component.scss */
+  /* line 243, ../components/property_component/clientlibs/property_component.scss */
   .property-component__info--btn-block .btn {
     float: right;
     clear: none;
@@ -7806,11 +7845,11 @@ select::-ms-expand {
   .property-component__info--btn-block .btn:last-child {
     margin-left: 0%;
   }
-  /* line 245, ../components/property_component/clientlibs/property_component.scss */
+  /* line 246, ../components/property_component/clientlibs/property_component.scss */
   .property-component__info--btn-block .btn:first-child {
     border-left: none;
   }
-  /* line 252, ../components/property_component/clientlibs/property_component.scss */
+  /* line 253, ../components/property_component/clientlibs/property_component.scss */
   .property-component .property-slider-container {
     float: right;
     clear: none;
@@ -7824,7 +7863,7 @@ select::-ms-expand {
   }
 }
 @media (min-width: 800px) and (max-width: 1139px) and (min-width: 800px) and (max-width: 1139px) {
-  /* line 255, ../components/property_component/clientlibs/property_component.scss */
+  /* line 256, ../components/property_component/clientlibs/property_component.scss */
   .property-component .property-slider-container .property-slider-navigation {
     width: auto;
     max-width: 98%;
@@ -7837,7 +7876,7 @@ select::-ms-expand {
   }
 }
 @media (min-width: 800px) and (max-width: 1139px) and (min-width: 1140px) and (max-width: 1279px) {
-  /* line 255, ../components/property_component/clientlibs/property_component.scss */
+  /* line 256, ../components/property_component/clientlibs/property_component.scss */
   .property-component .property-slider-container .property-slider-navigation {
     width: auto;
     max-width: 1140px;
@@ -7850,7 +7889,7 @@ select::-ms-expand {
   }
 }
 @media (min-width: 800px) and (max-width: 1139px) and (min-width: 1280px) {
-  /* line 255, ../components/property_component/clientlibs/property_component.scss */
+  /* line 256, ../components/property_component/clientlibs/property_component.scss */
   .property-component .property-slider-container .property-slider-navigation {
     width: auto;
     max-width: 1170px;
@@ -7863,16 +7902,16 @@ select::-ms-expand {
   }
 }
 @media (min-width: 800px) and (max-width: 1139px) {
-  /* line 259, ../components/property_component/clientlibs/property_component.scss */
+  /* line 260, ../components/property_component/clientlibs/property_component.scss */
   .property-component .property-slider-container .property-slider__image {
     position: relative;
     height: 480px;
   }
-  /* line 262, ../components/property_component/clientlibs/property_component.scss */
+  /* line 263, ../components/property_component/clientlibs/property_component.scss */
   .property-component .property-slider-container .property-slider__image img {
     width: 170%;
   }
-  /* line 269, ../components/property_component/clientlibs/property_component.scss */
+  /* line 270, ../components/property_component/clientlibs/property_component.scss */
   .property-component__content--user {
     float: right;
     clear: none;
@@ -7884,16 +7923,17 @@ select::-ms-expand {
   .property-component__content--user:last-child {
     margin-left: 0%;
   }
-  /* line 272, ../components/property_component/clientlibs/property_component.scss */
+  /* line 273, ../components/property_component/clientlibs/property_component.scss */
   .property-component__content--user .agent-img {
     width: 138px;
     height: 138px;
   }
-  /* line 277, ../components/property_component/clientlibs/property_component.scss */
+  /* line 278, ../components/property_component/clientlibs/property_component.scss */
   .property-component__content--user .agent-title {
     width: calc(100% - 180px);
+    padding-top: 45px;
   }
-  /* line 282, ../components/property_component/clientlibs/property_component.scss */
+  /* line 284, ../components/property_component/clientlibs/property_component.scss */
   .property-component__content--text {
     float: right;
     clear: none;
@@ -7906,14 +7946,14 @@ select::-ms-expand {
   .property-component__content--text:last-child {
     margin-left: 0%;
   }
-  /* line 286, ../components/property_component/clientlibs/property_component.scss */
+  /* line 288, ../components/property_component/clientlibs/property_component.scss */
   .property-component__content--text---block {
     padding-top: 80px;
     padding-bottom: 55px;
   }
 }
 @media (min-width: 1140px) {
-  /* line 301, ../components/property_component/clientlibs/property_component.scss */
+  /* line 303, ../components/property_component/clientlibs/property_component.scss */
   .property-component__info {
     float: right;
     clear: none;
@@ -7925,11 +7965,11 @@ select::-ms-expand {
   .property-component__info:last-child {
     margin-left: 0%;
   }
-  /* line 304, ../components/property_component/clientlibs/property_component.scss */
+  /* line 306, ../components/property_component/clientlibs/property_component.scss */
   .property-component__info--bg {
     height: 510px;
   }
-  /* line 309, ../components/property_component/clientlibs/property_component.scss */
+  /* line 311, ../components/property_component/clientlibs/property_component.scss */
   .property-component .property-slider-container {
     float: right;
     clear: none;
@@ -7941,21 +7981,21 @@ select::-ms-expand {
   .property-component .property-slider-container:last-child {
     margin-left: 0%;
   }
-  /* line 314, ../components/property_component/clientlibs/property_component.scss */
+  /* line 316, ../components/property_component/clientlibs/property_component.scss */
   .property-component .property-slider-container .property-slider-navigation .prev, .property-component .property-slider-container .property-slider-navigation .next {
     width: 46px;
     height: 88px;
   }
-  /* line 320, ../components/property_component/clientlibs/property_component.scss */
+  /* line 322, ../components/property_component/clientlibs/property_component.scss */
   .property-component .property-slider-container .property-slider__image {
     position: relative;
     height: 510px;
   }
-  /* line 323, ../components/property_component/clientlibs/property_component.scss */
+  /* line 325, ../components/property_component/clientlibs/property_component.scss */
   .property-component .property-slider-container .property-slider__image img {
     width: 120%;
   }
-  /* line 330, ../components/property_component/clientlibs/property_component.scss */
+  /* line 332, ../components/property_component/clientlibs/property_component.scss */
   .property-component__content--user {
     float: right;
     clear: none;
@@ -7967,16 +8007,17 @@ select::-ms-expand {
   .property-component__content--user:last-child {
     margin-left: 0%;
   }
-  /* line 333, ../components/property_component/clientlibs/property_component.scss */
+  /* line 335, ../components/property_component/clientlibs/property_component.scss */
   .property-component__content--user .agent-img {
     width: 138px;
     height: 138px;
   }
-  /* line 338, ../components/property_component/clientlibs/property_component.scss */
+  /* line 340, ../components/property_component/clientlibs/property_component.scss */
   .property-component__content--user .agent-title {
     width: calc(100% - 180px);
+    padding-top: 45px;
   }
-  /* line 343, ../components/property_component/clientlibs/property_component.scss */
+  /* line 346, ../components/property_component/clientlibs/property_component.scss */
   .property-component__content--text {
     float: right;
     clear: none;
@@ -7989,7 +8030,7 @@ select::-ms-expand {
   .property-component__content--text:last-child {
     margin-left: 0%;
   }
-  /* line 347, ../components/property_component/clientlibs/property_component.scss */
+  /* line 350, ../components/property_component/clientlibs/property_component.scss */
   .property-component__content--text---block {
     padding-top: 80px;
     padding-bottom: 55px;
@@ -9545,12 +9586,12 @@ select::-ms-expand {
 /* line 1, ../components/blog_component/clientlibs/blog_component.scss */
 .blog-component {
   *zoom: 1;
+  width: 100%;
   font-family: "fbronibe", "Trebuchet MS", Ubuntu, serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
   direction: rtl;
-  margin: 0 0 75px 0;
 }
 /* line 343, ../sass/core/jeet/_grid.scss */
 .blog-component:before, .blog-component:after {
@@ -9561,9 +9602,13 @@ select::-ms-expand {
 .blog-component:after {
   clear: both;
 }
+/* line 8, ../components/blog_component/clientlibs/blog_component.scss */
+.blog-component__inner {
+  *zoom: 1;
+}
 @media (min-width: 800px) and (max-width: 1139px) {
-  /* line 1, ../components/blog_component/clientlibs/blog_component.scss */
-  .blog-component {
+  /* line 8, ../components/blog_component/clientlibs/blog_component.scss */
+  .blog-component__inner {
     width: auto;
     max-width: 98%;
     float: none;
@@ -9575,8 +9620,8 @@ select::-ms-expand {
   }
 }
 @media (min-width: 1140px) and (max-width: 1279px) {
-  /* line 1, ../components/blog_component/clientlibs/blog_component.scss */
-  .blog-component {
+  /* line 8, ../components/blog_component/clientlibs/blog_component.scss */
+  .blog-component__inner {
     width: auto;
     max-width: 1140px;
     float: none;
@@ -9588,8 +9633,8 @@ select::-ms-expand {
   }
 }
 @media (min-width: 1280px) {
-  /* line 1, ../components/blog_component/clientlibs/blog_component.scss */
-  .blog-component {
+  /* line 8, ../components/blog_component/clientlibs/blog_component.scss */
+  .blog-component__inner {
     width: auto;
     max-width: 1170px;
     float: none;
@@ -9600,15 +9645,6 @@ select::-ms-expand {
     width: 100%;
   }
 }
-/* line 9, ../components/blog_component/clientlibs/blog_component.scss */
-.blog-component__inner {
-  *zoom: 1;
-  float: right;
-  clear: none;
-  width: 95.83333%;
-  margin-right: 2.08333%;
-  margin-left: 0%;
-}
 /* line 343, ../sass/core/jeet/_grid.scss */
 .blog-component__inner:before, .blog-component__inner:after {
   content: '';
@@ -9618,17 +9654,13 @@ select::-ms-expand {
 .blog-component__inner:after {
   clear: both;
 }
-/* line 56, ../sass/core/jeet/_grid.scss */
-.blog-component__inner:last-child {
-  margin-left: 0%;
-}
-/* line 14, ../components/blog_component/clientlibs/blog_component.scss */
+/* line 13, ../components/blog_component/clientlibs/blog_component.scss */
 .blog-component__main {
   *zoom: 1;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   background-color: rgba(0, 0, 0, 0.1);
 }
 /* line 343, ../sass/core/jeet/_grid.scss */
@@ -9640,14 +9672,14 @@ select::-ms-expand {
 .blog-component__main:after {
   clear: both;
 }
-/* line 21, ../components/blog_component/clientlibs/blog_component.scss */
+/* line 20, ../components/blog_component/clientlibs/blog_component.scss */
 .blog-component__sidebar {
   *zoom: 1;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  margin-bottom: 60px;
-  padding: 30px;
+  margin-bottom: 40px;
+  padding: 30px 30px 15px 30px;
   background-color: rgba(0, 0, 0, 0.2);
 }
 /* line 343, ../sass/core/jeet/_grid.scss */
@@ -9659,7 +9691,7 @@ select::-ms-expand {
 .blog-component__sidebar:after {
   clear: both;
 }
-/* line 28, ../components/blog_component/clientlibs/blog_component.scss */
+/* line 27, ../components/blog_component/clientlibs/blog_component.scss */
 .blog-component__sidebar .search-form {
   *zoom: 1;
   margin-bottom: 20px;
@@ -9673,7 +9705,7 @@ select::-ms-expand {
 .blog-component__sidebar .search-form:after {
   clear: both;
 }
-/* line 32, ../components/blog_component/clientlibs/blog_component.scss */
+/* line 31, ../components/blog_component/clientlibs/blog_component.scss */
 .blog-component__sidebar .search-form--input {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -9685,9 +9717,9 @@ select::-ms-expand {
   width: calc(100% - 34px);
   height: 34px;
   margin-bottom: 0;
-  padding: 0 10px;
+  padding: 4px 10px 0 10px;
 }
-/* line 41, ../components/blog_component/clientlibs/blog_component.scss */
+/* line 40, ../components/blog_component/clientlibs/blog_component.scss */
 .blog-component__sidebar .search-form--btn {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -9711,7 +9743,7 @@ select::-ms-expand {
   width: 34px;
   padding-bottom: 7px;
 }
-/* line 47, ../components/blog_component/clientlibs/blog_component.scss */
+/* line 46, ../components/blog_component/clientlibs/blog_component.scss */
 .blog-component__sidebar .search-form--btn span {
   display: block;
   width: 15px;
@@ -9719,7 +9751,7 @@ select::-ms-expand {
   margin: 0;
   padding-top: 8px;
 }
-/* line 57, ../components/blog_component/clientlibs/blog_component.scss */
+/* line 56, ../components/blog_component/clientlibs/blog_component.scss */
 .blog-component__sidebar--title {
   font-family: "fbronibe", "Trebuchet MS", Ubuntu, serif;
   font-size: 16px;
@@ -9731,21 +9763,21 @@ select::-ms-expand {
   border-bottom: solid #061d27 1px;
   color: #061d27;
 }
-/* line 66, ../components/blog_component/clientlibs/blog_component.scss */
+/* line 65, ../components/blog_component/clientlibs/blog_component.scss */
 .blog-component__sidebar .filter-block-list-container {
   padding-bottom: 20px;
 }
-/* line 70, ../components/blog_component/clientlibs/blog_component.scss */
+/* line 69, ../components/blog_component/clientlibs/blog_component.scss */
 .blog-component__sidebar .filter-block-list {
   margin-bottom: 30px;
 }
-/* line 73, ../components/blog_component/clientlibs/blog_component.scss */
+/* line 72, ../components/blog_component/clientlibs/blog_component.scss */
 .blog-component__sidebar .filter-block-list li {
   position: relative;
   margin: 0 0 5px 0;
   padding: 0 40px 0 0;
 }
-/* line 78, ../components/blog_component/clientlibs/blog_component.scss */
+/* line 77, ../components/blog_component/clientlibs/blog_component.scss */
 .blog-component__sidebar .filter-block-list li:after {
   content: '';
   display: block;
@@ -9756,16 +9788,16 @@ select::-ms-expand {
   right: 15px;
   background-color: #054770;
 }
-/* line 88, ../components/blog_component/clientlibs/blog_component.scss */
+/* line 87, ../components/blog_component/clientlibs/blog_component.scss */
 .blog-component__sidebar .filter-block-list li:first-child {
   margin: 0 0 5px 0;
   padding: 0 25px 0 0;
 }
-/* line 91, ../components/blog_component/clientlibs/blog_component.scss */
+/* line 90, ../components/blog_component/clientlibs/blog_component.scss */
 .blog-component__sidebar .filter-block-list li:first-child:after {
   right: 0px;
 }
-/* line 97, ../components/blog_component/clientlibs/blog_component.scss */
+/* line 96, ../components/blog_component/clientlibs/blog_component.scss */
 .blog-component__sidebar .filter-block-list a {
   font-family: "fbronibe", "Trebuchet MS", Ubuntu, serif;
   font-size: 16px;
@@ -9773,11 +9805,11 @@ select::-ms-expand {
   font-weight: 300;
   color: #061d27;
 }
-/* line 103, ../components/blog_component/clientlibs/blog_component.scss */
+/* line 102, ../components/blog_component/clientlibs/blog_component.scss */
 .blog-component__sidebar .hot-item-block {
   padding: 5px 0 25px 0;
 }
-/* line 106, ../components/blog_component/clientlibs/blog_component.scss */
+/* line 105, ../components/blog_component/clientlibs/blog_component.scss */
 .blog-component__sidebar .hot-item-block--title {
   font-family: "fbronibe", "Trebuchet MS", Ubuntu, serif;
   font-size: 16px;
@@ -9787,7 +9819,7 @@ select::-ms-expand {
   color: #054770;
   line-height: 16px;
 }
-/* line 112, ../components/blog_component/clientlibs/blog_component.scss */
+/* line 111, ../components/blog_component/clientlibs/blog_component.scss */
 .blog-component__sidebar .hot-item-block--title span {
   font-family: "fbronibe", "Trebuchet MS", Ubuntu, serif;
   font-size: 16px;
@@ -9796,16 +9828,16 @@ select::-ms-expand {
   display: block;
   color: #061d27;
 }
-/* line 119, ../components/blog_component/clientlibs/blog_component.scss */
+/* line 118, ../components/blog_component/clientlibs/blog_component.scss */
 .blog-component__sidebar .hot-item-block--img {
   position: relative;
   overflow: hidden;
 }
-/* line 122, ../components/blog_component/clientlibs/blog_component.scss */
+/* line 121, ../components/blog_component/clientlibs/blog_component.scss */
 .blog-component__sidebar .hot-item-block--img img {
   width: 100%;
 }
-/* line 127, ../components/blog_component/clientlibs/blog_component.scss */
+/* line 126, ../components/blog_component/clientlibs/blog_component.scss */
 .blog-component__sidebar .hot-item-block--info {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -9819,28 +9851,22 @@ select::-ms-expand {
   background-color: rgba(6, 29, 39, 0.8);
   text-align: left;
 }
-/* line 137, ../components/blog_component/clientlibs/blog_component.scss */
+/* line 136, ../components/blog_component/clientlibs/blog_component.scss */
 .blog-component__sidebar .hot-item-block--info a {
   margin-top: 10px;
 }
-/* line 144, ../components/blog_component/clientlibs/blog_component.scss */
+/* line 143, ../components/blog_component/clientlibs/blog_component.scss */
 .blog-component--img {
   width: 100%;
-  margin-bottom: 40px;
 }
-/* line 149, ../components/blog_component/clientlibs/blog_component.scss */
+/* line 147, ../components/blog_component/clientlibs/blog_component.scss */
 .blog-component .blog-component-content {
   *zoom: 1;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  float: right;
-  clear: none;
-  width: 83.33333%;
-  margin-right: 8.33333%;
-  margin-left: 0%;
   position: relative;
-  padding-bottom: 60px;
+  padding-bottom: 40px;
 }
 /* line 343, ../sass/core/jeet/_grid.scss */
 .blog-component .blog-component-content:before, .blog-component .blog-component-content:after {
@@ -9851,11 +9877,7 @@ select::-ms-expand {
 .blog-component .blog-component-content:after {
   clear: both;
 }
-/* line 56, ../sass/core/jeet/_grid.scss */
-.blog-component .blog-component-content:last-child {
-  margin-left: 0%;
-}
-/* line 156, ../components/blog_component/clientlibs/blog_component.scss */
+/* line 153, ../components/blog_component/clientlibs/blog_component.scss */
 .blog-component .blog-component-content--title {
   position: relative;
   margin: 0 0 40px 0;
@@ -9864,12 +9886,33 @@ select::-ms-expand {
   color: #ffffff;
   text-align: center;
 }
-/* line 165, ../components/blog_component/clientlibs/blog_component.scss */
+/* line 162, ../components/blog_component/clientlibs/blog_component.scss */
 .blog-component .blog-component-content--text {
+  float: right;
+  clear: none;
+  width: 83.33333%;
+  margin-right: 8.33333%;
+  margin-left: 0%;
   margin-bottom: 30px;
   text-align: justify;
 }
-/* line 170, ../components/blog_component/clientlibs/blog_component.scss */
+/* line 56, ../sass/core/jeet/_grid.scss */
+.blog-component .blog-component-content--text:last-child {
+  margin-left: 0%;
+}
+/* line 168, ../components/blog_component/clientlibs/blog_component.scss */
+.blog-component .blog-component-content .blog-component-btn-container {
+  float: right;
+  clear: none;
+  width: 83.33333%;
+  margin-right: 8.33333%;
+  margin-left: 0%;
+}
+/* line 56, ../sass/core/jeet/_grid.scss */
+.blog-component .blog-component-content .blog-component-btn-container:last-child {
+  margin-left: 0%;
+}
+/* line 172, ../components/blog_component/clientlibs/blog_component.scss */
 .blog-component .blog-component-content--btn {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -9896,7 +9939,7 @@ select::-ms-expand {
   float: left;
   padding-bottom: 7px;
 }
-/* line 176, ../components/blog_component/clientlibs/blog_component.scss */
+/* line 178, ../components/blog_component/clientlibs/blog_component.scss */
 .blog-component .blog-component-content--btn:hover {
   -moz-border-radius: 0px;
   -webkit-border-radius: 0px;
@@ -9919,12 +9962,12 @@ select::-ms-expand {
   font-weight: 700;
   padding-bottom: 7px;
 }
-/* line 184, ../components/blog_component/clientlibs/blog_component.scss */
+/* line 186, ../components/blog_component/clientlibs/blog_component.scss */
 .blog-component .pagginator-list, .blog-component .blog-component-btn-block {
   margin-bottom: 40px;
   text-align: center;
 }
-/* line 187, ../components/blog_component/clientlibs/blog_component.scss */
+/* line 189, ../components/blog_component/clientlibs/blog_component.scss */
 .blog-component .pagginator-list__item, .blog-component .blog-component-btn-block__item {
   font-family: "fbronibe", "Trebuchet MS", Ubuntu, serif;
   font-size: 20px;
@@ -9933,7 +9976,7 @@ select::-ms-expand {
   display: inline-block;
   margin: 0 0 0 10px;
 }
-/* line 191, ../components/blog_component/clientlibs/blog_component.scss */
+/* line 193, ../components/blog_component/clientlibs/blog_component.scss */
 .blog-component .pagginator-list__item a, .blog-component .blog-component-btn-block__item a {
   width: 30px;
   display: block;
@@ -9942,13 +9985,13 @@ select::-ms-expand {
   color: #ffffff;
   text-align: center;
 }
-/* line 198, ../components/blog_component/clientlibs/blog_component.scss */
+/* line 200, ../components/blog_component/clientlibs/blog_component.scss */
 .blog-component .pagginator-list__item a:hover, .blog-component .pagginator-list__item a.active, .blog-component .blog-component-btn-block__item a:hover, .blog-component .blog-component-btn-block__item a.active {
   background-color: #ffffff;
   color: #93a33a;
   text-decoration: none;
 }
-/* line 206, ../components/blog_component/clientlibs/blog_component.scss */
+/* line 208, ../components/blog_component/clientlibs/blog_component.scss */
 .blog-component .pagginator-list .btn, .blog-component .blog-component-btn-block .btn {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -9970,7 +10013,7 @@ select::-ms-expand {
   background-color: #93a33a;
   padding-bottom: 7px;
 }
-/* line 210, ../components/blog_component/clientlibs/blog_component.scss */
+/* line 212, ../components/blog_component/clientlibs/blog_component.scss */
 .blog-component .pagginator-list .btn:hover, .blog-component .blog-component-btn-block .btn:hover {
   -moz-border-radius: 0px;
   -webkit-border-radius: 0px;
@@ -9991,7 +10034,7 @@ select::-ms-expand {
 }
 
 @media (min-width: 800px) and (max-width: 1139px) {
-  /* line 224, ../components/blog_component/clientlibs/blog_component.scss */
+  /* line 226, ../components/blog_component/clientlibs/blog_component.scss */
   .blog-component .blog-component_content {
     float: right;
     clear: none;
@@ -10004,27 +10047,41 @@ select::-ms-expand {
   .blog-component .blog-component_content:last-child {
     margin-left: 0%;
   }
-  /* line 229, ../components/blog_component/clientlibs/blog_component.scss */
+  /* line 231, ../components/blog_component/clientlibs/blog_component.scss */
   .blog-component__sidebar {
     float: right;
     clear: none;
     width: 34.16667%;
     margin-right: 0%;
     margin-left: 0%;
+    padding: 30px;
   }
   /* line 56, ../sass/core/jeet/_grid.scss */
   .blog-component__sidebar:last-child {
     margin-left: 0%;
   }
-  /* line 233, ../components/blog_component/clientlibs/blog_component.scss */
+  /* line 236, ../components/blog_component/clientlibs/blog_component.scss */
   .blog-component--img {
     margin-bottom: 0;
   }
-  /* line 238, ../components/blog_component/clientlibs/blog_component.scss */
-  .blog-component .blog-component-content--title {
-    margin-top: -50px;
+  /* line 240, ../components/blog_component/clientlibs/blog_component.scss */
+  .blog-component .blog-component-content {
+    padding-bottom: 60px;
   }
   /* line 243, ../components/blog_component/clientlibs/blog_component.scss */
+  .blog-component .blog-component-content--title {
+    float: right;
+    clear: none;
+    width: 83.33333%;
+    margin-right: 8.33333%;
+    margin-left: 0%;
+    margin-top: -50px;
+  }
+  /* line 56, ../sass/core/jeet/_grid.scss */
+  .blog-component .blog-component-content--title:last-child {
+    margin-left: 0%;
+  }
+  /* line 249, ../components/blog_component/clientlibs/blog_component.scss */
   .blog-component .pagginator-list, .blog-component .blog-component-btn-block {
     float: right;
     clear: none;
@@ -10038,14 +10095,14 @@ select::-ms-expand {
   .blog-component .pagginator-list:last-child, .blog-component .blog-component-btn-block:last-child {
     margin-left: 0%;
   }
-  /* line 248, ../components/blog_component/clientlibs/blog_component.scss */
+  /* line 254, ../components/blog_component/clientlibs/blog_component.scss */
   .blog-component .pagginator-list__item a, .blog-component .blog-component-btn-block__item a {
     width: 60px;
     padding: 12px 0 10px 0;
   }
 }
 @media (min-width: 1140px) {
-  /* line 263, ../components/blog_component/clientlibs/blog_component.scss */
+  /* line 269, ../components/blog_component/clientlibs/blog_component.scss */
   .blog-component .blog-component_content {
     float: right;
     clear: none;
@@ -10058,27 +10115,41 @@ select::-ms-expand {
   .blog-component .blog-component_content:last-child {
     margin-left: 0%;
   }
-  /* line 268, ../components/blog_component/clientlibs/blog_component.scss */
+  /* line 274, ../components/blog_component/clientlibs/blog_component.scss */
   .blog-component__sidebar {
     float: right;
     clear: none;
     width: 25.83333%;
     margin-right: 0%;
     margin-left: 0%;
+    padding: 30px;
   }
   /* line 56, ../sass/core/jeet/_grid.scss */
   .blog-component__sidebar:last-child {
     margin-left: 0%;
   }
-  /* line 272, ../components/blog_component/clientlibs/blog_component.scss */
+  /* line 279, ../components/blog_component/clientlibs/blog_component.scss */
   .blog-component--img {
     margin-bottom: 0;
   }
-  /* line 277, ../components/blog_component/clientlibs/blog_component.scss */
+  /* line 283, ../components/blog_component/clientlibs/blog_component.scss */
+  .blog-component .blog-component-content {
+    padding-bottom: 60px;
+  }
+  /* line 286, ../components/blog_component/clientlibs/blog_component.scss */
   .blog-component .blog-component-content--title {
+    float: right;
+    clear: none;
+    width: 83.33333%;
+    margin-right: 8.33333%;
+    margin-left: 0%;
     margin-top: -50px;
   }
-  /* line 282, ../components/blog_component/clientlibs/blog_component.scss */
+  /* line 56, ../sass/core/jeet/_grid.scss */
+  .blog-component .blog-component-content--title:last-child {
+    margin-left: 0%;
+  }
+  /* line 292, ../components/blog_component/clientlibs/blog_component.scss */
   .blog-component .pagginator-list, .blog-component .blog-component-btn-block {
     float: right;
     clear: none;
@@ -10092,7 +10163,7 @@ select::-ms-expand {
   .blog-component .pagginator-list:last-child, .blog-component .blog-component-btn-block:last-child {
     margin-left: 0%;
   }
-  /* line 287, ../components/blog_component/clientlibs/blog_component.scss */
+  /* line 297, ../components/blog_component/clientlibs/blog_component.scss */
   .blog-component .pagginator-list__item a, .blog-component .blog-component-btn-block__item a {
     width: 60px;
     padding: 12px 0 10px 0;
@@ -10103,7 +10174,7 @@ select::-ms-expand {
   width: 100%;
   *zoom: 1;
   direction: rtl;
-  margin-bottom: 200px;
+  margin-bottom: 40px;
 }
 /* line 343, ../sass/core/jeet/_grid.scss */
 .our-agents-component:before, .our-agents-component:after {
@@ -10169,7 +10240,6 @@ select::-ms-expand {
 /* line 13, ../components/our_agents_component/clientlibs/our_agents_component.scss */
 .our-agents-component .our-agents-list-item {
   *zoom: 1;
-  background-color: rgba(0, 0, 0, 0.1);
 }
 /* line 343, ../sass/core/jeet/_grid.scss */
 .our-agents-component .our-agents-list-item:before, .our-agents-component .our-agents-list-item:after {
@@ -10180,16 +10250,12 @@ select::-ms-expand {
 .our-agents-component .our-agents-list-item:after {
   clear: both;
 }
-/* line 17, ../components/our_agents_component/clientlibs/our_agents_component.scss */
+/* line 16, ../components/our_agents_component/clientlibs/our_agents_component.scss */
 .our-agents-component .our-agents-list-item__info {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  float: right;
-  clear: none;
   width: 100%;
-  margin-right: 0%;
-  margin-left: 0%;
   position: relative;
   display: table;
   padding-top: 30px;
@@ -10197,31 +10263,28 @@ select::-ms-expand {
   background-color: #054770;
   overflow: hidden;
 }
-/* line 56, ../sass/core/jeet/_grid.scss */
-.our-agents-component .our-agents-list-item__info:last-child {
-  margin-left: 0%;
-}
-/* line 27, ../components/our_agents_component/clientlibs/our_agents_component.scss */
-.our-agents-component .our-agents-list-item__info:nth-child(2n) {
+/* line 26, ../components/our_agents_component/clientlibs/our_agents_component.scss */
+.our-agents-component .our-agents-list-item__info:nth-child(2n+1) {
   background-color: #003559;
 }
-/* line 32, ../components/our_agents_component/clientlibs/our_agents_component.scss */
+/* line 31, ../components/our_agents_component/clientlibs/our_agents_component.scss */
 .our-agents-component .our-agents-list-item__agent-block {
   float: right;
   clear: none;
   width: 95.83333%;
   margin-right: 2.08333%;
   margin-left: 0%;
-  padding-top: 35px;
 }
 /* line 56, ../sass/core/jeet/_grid.scss */
 .our-agents-component .our-agents-list-item__agent-block:last-child {
   margin-left: 0%;
 }
-/* line 36, ../components/our_agents_component/clientlibs/our_agents_component.scss */
+/* line 34, ../components/our_agents_component/clientlibs/our_agents_component.scss */
 .our-agents-component .our-agents-list-item__agent-block .agent-title {
   float: left;
-  width: calc(100% - 160px);
+  width: calc(100% - 110px);
+  margin-bottom: 40px;
+  padding-top: 15px;
   color: #ffffff;
 }
 /* line 40, ../components/our_agents_component/clientlibs/our_agents_component.scss */
@@ -10249,21 +10312,20 @@ select::-ms-expand {
   -webkit-border-radius: 150px;
   border-radius: 150px;
   position: relative;
-  width: 138px;
-  height: 138px;
-  top: -40px;
-  right: -20px;
+  width: 90px;
+  height: 90px;
+  margin-bottom: 40px;
   border: solid #ffffff 2px;
 }
-/* line 62, ../components/our_agents_component/clientlibs/our_agents_component.scss */
+/* line 61, ../components/our_agents_component/clientlibs/our_agents_component.scss */
 .our-agents-component .our-agents-list-item__agent-block .agent-phone, .our-agents-component .our-agents-list-item__agent-block .agent-location {
   display: block;
 }
-/* line 64, ../components/our_agents_component/clientlibs/our_agents_component.scss */
+/* line 63, ../components/our_agents_component/clientlibs/our_agents_component.scss */
 .our-agents-component .our-agents-list-item__agent-block .agent-phone:hover, .our-agents-component .our-agents-list-item__agent-block .agent-location:hover {
   text-decoration: none;
 }
-/* line 67, ../components/our_agents_component/clientlibs/our_agents_component.scss */
+/* line 66, ../components/our_agents_component/clientlibs/our_agents_component.scss */
 .our-agents-component .our-agents-list-item__agent-block .agent-phone:before, .our-agents-component .our-agents-list-item__agent-block .agent-location:before {
   content: '';
   display: block;
@@ -10278,7 +10340,7 @@ select::-ms-expand {
   top: 5px;
   margin: 0 0 0 10px;
 }
-/* line 77, ../components/our_agents_component/clientlibs/our_agents_component.scss */
+/* line 76, ../components/our_agents_component/clientlibs/our_agents_component.scss */
 .our-agents-component .our-agents-list-item__agent-block .agent-fbook, .our-agents-component .our-agents-list-item__agent-block .agent-phone, .our-agents-component .our-agents-list-item__agent-block .agent-location {
   font-family: "fbronibe", "Trebuchet MS", Ubuntu, serif;
   font-size: 18px;
@@ -10287,12 +10349,12 @@ select::-ms-expand {
   position: relative;
   color: #ffffff;
 }
-/* line 83, ../components/our_agents_component/clientlibs/our_agents_component.scss */
+/* line 82, ../components/our_agents_component/clientlibs/our_agents_component.scss */
 .our-agents-component .our-agents-list-item__agent-block .btn-block {
-  padding-top: 20px;
+  padding-top: 10px;
   text-align: center;
 }
-/* line 88, ../components/our_agents_component/clientlibs/our_agents_component.scss */
+/* line 87, ../components/our_agents_component/clientlibs/our_agents_component.scss */
 .our-agents-component .our-agents-list-item__agent-block .btn {
   -moz-border-radius: 0px;
   -webkit-border-radius: 0px;
@@ -10315,14 +10377,14 @@ select::-ms-expand {
   font-weight: 700;
   padding-top: 15px;
 }
-/* line 92, ../components/our_agents_component/clientlibs/our_agents_component.scss */
+/* line 91, ../components/our_agents_component/clientlibs/our_agents_component.scss */
 .our-agents-component .our-agents-list-item__agent-block .btn:hover {
   background-color: #ffffff;
   color: #93a33a;
 }
 
 @media (min-width: 800px) and (max-width: 1139px) {
-  /* line 107, ../components/our_agents_component/clientlibs/our_agents_component.scss */
+  /* line 106, ../components/our_agents_component/clientlibs/our_agents_component.scss */
   .our-agents-component .our-agents-list-item__info {
     float: right;
     clear: none;
@@ -10332,28 +10394,56 @@ select::-ms-expand {
     height: 396px;
     padding-top: 0;
     padding-bottom: 0;
-    border: solid #ffffff 0.5px;
   }
   /* line 56, ../sass/core/jeet/_grid.scss */
   .our-agents-component .our-agents-list-item__info:last-child {
     margin-left: 0%;
   }
+  /* line 112, ../components/our_agents_component/clientlibs/our_agents_component.scss */
+  .our-agents-component .our-agents-list-item__info:nth-child(2n+1) {
+    background-color: #054770;
+  }
+  /* line 116, ../components/our_agents_component/clientlibs/our_agents_component.scss */
+  .our-agents-component .our-agents-list-item__info:nth-child(4n+2), .our-agents-component .our-agents-list-item__info:nth-child(4n+3) {
+    background-color: #003559;
+  }
+  /* line 122, ../components/our_agents_component/clientlibs/our_agents_component.scss */
+  .our-agents-component .our-agents-list-item .agent-img {
+    width: 138px;
+    height: 138px;
+  }
+  /* line 127, ../components/our_agents_component/clientlibs/our_agents_component.scss */
+  .our-agents-component .our-agents-list-item .agent-title {
+    width: calc(100% - 180px);
+    padding-top: 45px;
+  }
 }
 @media (min-width: 1140px) {
-  /* line 126, ../components/our_agents_component/clientlibs/our_agents_component.scss */
+  /* line 142, ../components/our_agents_component/clientlibs/our_agents_component.scss */
   .our-agents-component .our-agents-list-item__info {
-    height: 396px;
-    padding-top: 0;
-    padding-bottom: 0;
     float: right;
     clear: none;
     width: 33.33333%;
     margin-right: 0%;
     margin-left: 0%;
+    width: 33.3333333333333333%;
+    height: 396px;
+    padding-top: 0;
+    padding-bottom: 0;
   }
   /* line 56, ../sass/core/jeet/_grid.scss */
   .our-agents-component .our-agents-list-item__info:last-child {
     margin-left: 0%;
+  }
+  /* line 150, ../components/our_agents_component/clientlibs/our_agents_component.scss */
+  .our-agents-component .our-agents-list-item .agent-img {
+    width: 138px;
+    height: 138px;
+  }
+  /* line 155, ../components/our_agents_component/clientlibs/our_agents_component.scss */
+  .our-agents-component .our-agents-list-item .agent-title {
+    width: calc(100% - 180px);
+    padding-top: 45px;
   }
 }
 /* line 1, ../components/career_component/clientlibs/career_component.scss */
@@ -10364,7 +10454,7 @@ select::-ms-expand {
   font-style: normal;
   font-weight: 300;
   direction: rtl;
-  margin: 0 0 75px 0;
+  margin: 0 0 40px 0;
 }
 /* line 343, ../sass/core/jeet/_grid.scss */
 .career-component:before, .career-component:after {
@@ -10464,7 +10554,7 @@ select::-ms-expand {
   width: 100%;
   margin-top: 0;
   margin-bottom: 0;
-  padding: 35px 50px 20px 50px;
+  padding: 35px 20px 20px 20px;
   background-color: rgba(0, 53, 89, 0.8);
   color: #ffffff;
   text-align: center;
@@ -10473,7 +10563,7 @@ select::-ms-expand {
 .career-component .career-component-header-block {
   *zoom: 1;
   padding: 0 20px 0 20px;
-  margin-bottom: 70px;
+  margin-bottom: 40px;
   border-bottom: solid #061d27 1px;
 }
 /* line 343, ../sass/core/jeet/_grid.scss */
@@ -10516,21 +10606,20 @@ select::-ms-expand {
   background-image: url("../img/main-logo-text.svg");
 }
 /* line 75, ../components/career_component/clientlibs/career_component.scss */
-.career-component .career-component-list-block {
+.career-component .career-component-accordion {
   *zoom: 1;
-  margin-bottom: 20px;
 }
 /* line 343, ../sass/core/jeet/_grid.scss */
-.career-component .career-component-list-block:before, .career-component .career-component-list-block:after {
+.career-component .career-component-accordion:before, .career-component .career-component-accordion:after {
   content: '';
   display: table;
 }
 /* line 348, ../sass/core/jeet/_grid.scss */
-.career-component .career-component-list-block:after {
+.career-component .career-component-accordion:after {
   clear: both;
 }
-/* line 79, ../components/career_component/clientlibs/career_component.scss */
-.career-component .career-component-list-block--item {
+/* line 78, ../components/career_component/clientlibs/career_component.scss */
+.career-component .career-component-accordion--item {
   font-family: "fbronibe", "Trebuchet MS", Ubuntu, serif;
   font-size: 24px;
   font-style: normal;
@@ -10543,12 +10632,12 @@ select::-ms-expand {
   text-align: right;
   color: #061d27;
 }
-/* line 86, ../components/career_component/clientlibs/career_component.scss */
-.career-component .career-component-list-block--item a {
+/* line 85, ../components/career_component/clientlibs/career_component.scss */
+.career-component .career-component-accordion--item a {
   color: #061d27;
 }
-/* line 90, ../components/career_component/clientlibs/career_component.scss */
-.career-component .career-component-list-block--item:nth-child(2n) {
+/* line 89, ../components/career_component/clientlibs/career_component.scss */
+.career-component .career-component-accordion--item:nth-child(2n) {
   font-family: "fbronibe", "Trebuchet MS", Ubuntu, serif;
   font-size: 20px;
   font-style: normal;
@@ -10558,21 +10647,54 @@ select::-ms-expand {
   text-align: center;
   color: #ffffff;
 }
-/* line 96, ../components/career_component/clientlibs/career_component.scss */
-.career-component .career-component-list-block--item:nth-child(2n) a {
+/* line 95, ../components/career_component/clientlibs/career_component.scss */
+.career-component .career-component-accordion--item:nth-child(2n) a {
   color: #ffffff;
+}
+/* line 101, ../components/career_component/clientlibs/career_component.scss */
+.career-component .career-component-accordion .accordion-pannel {
+  *zoom: 1;
+  margin-top: 10px;
+}
+/* line 343, ../sass/core/jeet/_grid.scss */
+.career-component .career-component-accordion .accordion-pannel:before, .career-component .career-component-accordion .accordion-pannel:after {
+  content: '';
+  display: table;
+}
+/* line 348, ../sass/core/jeet/_grid.scss */
+.career-component .career-component-accordion .accordion-pannel:after {
+  clear: both;
+}
+/* line 106, ../components/career_component/clientlibs/career_component.scss */
+.career-component .career-component-accordion .accordion-content {
+  *zoom: 1;
+  font-family: "fbronibe", "Trebuchet MS", Ubuntu, serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  padding: 25px 20px 15px 20px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+/* line 343, ../sass/core/jeet/_grid.scss */
+.career-component .career-component-accordion .accordion-content:before, .career-component .career-component-accordion .accordion-content:after {
+  content: '';
+  display: table;
+}
+/* line 348, ../sass/core/jeet/_grid.scss */
+.career-component .career-component-accordion .accordion-content:after {
+  clear: both;
 }
 
 @media (min-width: 800px) and (max-width: 1139px) {
-  /* line 110, ../components/career_component/clientlibs/career_component.scss */
+  /* line 122, ../components/career_component/clientlibs/career_component.scss */
   .career-component .career-component-img-block {
     height: 350px;
   }
-  /* line 114, ../components/career_component/clientlibs/career_component.scss */
+  /* line 126, ../components/career_component/clientlibs/career_component.scss */
   .career-component .career-component-header-block {
     padding: 0 0 0 0;
   }
-  /* line 116, ../components/career_component/clientlibs/career_component.scss */
+  /* line 128, ../components/career_component/clientlibs/career_component.scss */
   .career-component .career-component-header-block--item {
     float: right;
     clear: none;
@@ -10588,32 +10710,33 @@ select::-ms-expand {
   .career-component .career-component-header-block--item:last-child {
     margin-left: 0%;
   }
-  /* line 121, ../components/career_component/clientlibs/career_component.scss */
+  /* line 133, ../components/career_component/clientlibs/career_component.scss */
   .career-component .career-component-header-block .career-logo-block {
     float: left;
     margin-top: 0;
     width: 225px;
   }
-  /* line 127, ../components/career_component/clientlibs/career_component.scss */
+  /* line 139, ../components/career_component/clientlibs/career_component.scss */
   .career-component .career-component-header-block .main-logo {
     width: 49px;
     height: 49px;
     margin: -15px 0 15px 0;
   }
-  /* line 131, ../components/career_component/clientlibs/career_component.scss */
+  /* line 143, ../components/career_component/clientlibs/career_component.scss */
   .career-component .career-component-header-block .main-logo__text {
     margin: 5px 55px 0 0;
     width: 162px;
     height: 47px;
   }
-  /* line 140, ../components/career_component/clientlibs/career_component.scss */
+  /* line 152, ../components/career_component/clientlibs/career_component.scss */
   .career-component .career-component-title-block--title {
     display: inline-block;
     width: auto;
     margin-top: -150px;
+    padding: 35px 50px 20px 50px;
   }
-  /* line 149, ../components/career_component/clientlibs/career_component.scss */
-  .career-component .career-component-list-block--item {
+  /* line 162, ../components/career_component/clientlibs/career_component.scss */
+  .career-component .career-component-accordion--item {
     float: right;
     clear: none;
     width: 50%;
@@ -10625,11 +10748,11 @@ select::-ms-expand {
     font-weight: 700;
   }
   /* line 56, ../sass/core/jeet/_grid.scss */
-  .career-component .career-component-list-block--item:last-child {
+  .career-component .career-component-accordion--item:last-child {
     margin-left: 0%;
   }
-  /* line 153, ../components/career_component/clientlibs/career_component.scss */
-  .career-component .career-component-list-block--item:nth-child(2n) {
+  /* line 166, ../components/career_component/clientlibs/career_component.scss */
+  .career-component .career-component-accordion--item:nth-child(2n) {
     font-family: "fbronibe", "Trebuchet MS", Ubuntu, serif;
     font-size: 21px;
     font-style: normal;
@@ -10637,15 +10760,15 @@ select::-ms-expand {
   }
 }
 @media (min-width: 1140px) {
-  /* line 167, ../components/career_component/clientlibs/career_component.scss */
+  /* line 180, ../components/career_component/clientlibs/career_component.scss */
   .career-component .career-component-img-block {
     height: 350px;
   }
-  /* line 171, ../components/career_component/clientlibs/career_component.scss */
+  /* line 184, ../components/career_component/clientlibs/career_component.scss */
   .career-component .career-component-header-block {
     padding: 0 0 0 0;
   }
-  /* line 173, ../components/career_component/clientlibs/career_component.scss */
+  /* line 186, ../components/career_component/clientlibs/career_component.scss */
   .career-component .career-component-header-block--item {
     float: right;
     clear: none;
@@ -10661,32 +10784,33 @@ select::-ms-expand {
   .career-component .career-component-header-block--item:last-child {
     margin-left: 0%;
   }
-  /* line 178, ../components/career_component/clientlibs/career_component.scss */
+  /* line 191, ../components/career_component/clientlibs/career_component.scss */
   .career-component .career-component-header-block .career-logo-block {
     float: left;
     margin-top: 0;
     width: 225px;
   }
-  /* line 184, ../components/career_component/clientlibs/career_component.scss */
+  /* line 197, ../components/career_component/clientlibs/career_component.scss */
   .career-component .career-component-header-block .main-logo {
     width: 49px;
     height: 49px;
     margin: -15px 0 15px 0;
   }
-  /* line 188, ../components/career_component/clientlibs/career_component.scss */
+  /* line 201, ../components/career_component/clientlibs/career_component.scss */
   .career-component .career-component-header-block .main-logo__text {
     margin: 5px 55px 0 0;
     width: 162px;
     height: 47px;
   }
-  /* line 197, ../components/career_component/clientlibs/career_component.scss */
+  /* line 210, ../components/career_component/clientlibs/career_component.scss */
   .career-component .career-component-title-block--title {
     width: auto;
     display: inline-block;
     margin-top: -150px;
+    padding: 35px 50px 20px 50px;
   }
-  /* line 206, ../components/career_component/clientlibs/career_component.scss */
-  .career-component .career-component-list-block--item {
+  /* line 220, ../components/career_component/clientlibs/career_component.scss */
+  .career-component .career-component-accordion--item {
     float: right;
     clear: none;
     width: 50%;
@@ -10698,11 +10822,11 @@ select::-ms-expand {
     font-weight: 700;
   }
   /* line 56, ../sass/core/jeet/_grid.scss */
-  .career-component .career-component-list-block--item:last-child {
+  .career-component .career-component-accordion--item:last-child {
     margin-left: 0%;
   }
-  /* line 210, ../components/career_component/clientlibs/career_component.scss */
-  .career-component .career-component-list-block--item:nth-child(2n) {
+  /* line 224, ../components/career_component/clientlibs/career_component.scss */
+  .career-component .career-component-accordion--item:nth-child(2n) {
     font-family: "fbronibe", "Trebuchet MS", Ubuntu, serif;
     font-size: 25px;
     font-style: normal;
