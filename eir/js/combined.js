@@ -716,6 +716,7 @@ EIR.define('SettingPopupComponent', ['jQuery', 'Response'], function($, Response
 	}
 
 	$('.js-setting-popup-select').select2({
+		dropdownCssClass: "increasedzindexclass",
     dir: "rtl"
   });
 

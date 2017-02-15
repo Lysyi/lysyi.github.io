@@ -4987,7 +4987,6 @@ select::-ms-expand {
 .product-table-component .product-table-item {
   *zoom: 1;
   background-color: rgba(0, 0, 0, 0.1);
-  border-bottom: solid #ffffff 2px;
 }
 /* line 343, ../sass/core/jeet/_grid.scss */
 .product-table-component .product-table-item:before, .product-table-component .product-table-item:after {
@@ -4998,7 +4997,7 @@ select::-ms-expand {
 .product-table-component .product-table-item:after {
   clear: both;
 }
-/* line 17, ../components/product_table_component/clientlibs/product_table_component.scss */
+/* line 16, ../components/product_table_component/clientlibs/product_table_component.scss */
 .product-table-component .product-table-item .col {
   float: right;
   clear: none;
@@ -5010,16 +5009,16 @@ select::-ms-expand {
 .product-table-component .product-table-item .col:last-child {
   margin-left: 0%;
 }
-/* line 21, ../components/product_table_component/clientlibs/product_table_component.scss */
+/* line 20, ../components/product_table_component/clientlibs/product_table_component.scss */
 .product-table-component .product-table-item__img {
   position: relative;
   overflow: hidden;
 }
-/* line 24, ../components/product_table_component/clientlibs/product_table_component.scss */
+/* line 23, ../components/product_table_component/clientlibs/product_table_component.scss */
 .product-table-component .product-table-item__img img {
   width: 100%;
 }
-/* line 29, ../components/product_table_component/clientlibs/product_table_component.scss */
+/* line 28, ../components/product_table_component/clientlibs/product_table_component.scss */
 .product-table-component .product-table-item__text {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -5030,12 +5029,12 @@ select::-ms-expand {
   padding: 45px 0 30px 0;
   overflow: hidden;
 }
-/* line 38, ../components/product_table_component/clientlibs/product_table_component.scss */
+/* line 37, ../components/product_table_component/clientlibs/product_table_component.scss */
 .product-table-component .product-table-item h3 {
   margin-bottom: 5px;
   color: #054770;
 }
-/* line 41, ../components/product_table_component/clientlibs/product_table_component.scss */
+/* line 40, ../components/product_table_component/clientlibs/product_table_component.scss */
 .product-table-component .product-table-item h3 span {
   font-family: "fbronibe", "Trebuchet MS", Ubuntu, serif;
   font-size: 20px;
@@ -5043,7 +5042,7 @@ select::-ms-expand {
   font-weight: 700;
   color: rgba(0, 0, 0, 0.8);
 }
-/* line 47, ../components/product_table_component/clientlibs/product_table_component.scss */
+/* line 46, ../components/product_table_component/clientlibs/product_table_component.scss */
 .product-table-component .product-table-item .arrow-label {
   -moz-border-radius: 0px;
   -webkit-border-radius: 0px;
@@ -5080,7 +5079,7 @@ select::-ms-expand {
   top: -2px;
   left: -14px;
 }
-/* line 51, ../components/product_table_component/clientlibs/product_table_component.scss */
+/* line 50, ../components/product_table_component/clientlibs/product_table_component.scss */
 .product-table-component .product-table-item .info {
   font-family: "fbronibe", "Trebuchet MS", Ubuntu, serif;
   font-size: 17px;
@@ -5090,7 +5089,7 @@ select::-ms-expand {
   margin-bottom: 5px;
   line-height: 20px;
 }
-/* line 56, ../components/product_table_component/clientlibs/product_table_component.scss */
+/* line 55, ../components/product_table_component/clientlibs/product_table_component.scss */
 .product-table-component .product-table-item .info i {
   font-family: "fbronibe", "Trebuchet MS", Ubuntu, serif;
   font-size: 14px;
@@ -5100,7 +5099,7 @@ select::-ms-expand {
 }
 
 @media (min-width: 800px) and (max-width: 1139px) {
-  /* line 72, ../components/product_table_component/clientlibs/product_table_component.scss */
+  /* line 71, ../components/product_table_component/clientlibs/product_table_component.scss */
   .product-table-component .product-table-item__img {
     float: right;
     clear: none;
@@ -5115,11 +5114,11 @@ select::-ms-expand {
   .product-table-component .product-table-item__img:last-child {
     margin-left: 0%;
   }
-  /* line 77, ../components/product_table_component/clientlibs/product_table_component.scss */
+  /* line 76, ../components/product_table_component/clientlibs/product_table_component.scss */
   .product-table-component .product-table-item__img img {
     width: 130%;
   }
-  /* line 82, ../components/product_table_component/clientlibs/product_table_component.scss */
+  /* line 81, ../components/product_table_component/clientlibs/product_table_component.scss */
   .product-table-component .product-table-item__text {
     float: right;
     clear: none;
@@ -5133,26 +5132,25 @@ select::-ms-expand {
   .product-table-component .product-table-item__text:last-child {
     margin-left: 0%;
   }
-  /* line 89, ../components/product_table_component/clientlibs/product_table_component.scss */
+  /* line 88, ../components/product_table_component/clientlibs/product_table_component.scss */
   .product-table-component .product-table-item:nth-child(2n+2) .product-table-item__img, .product-table-component .product-table-item:nth-child(2n+2) .product-table-item__text {
     float: left;
   }
 }
 @media (min-width: 1140px) {
-  /* line 103, ../components/product_table_component/clientlibs/product_table_component.scss */
+  /* line 102, ../components/product_table_component/clientlibs/product_table_component.scss */
   .product-table-component .product-table-item {
     float: right;
     clear: none;
     width: 50%;
     margin-right: 0%;
     margin-left: 0%;
-    border-bottom: none;
   }
   /* line 56, ../sass/core/jeet/_grid.scss */
   .product-table-component .product-table-item:last-child {
     margin-left: 0%;
   }
-  /* line 107, ../components/product_table_component/clientlibs/product_table_component.scss */
+  /* line 105, ../components/product_table_component/clientlibs/product_table_component.scss */
   .product-table-component .product-table-item .col {
     float: right;
     clear: none;
@@ -5164,7 +5162,7 @@ select::-ms-expand {
   .product-table-component .product-table-item .col:last-child {
     margin-left: 0%;
   }
-  /* line 111, ../components/product_table_component/clientlibs/product_table_component.scss */
+  /* line 109, ../components/product_table_component/clientlibs/product_table_component.scss */
   .product-table-component .product-table-item__img {
     float: right;
     clear: none;
@@ -5179,11 +5177,11 @@ select::-ms-expand {
   .product-table-component .product-table-item__img:last-child {
     margin-left: 0%;
   }
-  /* line 116, ../components/product_table_component/clientlibs/product_table_component.scss */
+  /* line 114, ../components/product_table_component/clientlibs/product_table_component.scss */
   .product-table-component .product-table-item__img img {
     width: 160%;
   }
-  /* line 121, ../components/product_table_component/clientlibs/product_table_component.scss */
+  /* line 119, ../components/product_table_component/clientlibs/product_table_component.scss */
   .product-table-component .product-table-item__text {
     float: right;
     clear: none;
@@ -5197,7 +5195,7 @@ select::-ms-expand {
   .product-table-component .product-table-item__text:last-child {
     margin-left: 0%;
   }
-  /* line 128, ../components/product_table_component/clientlibs/product_table_component.scss */
+  /* line 126, ../components/product_table_component/clientlibs/product_table_component.scss */
   .product-table-component .product-table-item:nth-child(4n+4) .product-table-item__img, .product-table-component .product-table-item:nth-child(4n+4) .product-table-item__text, .product-table-component .product-table-item:nth-child(4n+3) .product-table-item__img, .product-table-component .product-table-item:nth-child(4n+3) .product-table-item__text {
     float: left;
   }
@@ -6103,6 +6101,7 @@ select::-ms-expand {
   font-weight: 300;
   direction: rtl;
   background-color: rgba(0, 0, 0, 0.1);
+  margin: 0 0 40px 0;
 }
 /* line 343, ../sass/core/jeet/_grid.scss */
 .about-component:before, .about-component:after {
@@ -6172,7 +6171,7 @@ select::-ms-expand {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   position: relative;
-  padding-bottom: 25px;
+  padding-bottom: 20px;
 }
 /* line 343, ../sass/core/jeet/_grid.scss */
 .about-component .about-component-content:before, .about-component .about-component-content:after {
@@ -6194,14 +6193,14 @@ select::-ms-expand {
 /* line 28, ../components/about_component/clientlibs/about_component.scss */
 .about-component .about-component-content--img {
   width: 100%;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 /* line 33, ../components/about_component/clientlibs/about_component.scss */
 .about-component .about-component-content--text {
   float: right;
   clear: none;
-  width: 83.33333%;
-  margin-right: 8.33333%;
+  width: 91.66667%;
+  margin-right: 4.16667%;
   margin-left: 0%;
   text-align: justify;
 }
@@ -6342,8 +6341,8 @@ select::-ms-expand {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   position: relative;
-  margin-bottom: 40px;
-  padding-bottom: 25px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
   background-color: rgba(0, 0, 0, 0.1);
   text-align: center;
 }
@@ -6389,7 +6388,7 @@ select::-ms-expand {
 /* line 35, ../components/success_stories_component/clientlibs/success_stories_component.scss */
 .success-stories-component .success-stories-component-content--img {
   width: 214px;
-  margin: 40px 0 40px 0;
+  margin: 30px 0 20px 0;
 }
 /* line 40, ../components/success_stories_component/clientlibs/success_stories_component.scss */
 .success-stories-component .success-stories-component-content--text {
@@ -6830,12 +6829,12 @@ select::-ms-expand {
 .resident-property-component:after {
   clear: both;
 }
-/* line 8, ../components/resident_property_component/clientlibs/resident_property_component.scss */
+/* line 7, ../components/resident_property_component/clientlibs/resident_property_component.scss */
 .resident-property-component__inner {
   *zoom: 1;
 }
 @media (min-width: 800px) and (max-width: 1139px) {
-  /* line 8, ../components/resident_property_component/clientlibs/resident_property_component.scss */
+  /* line 7, ../components/resident_property_component/clientlibs/resident_property_component.scss */
   .resident-property-component__inner {
     width: auto;
     max-width: 98%;
@@ -6848,7 +6847,7 @@ select::-ms-expand {
   }
 }
 @media (min-width: 1140px) and (max-width: 1279px) {
-  /* line 8, ../components/resident_property_component/clientlibs/resident_property_component.scss */
+  /* line 7, ../components/resident_property_component/clientlibs/resident_property_component.scss */
   .resident-property-component__inner {
     width: auto;
     max-width: 1140px;
@@ -6861,7 +6860,7 @@ select::-ms-expand {
   }
 }
 @media (min-width: 1280px) {
-  /* line 8, ../components/resident_property_component/clientlibs/resident_property_component.scss */
+  /* line 7, ../components/resident_property_component/clientlibs/resident_property_component.scss */
   .resident-property-component__inner {
     width: auto;
     max-width: 1170px;
@@ -6882,11 +6881,11 @@ select::-ms-expand {
 .resident-property-component__inner:after {
   clear: both;
 }
-/* line 13, ../components/resident_property_component/clientlibs/resident_property_component.scss */
+/* line 12, ../components/resident_property_component/clientlibs/resident_property_component.scss */
 .resident-property-component__header {
   *zoom: 1;
   margin-bottom: 40px;
-  padding-bottom: 20px;
+  padding: 0 15px 20px 15px;
   border-bottom: solid rgba(0, 0, 0, 0.6) 1px;
 }
 /* line 343, ../sass/core/jeet/_grid.scss */
@@ -6898,27 +6897,14 @@ select::-ms-expand {
 .resident-property-component__header:after {
   clear: both;
 }
-/* line 20, ../components/resident_property_component/clientlibs/resident_property_component.scss */
+/* line 19, ../components/resident_property_component/clientlibs/resident_property_component.scss */
 .resident-property-component .resident-property-select-block {
-  float: right;
-  clear: none;
-  width: 91.66667%;
-  margin-right: 4.16667%;
-  margin-left: 0%;
-  margin-bottom: 25px;
-}
-/* line 56, ../sass/core/jeet/_grid.scss */
-.resident-property-component .resident-property-select-block:last-child {
-  margin-left: 0%;
+  width: 100%;
+  margin: 0 auto 25px;
 }
 /* line 25, ../components/resident_property_component/clientlibs/resident_property_component.scss */
 .resident-property-component .resident-property-breadcrumbs {
   *zoom: 1;
-  float: right;
-  clear: none;
-  width: 91.66667%;
-  margin-right: 4.16667%;
-  margin-left: 0%;
   text-align: center;
 }
 /* line 343, ../sass/core/jeet/_grid.scss */
@@ -6929,10 +6915,6 @@ select::-ms-expand {
 /* line 348, ../sass/core/jeet/_grid.scss */
 .resident-property-component .resident-property-breadcrumbs:after {
   clear: both;
-}
-/* line 56, ../sass/core/jeet/_grid.scss */
-.resident-property-component .resident-property-breadcrumbs:last-child {
-  margin-left: 0%;
 }
 /* line 29, ../components/resident_property_component/clientlibs/resident_property_component.scss */
 .resident-property-component .resident-property-breadcrumbs__item {
@@ -7220,21 +7202,17 @@ select::-ms-expand {
 
 @media (min-width: 800px) and (max-width: 1139px) {
   /* line 198, ../components/resident_property_component/clientlibs/resident_property_component.scss */
+  .resident-property-component__header {
+    padding: 0 0 20px 0;
+  }
+  /* line 202, ../components/resident_property_component/clientlibs/resident_property_component.scss */
   .resident-property-component .resident-property-select-block {
-    float: right;
-    clear: none;
-    width: 16.66667%;
-    margin-right: 0%;
-    margin-left: 0%;
+    width: 300px;
     float: left;
     margin-bottom: 0;
     text-align: right;
   }
-  /* line 56, ../sass/core/jeet/_grid.scss */
-  .resident-property-component .resident-property-select-block:last-child {
-    margin-left: 0%;
-  }
-  /* line 205, ../components/resident_property_component/clientlibs/resident_property_component.scss */
+  /* line 210, ../components/resident_property_component/clientlibs/resident_property_component.scss */
   .resident-property-component .resident-property-breadcrumbs {
     float: right;
     clear: none;
@@ -7248,7 +7226,7 @@ select::-ms-expand {
   .resident-property-component .resident-property-breadcrumbs:last-child {
     margin-left: 0%;
   }
-  /* line 212, ../components/resident_property_component/clientlibs/resident_property_component.scss */
+  /* line 217, ../components/resident_property_component/clientlibs/resident_property_component.scss */
   .resident-property-component .resident-property-list-item__about, .resident-property-component .resident-property-list-item__info {
     float: right;
     clear: none;
@@ -7264,21 +7242,17 @@ select::-ms-expand {
   }
 }
 @media (min-width: 1140px) {
-  /* line 227, ../components/resident_property_component/clientlibs/resident_property_component.scss */
+  /* line 232, ../components/resident_property_component/clientlibs/resident_property_component.scss */
+  .resident-property-component__header {
+    padding: 0 0 20px 0;
+  }
+  /* line 236, ../components/resident_property_component/clientlibs/resident_property_component.scss */
   .resident-property-component .resident-property-select-block {
-    float: right;
-    clear: none;
-    width: 25%;
-    margin-right: 0%;
-    margin-left: 0%;
+    width: 300px;
     float: left;
     margin-bottom: 0;
   }
-  /* line 56, ../sass/core/jeet/_grid.scss */
-  .resident-property-component .resident-property-select-block:last-child {
-    margin-left: 0%;
-  }
-  /* line 233, ../components/resident_property_component/clientlibs/resident_property_component.scss */
+  /* line 243, ../components/resident_property_component/clientlibs/resident_property_component.scss */
   .resident-property-component .resident-property-breadcrumbs {
     float: right;
     clear: none;
@@ -7292,7 +7266,7 @@ select::-ms-expand {
   .resident-property-component .resident-property-breadcrumbs:last-child {
     margin-left: 0%;
   }
-  /* line 240, ../components/resident_property_component/clientlibs/resident_property_component.scss */
+  /* line 250, ../components/resident_property_component/clientlibs/resident_property_component.scss */
   .resident-property-component .resident-property-list-item__img, .resident-property-component .resident-property-list-item__about, .resident-property-component .resident-property-list-item__info {
     float: right;
     clear: none;
@@ -7307,7 +7281,7 @@ select::-ms-expand {
   .resident-property-component .resident-property-list-item__img:last-child, .resident-property-component .resident-property-list-item__about:last-child, .resident-property-component .resident-property-list-item__info:last-child {
     margin-left: 0%;
   }
-  /* line 248, ../components/resident_property_component/clientlibs/resident_property_component.scss */
+  /* line 258, ../components/resident_property_component/clientlibs/resident_property_component.scss */
   .resident-property-component .resident-property-list-item__img img {
     width: 160%;
   }
@@ -8039,13 +8013,14 @@ select::-ms-expand {
 /* line 1, ../components/property_popup_component/clientlibs/property_popup_component.scss */
 .property-popup-component {
   *zoom: 1;
-  display: none;
+  display: block;
   z-index: 3000;
   position: absolute;
   width: 100%;
   height: 100%;
   top: 0;
   background-color: rgba(0, 0, 0, 0.6);
+  overflow-y: scroll;
 }
 /* line 343, ../sass/core/jeet/_grid.scss */
 .property-popup-component:before, .property-popup-component:after {
@@ -8056,7 +8031,7 @@ select::-ms-expand {
 .property-popup-component:after {
   clear: both;
 }
-/* line 11, ../components/property_popup_component/clientlibs/property_popup_component.scss */
+/* line 12, ../components/property_popup_component/clientlibs/property_popup_component.scss */
 .property-popup-component__inner {
   *zoom: 1;
   -moz-box-sizing: border-box;
@@ -8074,7 +8049,7 @@ select::-ms-expand {
   clear: both;
 }
 @media (min-width: 800px) and (max-width: 1139px) {
-  /* line 11, ../components/property_popup_component/clientlibs/property_popup_component.scss */
+  /* line 12, ../components/property_popup_component/clientlibs/property_popup_component.scss */
   .property-popup-component__inner {
     width: auto;
     max-width: 98%;
@@ -8087,7 +8062,7 @@ select::-ms-expand {
   }
 }
 @media (min-width: 1140px) and (max-width: 1279px) {
-  /* line 11, ../components/property_popup_component/clientlibs/property_popup_component.scss */
+  /* line 12, ../components/property_popup_component/clientlibs/property_popup_component.scss */
   .property-popup-component__inner {
     width: auto;
     max-width: 1140px;
@@ -8100,7 +8075,7 @@ select::-ms-expand {
   }
 }
 @media (min-width: 1280px) {
-  /* line 11, ../components/property_popup_component/clientlibs/property_popup_component.scss */
+  /* line 12, ../components/property_popup_component/clientlibs/property_popup_component.scss */
   .property-popup-component__inner {
     width: auto;
     max-width: 1170px;
@@ -8112,14 +8087,14 @@ select::-ms-expand {
     width: 100%;
   }
 }
-/* line 18, ../components/property_popup_component/clientlibs/property_popup_component.scss */
+/* line 19, ../components/property_popup_component/clientlibs/property_popup_component.scss */
 .property-popup-component .close-popup-btn {
   cursor: pointer;
   z-index: 20;
   position: absolute;
   margin: 20px;
 }
-/* line 25, ../components/property_popup_component/clientlibs/property_popup_component.scss */
+/* line 26, ../components/property_popup_component/clientlibs/property_popup_component.scss */
 .property-popup-component .property-popup-info-container {
   *zoom: 1;
   -moz-box-sizing: border-box;
@@ -8138,7 +8113,7 @@ select::-ms-expand {
 .property-popup-component .property-popup-info-container:after {
   clear: both;
 }
-/* line 32, ../components/property_popup_component/clientlibs/property_popup_component.scss */
+/* line 33, ../components/property_popup_component/clientlibs/property_popup_component.scss */
 .property-popup-component .property-popup-info-container--text, .property-popup-component .property-popup-info-container--text2 {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -8155,7 +8130,7 @@ select::-ms-expand {
 .property-popup-component .property-popup-info-container--text:after, .property-popup-component .property-popup-info-container--text2:after {
   clear: both;
 }
-/* line 37, ../components/property_popup_component/clientlibs/property_popup_component.scss */
+/* line 38, ../components/property_popup_component/clientlibs/property_popup_component.scss */
 .property-popup-component .property-popup-info-container--text h3, .property-popup-component .property-popup-info-container--text2 h3 {
   font-family: "fbronibe", "Trebuchet MS", Ubuntu, serif;
   font-size: 31px;
@@ -8164,7 +8139,7 @@ select::-ms-expand {
   margin-bottom: 20px;
   color: #333333;
 }
-/* line 42, ../components/property_popup_component/clientlibs/property_popup_component.scss */
+/* line 43, ../components/property_popup_component/clientlibs/property_popup_component.scss */
 .property-popup-component .property-popup-info-container--text p, .property-popup-component .property-popup-info-container--text2 p {
   font-family: "fbronibe", "Trebuchet MS", Ubuntu, serif;
   font-size: 21px;
@@ -8173,9 +8148,8 @@ select::-ms-expand {
   margin-bottom: 10px;
   color: #333333;
 }
-/* line 49, ../components/property_popup_component/clientlibs/property_popup_component.scss */
+/* line 50, ../components/property_popup_component/clientlibs/property_popup_component.scss */
 .property-popup-component .property-popup-info-container--text2 {
-  padding: 60px 35px 50px 0;
   border-top: solid rgba(0, 0, 0, 0.8) 1px;
 }
 /* line 54, ../components/property_popup_component/clientlibs/property_popup_component.scss */
@@ -8205,38 +8179,19 @@ select::-ms-expand {
 .property-popup-component .property-popup-info-container--list:last-child {
   margin-left: 0%;
 }
-/* line 60, ../components/property_popup_component/clientlibs/property_popup_component.scss */
-.property-popup-component .property-popup-info-container--list li {
-  float: right;
-  margin: 0 0 0 20px;
-}
-/* line 65, ../components/property_popup_component/clientlibs/property_popup_component.scss */
-.property-popup-component .property-popup-info-container--list input[type="checkbox"] {
-  float: right;
-  margin: 4px 0 0 10px;
-  border: solid #333333 1px;
-}
-/* line 73, ../components/property_popup_component/clientlibs/property_popup_component.scss */
+/* line 62, ../components/property_popup_component/clientlibs/property_popup_component.scss */
 .property-popup-component .property-popup-slider-container {
   position: relative;
   background-color: #054770;
 }
-/* line 77, ../components/property_popup_component/clientlibs/property_popup_component.scss */
+/* line 66, ../components/property_popup_component/clientlibs/property_popup_component.scss */
 .property-popup-component .property-popup-slider-container .slider-control-button {
-  float: right;
-  clear: none;
-  width: 95.83333%;
-  margin-right: 2.08333%;
-  margin-left: 0%;
   position: absolute;
   z-index: 30;
-  bottom: 50px;
+  bottom: 20px;
+  right: 20px;
 }
-/* line 56, ../sass/core/jeet/_grid.scss */
-.property-popup-component .property-popup-slider-container .slider-control-button:last-child {
-  margin-left: 0%;
-}
-/* line 83, ../components/property_popup_component/clientlibs/property_popup_component.scss */
+/* line 72, ../components/property_popup_component/clientlibs/property_popup_component.scss */
 .property-popup-component .property-popup-slider-container .slider-control-button li {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -8249,38 +8204,30 @@ select::-ms-expand {
   padding: 12px 0;
   text-align: center;
 }
-/* line 94, ../components/property_popup_component/clientlibs/property_popup_component.scss */
+/* line 83, ../components/property_popup_component/clientlibs/property_popup_component.scss */
 .property-popup-component .property-popup-slider-container .slider-control-button a {
   display: inline-block;
 }
-/* line 99, ../components/property_popup_component/clientlibs/property_popup_component.scss */
+/* line 88, ../components/property_popup_component/clientlibs/property_popup_component.scss */
 .property-popup-component .property-popup-slider-container .property-popup-slider-navigation {
-  float: right;
-  clear: none;
-  width: 95.83333%;
-  margin-right: 2.08333%;
-  margin-left: 0%;
   position: absolute;
-  left: 50%;
   top: 50%;
-  -moz-transform: translateY(-50%) translateX(-50%);
-  -ms-transform: translateY(-50%) translateX(-50%);
-  -webkit-transform: translateY(-50%) translateX(-50%);
-  transform: translateY(-50%) translateX(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 90%;
+  padding: 0 5%;
   z-index: 10;
 }
-/* line 56, ../sass/core/jeet/_grid.scss */
-.property-popup-component .property-popup-slider-container .property-popup-slider-navigation:last-child {
-  margin-left: 0%;
-}
-/* line 103, ../components/property_popup_component/clientlibs/property_popup_component.scss */
+/* line 93, ../components/property_popup_component/clientlibs/property_popup_component.scss */
 .property-popup-component .property-popup-slider-container .property-popup-slider-navigation .prev, .property-popup-component .property-popup-slider-container .property-popup-slider-navigation .next {
   display: inline-block;
   width: 31px;
   height: 58px;
   margin-left: 0;
 }
-/* line 109, ../components/property_popup_component/clientlibs/property_popup_component.scss */
+/* line 99, ../components/property_popup_component/clientlibs/property_popup_component.scss */
 .property-popup-component .property-popup-slider-container .property-popup-slider-navigation .next {
   -moz-transform: rotate(-180deg);
   -ms-transform: rotate(-180deg);
@@ -8288,11 +8235,11 @@ select::-ms-expand {
   transform: rotate(-180deg);
   float: right;
 }
-/* line 115, ../components/property_popup_component/clientlibs/property_popup_component.scss */
+/* line 105, ../components/property_popup_component/clientlibs/property_popup_component.scss */
 .property-popup-component .property-popup-slider-container .property-popup-slider-carousel {
   overflow: hidden;
 }
-/* line 117, ../components/property_popup_component/clientlibs/property_popup_component.scss */
+/* line 107, ../components/property_popup_component/clientlibs/property_popup_component.scss */
 .property-popup-component .property-popup-slider-container .property-popup-slider-carousel__item {
   *zoom: 1;
   position: relative;
@@ -8307,16 +8254,16 @@ select::-ms-expand {
 .property-popup-component .property-popup-slider-container .property-popup-slider-carousel__item:after {
   clear: both;
 }
-/* line 124, ../components/property_popup_component/clientlibs/property_popup_component.scss */
+/* line 114, ../components/property_popup_component/clientlibs/property_popup_component.scss */
 .property-popup-component .property-popup-slider-container .property-popup-slider__image {
   position: relative;
   overflow: hidden;
 }
-/* line 128, ../components/property_popup_component/clientlibs/property_popup_component.scss */
+/* line 118, ../components/property_popup_component/clientlibs/property_popup_component.scss */
 .property-popup-component .property-popup-slider-container .property-popup-slider__image img {
   width: 100%;
 }
-/* line 134, ../components/property_popup_component/clientlibs/property_popup_component.scss */
+/* line 124, ../components/property_popup_component/clientlibs/property_popup_component.scss */
 .property-popup-component .property-popup-bottom-container {
   *zoom: 1;
   -moz-box-sizing: border-box;
@@ -8337,14 +8284,14 @@ select::-ms-expand {
 .property-popup-component .property-popup-bottom-container:after {
   clear: both;
 }
-/* line 143, ../components/property_popup_component/clientlibs/property_popup_component.scss */
+/* line 133, ../components/property_popup_component/clientlibs/property_popup_component.scss */
 .property-popup-component .property-popup-bottom-container--user-help {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 15px 25px 0 0;
 }
-/* line 148, ../components/property_popup_component/clientlibs/property_popup_component.scss */
+/* line 138, ../components/property_popup_component/clientlibs/property_popup_component.scss */
 .property-popup-component .property-popup-bottom-container--button-list {
   *zoom: 1;
   -moz-box-sizing: border-box;
@@ -8361,7 +8308,7 @@ select::-ms-expand {
 .property-popup-component .property-popup-bottom-container--button-list:after {
   clear: both;
 }
-/* line 154, ../components/property_popup_component/clientlibs/property_popup_component.scss */
+/* line 144, ../components/property_popup_component/clientlibs/property_popup_component.scss */
 .property-popup-component .property-popup-bottom-container .btn {
   -moz-border-radius: 0px;
   -webkit-border-radius: 0px;
@@ -8392,12 +8339,12 @@ select::-ms-expand {
   padding-top: 13px;
   padding-bottom: 9px;
 }
-/* line 164, ../components/property_popup_component/clientlibs/property_popup_component.scss */
+/* line 154, ../components/property_popup_component/clientlibs/property_popup_component.scss */
 .property-popup-component .property-popup-bottom-container .btn:hover {
   background-color: #003559;
   color: #ffffff;
 }
-/* line 170, ../components/property_popup_component/clientlibs/property_popup_component.scss */
+/* line 160, ../components/property_popup_component/clientlibs/property_popup_component.scss */
 .property-popup-component .property-popup-bottom-container .btn-blue {
   font-family: "fbronibe", "Trebuchet MS", Ubuntu, serif;
   font-size: 24px;
@@ -8406,12 +8353,12 @@ select::-ms-expand {
   background-color: #003559;
   color: #ffffff;
 }
-/* line 174, ../components/property_popup_component/clientlibs/property_popup_component.scss */
+/* line 164, ../components/property_popup_component/clientlibs/property_popup_component.scss */
 .property-popup-component .property-popup-bottom-container .btn-blue:hover {
   background-color: #ffffff;
   color: #003559;
 }
-/* line 180, ../components/property_popup_component/clientlibs/property_popup_component.scss */
+/* line 170, ../components/property_popup_component/clientlibs/property_popup_component.scss */
 .property-popup-component .property-popup-bottom-container .user-help-link {
   font-family: "fbronibe", "Trebuchet MS", Ubuntu, serif;
   font-size: 22px;
@@ -8419,7 +8366,7 @@ select::-ms-expand {
   font-weight: 700;
   color: #f99e1b;
 }
-/* line 185, ../components/property_popup_component/clientlibs/property_popup_component.scss */
+/* line 175, ../components/property_popup_component/clientlibs/property_popup_component.scss */
 .property-popup-component .property-popup-bottom-container .user-help-img {
   -moz-border-radius: 150px;
   -webkit-border-radius: 150px;
@@ -8432,7 +8379,7 @@ select::-ms-expand {
 }
 
 @media (min-width: 800px) and (max-width: 1139px) {
-  /* line 202, ../components/property_popup_component/clientlibs/property_popup_component.scss */
+  /* line 192, ../components/property_popup_component/clientlibs/property_popup_component.scss */
   .property-popup-component__inner {
     position: absolute;
     left: 50%;
@@ -8441,87 +8388,7 @@ select::-ms-expand {
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
   }
-  /* line 206, ../components/property_popup_component/clientlibs/property_popup_component.scss */
-  .property-popup-component .property-popup-info-container {
-    float: right;
-    clear: none;
-    width: 44.16667%;
-    margin-right: 0%;
-    margin-left: 0%;
-    height: 655px;
-  }
-  /* line 56, ../sass/core/jeet/_grid.scss */
-  .property-popup-component .property-popup-info-container:last-child {
-    margin-left: 0%;
-  }
-  /* line 211, ../components/property_popup_component/clientlibs/property_popup_component.scss */
-  .property-popup-component .property-popup-info-container--list li {
-    float: none;
-    margin: 0 0 0 0;
-  }
-  /* line 218, ../components/property_popup_component/clientlibs/property_popup_component.scss */
-  .property-popup-component .property-popup-slider-container {
-    float: right;
-    clear: none;
-    width: 55.83333%;
-    margin-right: 0%;
-    margin-left: 0%;
-  }
-  /* line 56, ../sass/core/jeet/_grid.scss */
-  .property-popup-component .property-popup-slider-container:last-child {
-    margin-left: 0%;
-  }
-}
-@media (min-width: 800px) and (max-width: 1139px) and (min-width: 800px) and (max-width: 1139px) {
-  /* line 221, ../components/property_popup_component/clientlibs/property_popup_component.scss */
-  .property-popup-component .property-popup-slider-container .property-popup-slider-navigation {
-    width: auto;
-    max-width: 98%;
-    float: none;
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: 0;
-    padding-right: 0;
-    width: 100%;
-  }
-}
-@media (min-width: 800px) and (max-width: 1139px) and (min-width: 1140px) and (max-width: 1279px) {
-  /* line 221, ../components/property_popup_component/clientlibs/property_popup_component.scss */
-  .property-popup-component .property-popup-slider-container .property-popup-slider-navigation {
-    width: auto;
-    max-width: 1140px;
-    float: none;
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: 0;
-    padding-right: 0;
-    width: 100%;
-  }
-}
-@media (min-width: 800px) and (max-width: 1139px) and (min-width: 1280px) {
-  /* line 221, ../components/property_popup_component/clientlibs/property_popup_component.scss */
-  .property-popup-component .property-popup-slider-container .property-popup-slider-navigation {
-    width: auto;
-    max-width: 1170px;
-    float: none;
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: 0;
-    padding-right: 0;
-    width: 100%;
-  }
-}
-@media (min-width: 800px) and (max-width: 1139px) {
-  /* line 225, ../components/property_popup_component/clientlibs/property_popup_component.scss */
-  .property-popup-component .property-popup-slider-container .property-popup-slider__image {
-    position: relative;
-    height: 655px;
-  }
-  /* line 229, ../components/property_popup_component/clientlibs/property_popup_component.scss */
-  .property-popup-component .property-popup-slider-container .property-popup-slider__image img {
-    width: 250%;
-  }
-  /* line 236, ../components/property_popup_component/clientlibs/property_popup_component.scss */
+  /* line 197, ../components/property_popup_component/clientlibs/property_popup_component.scss */
   .property-popup-component .property-popup-bottom-container--user-help {
     float: right;
     clear: none;
@@ -8533,7 +8400,7 @@ select::-ms-expand {
   .property-popup-component .property-popup-bottom-container--user-help:last-child {
     margin-left: 0%;
   }
-  /* line 240, ../components/property_popup_component/clientlibs/property_popup_component.scss */
+  /* line 201, ../components/property_popup_component/clientlibs/property_popup_component.scss */
   .property-popup-component .property-popup-bottom-container--button-list {
     float: right;
     clear: none;
@@ -8548,7 +8415,7 @@ select::-ms-expand {
   }
 }
 @media (min-width: 1140px) {
-  /* line 254, ../components/property_popup_component/clientlibs/property_popup_component.scss */
+  /* line 215, ../components/property_popup_component/clientlibs/property_popup_component.scss */
   .property-popup-component__inner {
     position: absolute;
     left: 50%;
@@ -8557,46 +8424,47 @@ select::-ms-expand {
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
   }
-  /* line 258, ../components/property_popup_component/clientlibs/property_popup_component.scss */
+  /* line 219, ../components/property_popup_component/clientlibs/property_popup_component.scss */
   .property-popup-component .property-popup-info-container {
     float: right;
     clear: none;
     width: 34.16667%;
     margin-right: 0%;
     margin-left: 0%;
+    float: left;
     height: 655px;
   }
   /* line 56, ../sass/core/jeet/_grid.scss */
   .property-popup-component .property-popup-info-container:last-child {
     margin-left: 0%;
   }
-  /* line 263, ../components/property_popup_component/clientlibs/property_popup_component.scss */
-  .property-popup-component .property-popup-info-container--list li {
-    float: none;
-    margin: 0 0 0 0;
+  /* line 224, ../components/property_popup_component/clientlibs/property_popup_component.scss */
+  .property-popup-component .property-popup-info-container--text2 {
+    padding: 60px 35px 50px 0;
   }
-  /* line 270, ../components/property_popup_component/clientlibs/property_popup_component.scss */
+  /* line 229, ../components/property_popup_component/clientlibs/property_popup_component.scss */
   .property-popup-component .property-popup-slider-container {
     float: right;
     clear: none;
     width: 65.83333%;
     margin-right: 0%;
     margin-left: 0%;
+    float: left;
   }
   /* line 56, ../sass/core/jeet/_grid.scss */
   .property-popup-component .property-popup-slider-container:last-child {
     margin-left: 0%;
   }
-  /* line 273, ../components/property_popup_component/clientlibs/property_popup_component.scss */
+  /* line 233, ../components/property_popup_component/clientlibs/property_popup_component.scss */
   .property-popup-component .property-popup-slider-container .property-popup-slider__image {
     position: relative;
     height: 655px;
   }
-  /* line 277, ../components/property_popup_component/clientlibs/property_popup_component.scss */
+  /* line 237, ../components/property_popup_component/clientlibs/property_popup_component.scss */
   .property-popup-component .property-popup-slider-container .property-popup-slider__image img {
     width: 150%;
   }
-  /* line 284, ../components/property_popup_component/clientlibs/property_popup_component.scss */
+  /* line 244, ../components/property_popup_component/clientlibs/property_popup_component.scss */
   .property-popup-component .property-popup-bottom-container--user-help {
     float: right;
     clear: none;
@@ -8608,7 +8476,7 @@ select::-ms-expand {
   .property-popup-component .property-popup-bottom-container--user-help:last-child {
     margin-left: 0%;
   }
-  /* line 288, ../components/property_popup_component/clientlibs/property_popup_component.scss */
+  /* line 248, ../components/property_popup_component/clientlibs/property_popup_component.scss */
   .property-popup-component .property-popup-bottom-container--button-list {
     float: right;
     clear: none;
@@ -8622,6 +8490,50 @@ select::-ms-expand {
     margin-left: 0%;
   }
 }
+/* line 259, ../components/property_popup_component/clientlibs/property_popup_component.scss */
+.eir-checkbox-block {
+  float: right;
+  position: relative;
+  margin: 0 0 0 10px;
+}
+/* line 263, ../components/property_popup_component/clientlibs/property_popup_component.scss */
+.eir-checkbox-block label {
+  width: 19px;
+  height: 19px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: solid rgba(0, 0, 0, 0.2) 1px;
+}
+/* line 271, ../components/property_popup_component/clientlibs/property_popup_component.scss */
+.eir-checkbox-block label:after {
+  content: '';
+  width: 22px;
+  height: 9px;
+  position: absolute;
+  top: -3px;
+  left: 2px;
+  border: 2px solid #061d27;
+  border-top: none;
+  border-right: none;
+  background: transparent;
+  opacity: 0;
+  transform: rotate(-45deg);
+}
+/* line 285, ../components/property_popup_component/clientlibs/property_popup_component.scss */
+.eir-checkbox-block label:hover::after {
+  opacity: 0.3;
+}
+/* line 289, ../components/property_popup_component/clientlibs/property_popup_component.scss */
+.eir-checkbox-block input[type=checkbox] {
+  visibility: hidden;
+}
+/* line 291, ../components/property_popup_component/clientlibs/property_popup_component.scss */
+.eir-checkbox-block input[type=checkbox]:checked + label:after {
+  opacity: 1;
+}
+
 /* line 1, ../components/signup_popup_component/clientlibs/signup_popup_component.scss */
 .signup-popup-component {
   *zoom: 1;
@@ -8630,7 +8542,7 @@ select::-ms-expand {
   z-index: 3000;
   position: absolute;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   top: 0;
   background-color: rgba(0, 0, 0, 0.6);
 }
@@ -8685,7 +8597,6 @@ select::-ms-expand {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  padding: 0 0 80px 0;
   background-color: rgba(6, 29, 39, 0.8);
 }
 /* line 343, ../sass/core/jeet/_grid.scss */
@@ -8697,29 +8608,28 @@ select::-ms-expand {
 .signup-popup-component .signup-popup-info-container:after {
   clear: both;
 }
-/* line 37, ../components/signup_popup_component/clientlibs/signup_popup_component.scss */
+/* line 36, ../components/signup_popup_component/clientlibs/signup_popup_component.scss */
 .signup-popup-component .signup-popup-info-container--header {
   position: relative;
-  margin: 0 0 78px 0;
-  padding: 90px 0 30px 0;
+  padding: 60px 0 60px 0;
   border-bottom: solid #f99e1b 1px;
   text-align: center;
 }
-/* line 44, ../components/signup_popup_component/clientlibs/signup_popup_component.scss */
+/* line 42, ../components/signup_popup_component/clientlibs/signup_popup_component.scss */
 .signup-popup-component .signup-popup-info-container--header:after {
   content: '';
   display: block;
   position: absolute;
   width: 28px;
   height: 28px;
-  right: 25px;
-  top: 25px;
+  right: 20px;
+  top: 20px;
   bottom: 0;
   background-image: url("../img/person-ico.svg");
   background-size: 100%;
   background-repeat: no-repeat;
 }
-/* line 57, ../components/signup_popup_component/clientlibs/signup_popup_component.scss */
+/* line 55, ../components/signup_popup_component/clientlibs/signup_popup_component.scss */
 .signup-popup-component .signup-popup-info-container--header h3 {
   font-family: "fbronibe", "Trebuchet MS", Ubuntu, serif;
   font-size: 30px;
@@ -8728,7 +8638,7 @@ select::-ms-expand {
   margin-bottom: 10px;
   color: #ffffff;
 }
-/* line 63, ../components/signup_popup_component/clientlibs/signup_popup_component.scss */
+/* line 61, ../components/signup_popup_component/clientlibs/signup_popup_component.scss */
 .signup-popup-component .signup-popup-info-container--header p {
   font-family: "fbronibe", "Trebuchet MS", Ubuntu, serif;
   font-size: 20px;
@@ -8739,12 +8649,26 @@ select::-ms-expand {
   line-height: 22px;
   color: #ffffff;
 }
-/* line 72, ../components/signup_popup_component/clientlibs/signup_popup_component.scss */
+/* line 70, ../components/signup_popup_component/clientlibs/signup_popup_component.scss */
 .signup-popup-component .signup-popup-info-container--form {
+  *zoom: 1;
+  padding: 80px 0 80px 0;
   text-align: center;
+}
+/* line 343, ../sass/core/jeet/_grid.scss */
+.signup-popup-component .signup-popup-info-container--form:before, .signup-popup-component .signup-popup-info-container--form:after {
+  content: '';
+  display: table;
+}
+/* line 348, ../sass/core/jeet/_grid.scss */
+.signup-popup-component .signup-popup-info-container--form:after {
+  clear: both;
 }
 /* line 75, ../components/signup_popup_component/clientlibs/signup_popup_component.scss */
 .signup-popup-component .signup-popup-info-container--form .btn {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
   -moz-border-radius: 0px;
   -webkit-border-radius: 0px;
   border-radius: 0px;
@@ -8760,22 +8684,24 @@ select::-ms-expand {
   color: #ffffff;
   border: 2px solid transparent;
   background-color: #054770;
-  width: 100px;
-  height: 140px;
-  display: inline-block;
+  width: 197px;
+  height: 45px;
+  margin: 0 auto;
+  padding: 12px 0 10px 0;
+  border: none;
   vertical-align: top;
 }
-/* line 81, ../components/signup_popup_component/clientlibs/signup_popup_component.scss */
+/* line 84, ../components/signup_popup_component/clientlibs/signup_popup_component.scss */
 .signup-popup-component .signup-popup-info-container--form .btn:hover {
   background-color: #ffffff;
   color: #054770;
 }
-/* line 87, ../components/signup_popup_component/clientlibs/signup_popup_component.scss */
+/* line 90, ../components/signup_popup_component/clientlibs/signup_popup_component.scss */
 .signup-popup-component .signup-popup-info-container--form .input-block {
   width: 197px;
-  display: inline-block;
+  margin: 0 auto;
 }
-/* line 91, ../components/signup_popup_component/clientlibs/signup_popup_component.scss */
+/* line 94, ../components/signup_popup_component/clientlibs/signup_popup_component.scss */
 .signup-popup-component .signup-popup-info-container--form .input-block input {
   -moz-border-radius: 0px;
   -webkit-border-radius: 0px;
@@ -8799,7 +8725,7 @@ select::-ms-expand {
 }
 
 @media (min-width: 800px) and (max-width: 1139px) {
-  /* line 109, ../components/signup_popup_component/clientlibs/signup_popup_component.scss */
+  /* line 112, ../components/signup_popup_component/clientlibs/signup_popup_component.scss */
   .signup-popup-component__inner {
     position: absolute;
     left: 50%;
@@ -8810,22 +8736,34 @@ select::-ms-expand {
     transform: translateY(-50%) translateX(-50%);
     width: auto;
   }
-  /* line 114, ../components/signup_popup_component/clientlibs/signup_popup_component.scss */
+  /* line 117, ../components/signup_popup_component/clientlibs/signup_popup_component.scss */
   .signup-popup-component .signup-popup-info-container {
     width: 750px;
-    height: 566px;
   }
-  /* line 119, ../components/signup_popup_component/clientlibs/signup_popup_component.scss */
+  /* line 121, ../components/signup_popup_component/clientlibs/signup_popup_component.scss */
   .signup-popup-component .signup-popup-info-container--header:after {
+    position: relative;
+    display: inline-block;
     width: 58px;
     height: 58px;
-    right: 50px;
-    top: auto;
-    bottom: 45px;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+  /* line 133, ../components/signup_popup_component/clientlibs/signup_popup_component.scss */
+  .signup-popup-component .signup-popup-info-container--form .btn {
+    display: inline-block;
+    width: 100px;
+    height: 140px;
+    padding: 12px 0 10px 0;
+  }
+  /* line 140, ../components/signup_popup_component/clientlibs/signup_popup_component.scss */
+  .signup-popup-component .signup-popup-info-container--form .input-block {
+    display: inline-block;
   }
 }
 @media (min-width: 1140px) {
-  /* line 137, ../components/signup_popup_component/clientlibs/signup_popup_component.scss */
+  /* line 155, ../components/signup_popup_component/clientlibs/signup_popup_component.scss */
   .signup-popup-component__inner {
     position: absolute;
     left: 50%;
@@ -8836,18 +8774,30 @@ select::-ms-expand {
     transform: translateY(-50%) translateX(-50%);
     width: auto;
   }
-  /* line 142, ../components/signup_popup_component/clientlibs/signup_popup_component.scss */
+  /* line 160, ../components/signup_popup_component/clientlibs/signup_popup_component.scss */
   .signup-popup-component .signup-popup-info-container {
     width: 750px;
-    height: 566px;
   }
-  /* line 148, ../components/signup_popup_component/clientlibs/signup_popup_component.scss */
+  /* line 164, ../components/signup_popup_component/clientlibs/signup_popup_component.scss */
   .signup-popup-component .signup-popup-info-container--header:after {
+    position: relative;
+    display: inline-block;
     width: 58px;
     height: 58px;
-    right: 50px;
-    top: auto;
-    bottom: 45px;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+  /* line 176, ../components/signup_popup_component/clientlibs/signup_popup_component.scss */
+  .signup-popup-component .signup-popup-info-container--form .btn {
+    display: inline-block;
+    width: 100px;
+    height: 140px;
+    padding: 12px 0 10px 0;
+  }
+  /* line 183, ../components/signup_popup_component/clientlibs/signup_popup_component.scss */
+  .signup-popup-component .signup-popup-info-container--form .input-block {
+    display: inline-block;
   }
 }
 /* line 1, ../components/setting_popup_component/clientlibs/setting_popup_component.scss */
@@ -8858,7 +8808,7 @@ select::-ms-expand {
   z-index: 3000;
   position: absolute;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   top: 0;
   background-color: rgba(0, 0, 0, 0.6);
 }
@@ -8913,7 +8863,6 @@ select::-ms-expand {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  padding: 0 0 80px 0;
   background-color: rgba(6, 29, 39, 0.8);
 }
 /* line 343, ../sass/core/jeet/_grid.scss */
@@ -8925,29 +8874,28 @@ select::-ms-expand {
 .setting-popup-component .setting-popup-info-container:after {
   clear: both;
 }
-/* line 37, ../components/setting_popup_component/clientlibs/setting_popup_component.scss */
+/* line 36, ../components/setting_popup_component/clientlibs/setting_popup_component.scss */
 .setting-popup-component .setting-popup-info-container--header {
   position: relative;
-  margin: 0 0 78px 0;
-  padding: 90px 0 30px 0;
+  padding: 60px 0 60px 0;
   border-bottom: solid #f99e1b 1px;
   text-align: center;
 }
-/* line 44, ../components/setting_popup_component/clientlibs/setting_popup_component.scss */
+/* line 42, ../components/setting_popup_component/clientlibs/setting_popup_component.scss */
 .setting-popup-component .setting-popup-info-container--header:after {
   content: '';
   display: block;
   position: absolute;
   width: 30px;
   height: 48px;
-  right: 25px;
-  top: 25px;
+  right: 20px;
+  top: 20px;
   bottom: 0;
   background-image: url("../img/list-ico.svg");
   background-size: 100%;
   background-repeat: no-repeat;
 }
-/* line 57, ../components/setting_popup_component/clientlibs/setting_popup_component.scss */
+/* line 55, ../components/setting_popup_component/clientlibs/setting_popup_component.scss */
 .setting-popup-component .setting-popup-info-container--header h3 {
   font-family: "fbronibe", "Trebuchet MS", Ubuntu, serif;
   font-size: 30px;
@@ -8956,7 +8904,7 @@ select::-ms-expand {
   margin-bottom: 10px;
   color: #ffffff;
 }
-/* line 63, ../components/setting_popup_component/clientlibs/setting_popup_component.scss */
+/* line 61, ../components/setting_popup_component/clientlibs/setting_popup_component.scss */
 .setting-popup-component .setting-popup-info-container--header p {
   font-family: "fbronibe", "Trebuchet MS", Ubuntu, serif;
   font-size: 20px;
@@ -8967,20 +8915,26 @@ select::-ms-expand {
   line-height: 22px;
   color: #ffffff;
 }
-/* line 72, ../components/setting_popup_component/clientlibs/setting_popup_component.scss */
+/* line 70, ../components/setting_popup_component/clientlibs/setting_popup_component.scss */
 .setting-popup-component .setting-popup-info-container--form {
-  padding: 30px;
+  *zoom: 1;
+  padding: 80px 40px;
   text-align: center;
 }
-/* line 76, ../components/setting_popup_component/clientlibs/setting_popup_component.scss */
-.setting-popup-component .setting-popup-info-container--form .setting-popup-select-block {
-  display: inline-block;
-  width: 179px;
-  height: 42px;
-  margin: 2px;
+/* line 343, ../sass/core/jeet/_grid.scss */
+.setting-popup-component .setting-popup-info-container--form:before, .setting-popup-component .setting-popup-info-container--form:after {
+  content: '';
+  display: table;
 }
-/* line 83, ../components/setting_popup_component/clientlibs/setting_popup_component.scss */
+/* line 348, ../sass/core/jeet/_grid.scss */
+.setting-popup-component .setting-popup-info-container--form:after {
+  clear: both;
+}
+/* line 75, ../components/setting_popup_component/clientlibs/setting_popup_component.scss */
 .setting-popup-component .setting-popup-info-container--form .btn {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
   -moz-border-radius: 0px;
   -webkit-border-radius: 0px;
   border-radius: 0px;
@@ -8999,16 +8953,24 @@ select::-ms-expand {
   display: inline-block;
   width: 179px;
   margin: 2px;
+  border: none;
   padding-bottom: 7px;
 }
-/* line 89, ../components/setting_popup_component/clientlibs/setting_popup_component.scss */
+/* line 83, ../components/setting_popup_component/clientlibs/setting_popup_component.scss */
 .setting-popup-component .setting-popup-info-container--form .btn:hover {
   background-color: #ffffff;
   color: #054770;
 }
+/* line 89, ../components/setting_popup_component/clientlibs/setting_popup_component.scss */
+.setting-popup-component .setting-popup-info-container--form .setting-popup-select-block {
+  display: inline-block;
+  width: 179px;
+  height: 42px;
+  margin: 2px;
+}
 
 @media (min-width: 800px) and (max-width: 1139px) {
-  /* line 105, ../components/setting_popup_component/clientlibs/setting_popup_component.scss */
+  /* line 106, ../components/setting_popup_component/clientlibs/setting_popup_component.scss */
   .setting-popup-component__inner {
     position: absolute;
     left: 50%;
@@ -9019,22 +8981,23 @@ select::-ms-expand {
     transform: translateY(-50%) translateX(-50%);
     width: auto;
   }
-  /* line 110, ../components/setting_popup_component/clientlibs/setting_popup_component.scss */
+  /* line 111, ../components/setting_popup_component/clientlibs/setting_popup_component.scss */
   .setting-popup-component .setting-popup-info-container {
     width: 750px;
-    height: 566px;
   }
   /* line 115, ../components/setting_popup_component/clientlibs/setting_popup_component.scss */
   .setting-popup-component .setting-popup-info-container--header:after {
+    position: relative;
+    display: inline-block;
     width: 50px;
     height: 68px;
-    right: 50px;
-    top: auto;
-    bottom: 45px;
+    right: 0;
+    top: 0;
+    bottom: 0;
   }
 }
 @media (min-width: 1140px) {
-  /* line 133, ../components/setting_popup_component/clientlibs/setting_popup_component.scss */
+  /* line 135, ../components/setting_popup_component/clientlibs/setting_popup_component.scss */
   .setting-popup-component__inner {
     position: absolute;
     left: 50%;
@@ -9045,20 +9008,26 @@ select::-ms-expand {
     transform: translateY(-50%) translateX(-50%);
     width: auto;
   }
-  /* line 138, ../components/setting_popup_component/clientlibs/setting_popup_component.scss */
+  /* line 140, ../components/setting_popup_component/clientlibs/setting_popup_component.scss */
   .setting-popup-component .setting-popup-info-container {
     width: 750px;
-    height: 566px;
   }
   /* line 144, ../components/setting_popup_component/clientlibs/setting_popup_component.scss */
   .setting-popup-component .setting-popup-info-container--header:after {
+    position: relative;
+    display: inline-block;
     width: 50px;
     height: 68px;
-    right: 50px;
-    top: auto;
-    bottom: 45px;
+    right: 0;
+    top: 0;
+    bottom: 0;
   }
 }
+/* line 159, ../components/setting_popup_component/clientlibs/setting_popup_component.scss */
+.increasedzindexclass {
+  z-index: 99999;
+}
+
 /* line 1, ../components/success_popup_component/clientlibs/success_popup_component.scss */
 .success-popup-component {
   *zoom: 1;
@@ -9067,7 +9036,7 @@ select::-ms-expand {
   z-index: 3000;
   position: absolute;
   width: 100%;
-  height: 100vmin;
+  height: 100%;
   top: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.6);
@@ -9123,7 +9092,6 @@ select::-ms-expand {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  padding: 0 0 80px 0;
   background-color: rgba(6, 29, 39, 0.8);
 }
 /* line 343, ../sass/core/jeet/_grid.scss */
@@ -9135,29 +9103,28 @@ select::-ms-expand {
 .success-popup-component .success-popup-info-container:after {
   clear: both;
 }
-/* line 38, ../components/success_popup_component/clientlibs/success_popup_component.scss */
+/* line 37, ../components/success_popup_component/clientlibs/success_popup_component.scss */
 .success-popup-component .success-popup-info-container--header {
   position: relative;
-  margin: 0 0 78px 0;
-  padding: 90px 0 30px 0;
+  padding: 60px 0 60px 0;
   border-bottom: solid #f99e1b 1px;
   text-align: center;
 }
-/* line 45, ../components/success_popup_component/clientlibs/success_popup_component.scss */
+/* line 43, ../components/success_popup_component/clientlibs/success_popup_component.scss */
 .success-popup-component .success-popup-info-container--header:after {
   content: '';
   display: block;
   position: absolute;
   width: 30px;
   height: 48px;
-  right: 52px;
-  top: 44px;
+  right: 20px;
+  top: 20px;
   bottom: 0;
   background-image: url("../img/check-ico.svg");
   background-size: 100%;
   background-repeat: no-repeat;
 }
-/* line 58, ../components/success_popup_component/clientlibs/success_popup_component.scss */
+/* line 56, ../components/success_popup_component/clientlibs/success_popup_component.scss */
 .success-popup-component .success-popup-info-container--header h3 {
   font-family: "fbronibe", "Trebuchet MS", Ubuntu, serif;
   font-size: 30px;
@@ -9166,7 +9133,7 @@ select::-ms-expand {
   margin-bottom: 10px;
   color: #ffffff;
 }
-/* line 64, ../components/success_popup_component/clientlibs/success_popup_component.scss */
+/* line 62, ../components/success_popup_component/clientlibs/success_popup_component.scss */
 .success-popup-component .success-popup-info-container--header p {
   font-family: "fbronibe", "Trebuchet MS", Ubuntu, serif;
   font-size: 20px;
@@ -9177,14 +9144,14 @@ select::-ms-expand {
   line-height: 22px;
   color: #ffffff;
 }
-/* line 73, ../components/success_popup_component/clientlibs/success_popup_component.scss */
+/* line 71, ../components/success_popup_component/clientlibs/success_popup_component.scss */
 .success-popup-component .success-popup-info-container--text {
-  padding: 0 30px;
+  padding: 80px 40px;
   text-align: center;
 }
 
 @media (min-width: 800px) and (max-width: 1139px) {
-  /* line 86, ../components/success_popup_component/clientlibs/success_popup_component.scss */
+  /* line 84, ../components/success_popup_component/clientlibs/success_popup_component.scss */
   .success-popup-component__inner {
     position: absolute;
     left: 50%;
@@ -9195,22 +9162,23 @@ select::-ms-expand {
     transform: translateY(-50%) translateX(-50%);
     width: auto;
   }
-  /* line 91, ../components/success_popup_component/clientlibs/success_popup_component.scss */
+  /* line 89, ../components/success_popup_component/clientlibs/success_popup_component.scss */
   .success-popup-component .success-popup-info-container {
     width: 750px;
-    height: 566px;
   }
-  /* line 96, ../components/success_popup_component/clientlibs/success_popup_component.scss */
+  /* line 93, ../components/success_popup_component/clientlibs/success_popup_component.scss */
   .success-popup-component .success-popup-info-container--header:after {
+    position: relative;
+    display: inline-block;
     width: 72px;
     height: 64px;
-    right: 50px;
-    top: auto;
-    bottom: 45px;
+    right: 0;
+    top: 0;
+    bottom: 0;
   }
 }
 @media (min-width: 1140px) {
-  /* line 114, ../components/success_popup_component/clientlibs/success_popup_component.scss */
+  /* line 113, ../components/success_popup_component/clientlibs/success_popup_component.scss */
   .success-popup-component__inner {
     position: absolute;
     left: 50%;
@@ -9221,18 +9189,19 @@ select::-ms-expand {
     transform: translateY(-50%) translateX(-50%);
     width: auto;
   }
-  /* line 119, ../components/success_popup_component/clientlibs/success_popup_component.scss */
+  /* line 118, ../components/success_popup_component/clientlibs/success_popup_component.scss */
   .success-popup-component .success-popup-info-container {
     width: 750px;
-    height: 566px;
   }
-  /* line 125, ../components/success_popup_component/clientlibs/success_popup_component.scss */
+  /* line 123, ../components/success_popup_component/clientlibs/success_popup_component.scss */
   .success-popup-component .success-popup-info-container--header:after {
+    position: relative;
+    display: inline-block;
     width: 72px;
     height: 64px;
-    right: 50px;
-    top: auto;
-    bottom: 45px;
+    right: 0;
+    top: 0;
+    bottom: 0;
   }
 }
 /* line 1, ../components/apply_popup_component/clientlibs/apply_popup_component.scss */
@@ -9246,6 +9215,7 @@ select::-ms-expand {
   height: 100%;
   top: 0;
   background-color: rgba(0, 0, 0, 0.6);
+  overflow-y: scroll;
 }
 /* line 343, ../sass/core/jeet/_grid.scss */
 .apply-popup-component:before, .apply-popup-component:after {
@@ -9256,7 +9226,7 @@ select::-ms-expand {
 .apply-popup-component:after {
   clear: both;
 }
-/* line 12, ../components/apply_popup_component/clientlibs/apply_popup_component.scss */
+/* line 13, ../components/apply_popup_component/clientlibs/apply_popup_component.scss */
 .apply-popup-component__inner {
   *zoom: 1;
   -moz-box-sizing: border-box;
@@ -9275,7 +9245,7 @@ select::-ms-expand {
   clear: both;
 }
 @media (min-width: 800px) and (max-width: 1139px) {
-  /* line 12, ../components/apply_popup_component/clientlibs/apply_popup_component.scss */
+  /* line 13, ../components/apply_popup_component/clientlibs/apply_popup_component.scss */
   .apply-popup-component__inner {
     width: auto;
     max-width: 98%;
@@ -9288,7 +9258,7 @@ select::-ms-expand {
   }
 }
 @media (min-width: 1140px) and (max-width: 1279px) {
-  /* line 12, ../components/apply_popup_component/clientlibs/apply_popup_component.scss */
+  /* line 13, ../components/apply_popup_component/clientlibs/apply_popup_component.scss */
   .apply-popup-component__inner {
     width: auto;
     max-width: 1140px;
@@ -9301,7 +9271,7 @@ select::-ms-expand {
   }
 }
 @media (min-width: 1280px) {
-  /* line 12, ../components/apply_popup_component/clientlibs/apply_popup_component.scss */
+  /* line 13, ../components/apply_popup_component/clientlibs/apply_popup_component.scss */
   .apply-popup-component__inner {
     width: auto;
     max-width: 1170px;
@@ -9313,7 +9283,7 @@ select::-ms-expand {
     width: 100%;
   }
 }
-/* line 20, ../components/apply_popup_component/clientlibs/apply_popup_component.scss */
+/* line 21, ../components/apply_popup_component/clientlibs/apply_popup_component.scss */
 .apply-popup-component .close-popup-btn {
   cursor: pointer;
   z-index: 20;
@@ -9321,7 +9291,7 @@ select::-ms-expand {
   margin: 20px;
   left: 0;
 }
-/* line 28, ../components/apply_popup_component/clientlibs/apply_popup_component.scss */
+/* line 29, ../components/apply_popup_component/clientlibs/apply_popup_component.scss */
 .apply-popup-component .apply-popup-info-container {
   *zoom: 1;
   -moz-box-sizing: border-box;
@@ -9339,13 +9309,13 @@ select::-ms-expand {
 .apply-popup-component .apply-popup-info-container:after {
   clear: both;
 }
-/* line 34, ../components/apply_popup_component/clientlibs/apply_popup_component.scss */
+/* line 35, ../components/apply_popup_component/clientlibs/apply_popup_component.scss */
 .apply-popup-component .apply-popup-info-container--header {
   margin-bottom: 20px;
-  padding: 30px 30px 15px 30px;
+  padding: 25px 30px 15px 30px;
   border-bottom: solid rgba(0, 0, 0, 0.8) 1px;
 }
-/* line 39, ../components/apply_popup_component/clientlibs/apply_popup_component.scss */
+/* line 40, ../components/apply_popup_component/clientlibs/apply_popup_component.scss */
 .apply-popup-component .apply-popup-info-container--header h1 {
   font-family: "fbronibe", "Trebuchet MS", Ubuntu, serif;
   font-size: 35px;
@@ -9354,7 +9324,7 @@ select::-ms-expand {
   margin-bottom: 0;
   color: rgba(0, 0, 0, 0.8);
 }
-/* line 46, ../components/apply_popup_component/clientlibs/apply_popup_component.scss */
+/* line 47, ../components/apply_popup_component/clientlibs/apply_popup_component.scss */
 .apply-popup-component .apply-popup-info-container--text {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -9375,12 +9345,12 @@ select::-ms-expand {
 .apply-popup-component .apply-popup-info-container--text:after {
   clear: both;
 }
-/* line 52, ../components/apply_popup_component/clientlibs/apply_popup_component.scss */
+/* line 53, ../components/apply_popup_component/clientlibs/apply_popup_component.scss */
 .apply-popup-component .apply-popup-info-container--text p {
   margin-bottom: 30px;
   color: #333333;
 }
-/* line 57, ../components/apply_popup_component/clientlibs/apply_popup_component.scss */
+/* line 58, ../components/apply_popup_component/clientlibs/apply_popup_component.scss */
 .apply-popup-component .apply-popup-info-container--text h3 {
   font-family: "fbronibe", "Trebuchet MS", Ubuntu, serif;
   font-size: 19px;
@@ -9389,7 +9359,7 @@ select::-ms-expand {
   margin-bottom: 20px;
   color: rgba(0, 0, 0, 0.8);
 }
-/* line 64, ../components/apply_popup_component/clientlibs/apply_popup_component.scss */
+/* line 65, ../components/apply_popup_component/clientlibs/apply_popup_component.scss */
 .apply-popup-component .apply-popup-info-container--form {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -9401,7 +9371,7 @@ select::-ms-expand {
   padding: 50px 30px 30px 30px;
   text-align: left;
 }
-/* line 70, ../components/apply_popup_component/clientlibs/apply_popup_component.scss */
+/* line 71, ../components/apply_popup_component/clientlibs/apply_popup_component.scss */
 .apply-popup-component .apply-popup-info-container--form--input[type="text"] {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -9413,10 +9383,10 @@ select::-ms-expand {
   font-weight: 700;
   height: 70px;
   margin: 0 0 8px 0;
-  padding: 0 15px;
+  padding: 5px 15px 0 15px;
   border: solid rgba(0, 0, 0, 0.8) 1px;
 }
-/* line 80, ../components/apply_popup_component/clientlibs/apply_popup_component.scss */
+/* line 81, ../components/apply_popup_component/clientlibs/apply_popup_component.scss */
 .apply-popup-component .apply-popup-info-container--form--txtarea {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -9432,7 +9402,7 @@ select::-ms-expand {
   padding: 15px;
   border: solid rgba(0, 0, 0, 0.8) 1px;
 }
-/* line 91, ../components/apply_popup_component/clientlibs/apply_popup_component.scss */
+/* line 92, ../components/apply_popup_component/clientlibs/apply_popup_component.scss */
 .apply-popup-component .apply-popup-info-container--form--btn {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -9457,16 +9427,16 @@ select::-ms-expand {
   font-size: 35px;
   font-style: normal;
   font-weight: 700;
-  padding-bottom: 7px;
+  padding: 15px 0 8px 0;
 }
-/* line 97, ../components/apply_popup_component/clientlibs/apply_popup_component.scss */
+/* line 98, ../components/apply_popup_component/clientlibs/apply_popup_component.scss */
 .apply-popup-component .apply-popup-info-container--form--btn:hover {
   background-color: #ffffff;
   color: #93a33a;
 }
 
 @media (min-width: 800px) and (max-width: 1139px) {
-  /* line 112, ../components/apply_popup_component/clientlibs/apply_popup_component.scss */
+  /* line 113, ../components/apply_popup_component/clientlibs/apply_popup_component.scss */
   .apply-popup-component__inner {
     position: absolute;
     left: 50%;
@@ -9475,7 +9445,7 @@ select::-ms-expand {
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
   }
-  /* line 117, ../components/apply_popup_component/clientlibs/apply_popup_component.scss */
+  /* line 118, ../components/apply_popup_component/clientlibs/apply_popup_component.scss */
   .apply-popup-component .apply-popup-info-container--text {
     float: right;
     clear: none;
@@ -9487,7 +9457,7 @@ select::-ms-expand {
   .apply-popup-component .apply-popup-info-container--text:last-child {
     margin-left: 0%;
   }
-  /* line 121, ../components/apply_popup_component/clientlibs/apply_popup_component.scss */
+  /* line 122, ../components/apply_popup_component/clientlibs/apply_popup_component.scss */
   .apply-popup-component .apply-popup-info-container--form {
     float: right;
     clear: none;
@@ -9502,7 +9472,7 @@ select::-ms-expand {
   }
 }
 @media (min-width: 1140px) {
-  /* line 135, ../components/apply_popup_component/clientlibs/apply_popup_component.scss */
+  /* line 136, ../components/apply_popup_component/clientlibs/apply_popup_component.scss */
   .apply-popup-component__inner {
     position: absolute;
     left: 50%;
@@ -9511,7 +9481,7 @@ select::-ms-expand {
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
   }
-  /* line 140, ../components/apply_popup_component/clientlibs/apply_popup_component.scss */
+  /* line 141, ../components/apply_popup_component/clientlibs/apply_popup_component.scss */
   .apply-popup-component .apply-popup-info-container--text {
     float: right;
     clear: none;
@@ -9523,7 +9493,7 @@ select::-ms-expand {
   .apply-popup-component .apply-popup-info-container--text:last-child {
     margin-left: 0%;
   }
-  /* line 144, ../components/apply_popup_component/clientlibs/apply_popup_component.scss */
+  /* line 145, ../components/apply_popup_component/clientlibs/apply_popup_component.scss */
   .apply-popup-component .apply-popup-info-container--form {
     float: right;
     clear: none;
@@ -9537,7 +9507,7 @@ select::-ms-expand {
     margin-left: 0%;
   }
 }
-/* line 153, ../components/apply_popup_component/clientlibs/apply_popup_component.scss */
+/* line 154, ../components/apply_popup_component/clientlibs/apply_popup_component.scss */
 .js .inputfile {
   width: 0.1px;
   height: 0.1px;
@@ -9547,7 +9517,7 @@ select::-ms-expand {
   z-index: -1;
 }
 
-/* line 162, ../components/apply_popup_component/clientlibs/apply_popup_component.scss */
+/* line 163, ../components/apply_popup_component/clientlibs/apply_popup_component.scss */
 .inputfile + label {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -9567,17 +9537,17 @@ select::-ms-expand {
   overflow: hidden;
 }
 
-/* line 176, ../components/apply_popup_component/clientlibs/apply_popup_component.scss */
+/* line 177, ../components/apply_popup_component/clientlibs/apply_popup_component.scss */
 .no-js .inputfile + label {
   display: none;
 }
 
-/* line 181, ../components/apply_popup_component/clientlibs/apply_popup_component.scss */
+/* line 182, ../components/apply_popup_component/clientlibs/apply_popup_component.scss */
 .inputfile-3 + label {
   color: rgba(0, 0, 0, 0.8);
 }
 
-/* line 185, ../components/apply_popup_component/clientlibs/apply_popup_component.scss */
+/* line 186, ../components/apply_popup_component/clientlibs/apply_popup_component.scss */
 .inputfile-3:focus + label,
 .inputfile-3.has-focus + label,
 .inputfile-3 + label:hover {
