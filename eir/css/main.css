@@ -1627,7 +1627,7 @@
   position: relative;
   width: 19px;
   height: 19px;
-  top: 6px;
+  top: 4px;
   margin: 0 10px 0 0;
   background-image: url("../img/phone-ico.svg");
   background-size: 100%;
@@ -1653,7 +1653,7 @@
   position: relative;
   width: 23px;
   height: 23px;
-  top: 6px;
+  top: 5px;
   margin: 0 10px 0 0;
   background-image: url("../img/person-ico2.svg");
   background-size: 100%;
@@ -2771,6 +2771,11 @@ button:hover {
 }
 
 /* line 136, ../sass/core/_general.scss */
+.inner-page-global-contact {
+  padding: 0 0 0 0;
+}
+
+/* line 140, ../sass/core/_general.scss */
 .page-container {
   width: 100%;
   min-height: 100%;
@@ -2778,7 +2783,7 @@ button:hover {
   position: relative;
 }
 
-/* line 143, ../sass/core/_general.scss */
+/* line 147, ../sass/core/_general.scss */
 .clear {
   *zoom: 1;
 }
@@ -2792,17 +2797,17 @@ button:hover {
   clear: both;
 }
 
-/* line 147, ../sass/core/_general.scss */
+/* line 151, ../sass/core/_general.scss */
 .bold {
   font-weight: 700;
 }
 
-/* line 151, ../sass/core/_general.scss */
+/* line 155, ../sass/core/_general.scss */
 .text-decoration-none {
   text-decoration: none;
 }
 
-/* line 155, ../sass/core/_general.scss */
+/* line 159, ../sass/core/_general.scss */
 .center-xy {
   position: absolute;
   transform-style: preserve-3d;
@@ -2811,62 +2816,62 @@ button:hover {
   transform: translate(-50%, -50%);
 }
 
-/* line 159, ../sass/core/_general.scss */
+/* line 163, ../sass/core/_general.scss */
 .center-y {
   display: table-cell;
   vertical-align: middle;
   padding: 0 10%;
 }
 
-/* line 165, ../sass/core/_general.scss */
+/* line 169, ../sass/core/_general.scss */
 .popup__active {
   display: block !important;
 }
 
-/* line 170, ../sass/core/_general.scss */
+/* line 174, ../sass/core/_general.scss */
 select::-ms-expand {
   display: none;
 }
 
-/* line 175, ../sass/core/_general.scss */
+/* line 179, ../sass/core/_general.scss */
 .mobile-hide {
   display: none;
 }
 
-/* line 179, ../sass/core/_general.scss */
+/* line 183, ../sass/core/_general.scss */
 .mobile-show {
   display: block;
 }
 
 @media (min-width: 800px) and (max-width: 1139px) {
-  /* line 186, ../sass/core/_general.scss */
+  /* line 190, ../sass/core/_general.scss */
   .tablet-hide {
     display: none;
   }
 
-  /* line 190, ../sass/core/_general.scss */
+  /* line 194, ../sass/core/_general.scss */
   .tablet-show {
     display: block;
   }
 
-  /* line 194, ../sass/core/_general.scss */
-  .inner-pages-global-container {
+  /* line 198, ../sass/core/_general.scss */
+  .inner-pages-global-container, .inner-page-global-contact {
     padding: 60px 0 0 0;
   }
 }
 @media (min-width: 1140px) {
-  /* line 203, ../sass/core/_general.scss */
+  /* line 207, ../sass/core/_general.scss */
   .desktop-hide {
     display: none;
   }
 
-  /* line 207, ../sass/core/_general.scss */
+  /* line 211, ../sass/core/_general.scss */
   .desktop-show {
     display: block;
   }
 
-  /* line 211, ../sass/core/_general.scss */
-  .inner-pages-global-container {
+  /* line 215, ../sass/core/_general.scss */
+  .inner-pages-global-container, .inner-page-global-contact {
     padding: 60px 0 0 0;
   }
 }
@@ -3316,11 +3321,14 @@ select::-ms-expand {
   width: 100%;
   height: 60px;
   padding-top: 3px;
-  line-height: 60px;
 }
-/* line 115, ../components/main_menu/clientlibs/main_menu.scss */
+/* line 114, ../components/main_menu/clientlibs/main_menu.scss */
 .main-menu-component .search-block .search-btn:hover, .main-menu-component .search-block .sign-btn:hover, .main-menu-component .search-block .add-btn:hover {
   color: #ffffff;
+}
+/* line 119, ../components/main_menu/clientlibs/main_menu.scss */
+.main-menu-component .search-block .search-btn {
+  line-height: 55px;
 }
 /* line 121, ../components/main_menu/clientlibs/main_menu.scss */
 .main-menu-component .search-block .search-btn:hover {
@@ -3347,8 +3355,9 @@ select::-ms-expand {
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
+  line-height: 62px;
 }
-/* line 137, ../components/main_menu/clientlibs/main_menu.scss */
+/* line 138, ../components/main_menu/clientlibs/main_menu.scss */
 .main-menu-component .search-block .add-btn {
   -moz-border-radius: 0px;
   -webkit-border-radius: 0px;
@@ -3370,8 +3379,9 @@ select::-ms-expand {
   font-style: normal;
   font-weight: 700;
   display: none;
+  line-height: 62px;
 }
-/* line 149, ../components/main_menu/clientlibs/main_menu.scss */
+/* line 151, ../components/main_menu/clientlibs/main_menu.scss */
 .main-menu-component .search-block .phone {
   font-family: "fbronibe", "Trebuchet MS", Ubuntu, serif;
   font-size: 18px;
@@ -3384,17 +3394,17 @@ select::-ms-expand {
   width: 100%;
   height: 60px;
   padding-top: 3px;
-  line-height: 60px;
   background-color: #061d27;
   color: #ffffff;
   text-align: center;
+  line-height: 58px;
 }
-/* line 161, ../components/main_menu/clientlibs/main_menu.scss */
+/* line 163, ../components/main_menu/clientlibs/main_menu.scss */
 .main-menu-component .search-block .phone:hover {
   text-decoration: none;
   color: #f99e1b;
 }
-/* line 170, ../components/main_menu/clientlibs/main_menu.scss */
+/* line 172, ../components/main_menu/clientlibs/main_menu.scss */
 .main-menu-component .search-block .main-menu-select-block {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -3405,12 +3415,12 @@ select::-ms-expand {
 }
 
 @media (min-width: 800px) and (max-width: 1139px) {
-  /* line 184, ../components/main_menu/clientlibs/main_menu.scss */
+  /* line 186, ../components/main_menu/clientlibs/main_menu.scss */
   .main-menu-component {
     position: fixed;
     z-index: 1111;
   }
-  /* line 188, ../components/main_menu/clientlibs/main_menu.scss */
+  /* line 190, ../components/main_menu/clientlibs/main_menu.scss */
   .main-menu-component .main-logo-block {
     float: right;
     clear: none;
@@ -3425,11 +3435,11 @@ select::-ms-expand {
   .main-menu-component .main-logo-block:last-child {
     margin-left: 0%;
   }
-  /* line 194, ../components/main_menu/clientlibs/main_menu.scss */
+  /* line 196, ../components/main_menu/clientlibs/main_menu.scss */
   .main-menu-component .main-logo-block .main-menu-burger {
     display: none;
   }
-  /* line 198, ../components/main_menu/clientlibs/main_menu.scss */
+  /* line 200, ../components/main_menu/clientlibs/main_menu.scss */
   .main-menu-component .main-logo-block .main-logo {
     position: absolute;
     left: 50%;
@@ -3439,25 +3449,25 @@ select::-ms-expand {
     -webkit-transform: translateY(-50%) translateX(-50%);
     transform: translateY(-50%) translateX(-50%);
   }
-  /* line 201, ../components/main_menu/clientlibs/main_menu.scss */
+  /* line 203, ../components/main_menu/clientlibs/main_menu.scss */
   .main-menu-component .main-logo-block .main-logo__img {
     display: inline-block;
     width: 66px;
     height: 55px;
   }
-  /* line 207, ../components/main_menu/clientlibs/main_menu.scss */
+  /* line 209, ../components/main_menu/clientlibs/main_menu.scss */
   .main-menu-component .main-logo-block .main-logo__text {
     display: inline-block;
     width: 58px;
     height: 17px;
   }
-  /* line 214, ../components/main_menu/clientlibs/main_menu.scss */
+  /* line 216, ../components/main_menu/clientlibs/main_menu.scss */
   .main-menu-component .main-logo-block--style {
     top: 0;
     border-top: none;
     box-shadow: none;
   }
-  /* line 221, ../components/main_menu/clientlibs/main_menu.scss */
+  /* line 223, ../components/main_menu/clientlibs/main_menu.scss */
   .main-menu-component .main-menu-info {
     float: right;
     clear: none;
@@ -3470,13 +3480,13 @@ select::-ms-expand {
   .main-menu-component .main-menu-info:last-child {
     margin-left: 0%;
   }
-  /* line 225, ../components/main_menu/clientlibs/main_menu.scss */
+  /* line 227, ../components/main_menu/clientlibs/main_menu.scss */
   .main-menu-component .main-menu-info .main-menu-nav {
     display: block !important;
     position: inherit;
     height: auto;
   }
-  /* line 230, ../components/main_menu/clientlibs/main_menu.scss */
+  /* line 232, ../components/main_menu/clientlibs/main_menu.scss */
   .main-menu-component .main-menu-info .main-menu-nav__item {
     float: right;
     clear: none;
@@ -3488,7 +3498,7 @@ select::-ms-expand {
   .main-menu-component .main-menu-info .main-menu-nav__item:last-child {
     margin-left: 0%;
   }
-  /* line 237, ../components/main_menu/clientlibs/main_menu.scss */
+  /* line 239, ../components/main_menu/clientlibs/main_menu.scss */
   .main-menu-component .search-block .col {
     float: right;
     clear: none;
@@ -3500,22 +3510,22 @@ select::-ms-expand {
   .main-menu-component .search-block .col:last-child {
     margin-left: 0%;
   }
-  /* line 241, ../components/main_menu/clientlibs/main_menu.scss */
+  /* line 243, ../components/main_menu/clientlibs/main_menu.scss */
   .main-menu-component .search-block .add-btn {
     display: block;
   }
 }
 @media (min-width: 1140px) {
-  /* line 254, ../components/main_menu/clientlibs/main_menu.scss */
+  /* line 256, ../components/main_menu/clientlibs/main_menu.scss */
   .main-menu-component {
     position: fixed;
     z-index: 1111;
   }
-  /* line 258, ../components/main_menu/clientlibs/main_menu.scss */
+  /* line 260, ../components/main_menu/clientlibs/main_menu.scss */
   .main-menu-component .main-menu-burger {
     display: none;
   }
-  /* line 262, ../components/main_menu/clientlibs/main_menu.scss */
+  /* line 264, ../components/main_menu/clientlibs/main_menu.scss */
   .main-menu-component .main-logo-block {
     float: right;
     clear: none;
@@ -3530,7 +3540,7 @@ select::-ms-expand {
   .main-menu-component .main-logo-block:last-child {
     margin-left: 0%;
   }
-  /* line 268, ../components/main_menu/clientlibs/main_menu.scss */
+  /* line 270, ../components/main_menu/clientlibs/main_menu.scss */
   .main-menu-component .main-logo-block .main-logo {
     position: absolute;
     left: 50%;
@@ -3540,25 +3550,25 @@ select::-ms-expand {
     -webkit-transform: translateY(-50%) translateX(-50%);
     transform: translateY(-50%) translateX(-50%);
   }
-  /* line 271, ../components/main_menu/clientlibs/main_menu.scss */
+  /* line 273, ../components/main_menu/clientlibs/main_menu.scss */
   .main-menu-component .main-logo-block .main-logo__img {
     display: inline-block;
     width: 66px;
     height: 55px;
   }
-  /* line 277, ../components/main_menu/clientlibs/main_menu.scss */
+  /* line 279, ../components/main_menu/clientlibs/main_menu.scss */
   .main-menu-component .main-logo-block .main-logo__text {
     display: inline-block;
     width: 58px;
     height: 17px;
   }
-  /* line 284, ../components/main_menu/clientlibs/main_menu.scss */
+  /* line 286, ../components/main_menu/clientlibs/main_menu.scss */
   .main-menu-component .main-logo-block--style {
     top: 0;
     border-top: none;
     box-shadow: none;
   }
-  /* line 292, ../components/main_menu/clientlibs/main_menu.scss */
+  /* line 294, ../components/main_menu/clientlibs/main_menu.scss */
   .main-menu-component .main-menu-info {
     float: right;
     clear: none;
@@ -3571,13 +3581,13 @@ select::-ms-expand {
   .main-menu-component .main-menu-info:last-child {
     margin-left: 0%;
   }
-  /* line 296, ../components/main_menu/clientlibs/main_menu.scss */
+  /* line 298, ../components/main_menu/clientlibs/main_menu.scss */
   .main-menu-component .main-menu-info .main-menu-nav {
     display: block !important;
     position: inherit;
     height: auto;
   }
-  /* line 301, ../components/main_menu/clientlibs/main_menu.scss */
+  /* line 303, ../components/main_menu/clientlibs/main_menu.scss */
   .main-menu-component .main-menu-info .main-menu-nav__item {
     float: right;
     clear: none;
@@ -3589,7 +3599,7 @@ select::-ms-expand {
   .main-menu-component .main-menu-info .main-menu-nav__item:last-child {
     margin-left: 0%;
   }
-  /* line 308, ../components/main_menu/clientlibs/main_menu.scss */
+  /* line 310, ../components/main_menu/clientlibs/main_menu.scss */
   .main-menu-component .search-block .col {
     float: right;
     clear: none;
@@ -3601,12 +3611,12 @@ select::-ms-expand {
   .main-menu-component .search-block .col:last-child {
     margin-left: 0%;
   }
-  /* line 312, ../components/main_menu/clientlibs/main_menu.scss */
+  /* line 314, ../components/main_menu/clientlibs/main_menu.scss */
   .main-menu-component .search-block .add-btn {
     display: block;
   }
 }
-/* line 323, ../components/main_menu/clientlibs/main_menu.scss */
+/* line 325, ../components/main_menu/clientlibs/main_menu.scss */
 .menu-burger-icon {
   cursor: pointer;
   position: relative;
@@ -3622,7 +3632,7 @@ select::-ms-expand {
   transition: .5s ease-in-out;
   cursor: pointer;
 }
-/* line 338, ../components/main_menu/clientlibs/main_menu.scss */
+/* line 340, ../components/main_menu/clientlibs/main_menu.scss */
 .menu-burger-icon span {
   display: block;
   position: absolute;
@@ -3640,7 +3650,7 @@ select::-ms-expand {
   -o-transition: .25s ease-in-out;
   transition: .25s ease-in-out;
 }
-/* line 355, ../components/main_menu/clientlibs/main_menu.scss */
+/* line 357, ../components/main_menu/clientlibs/main_menu.scss */
 .menu-burger-icon span:nth-child(1), .menu-burger-icon span:nth-child(2), .menu-burger-icon span:nth-child(3) {
   top: 0px;
   -webkit-transform-origin: left center;
@@ -3648,27 +3658,27 @@ select::-ms-expand {
   -o-transform-origin: left center;
   transform-origin: left center;
 }
-/* line 363, ../components/main_menu/clientlibs/main_menu.scss */
+/* line 365, ../components/main_menu/clientlibs/main_menu.scss */
 .menu-burger-icon span:nth-child(2) {
   top: 12px;
 }
-/* line 368, ../components/main_menu/clientlibs/main_menu.scss */
+/* line 370, ../components/main_menu/clientlibs/main_menu.scss */
 .menu-burger-icon span:nth-child(3) {
   top: 24px;
 }
-/* line 376, ../components/main_menu/clientlibs/main_menu.scss */
+/* line 378, ../components/main_menu/clientlibs/main_menu.scss */
 .menu-burger-icon.burger-active span:nth-child(1) {
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   -o-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-/* line 383, ../components/main_menu/clientlibs/main_menu.scss */
+/* line 385, ../components/main_menu/clientlibs/main_menu.scss */
 .menu-burger-icon.burger-active span:nth-child(2) {
   width: 0%;
   opacity: 0;
 }
-/* line 388, ../components/main_menu/clientlibs/main_menu.scss */
+/* line 390, ../components/main_menu/clientlibs/main_menu.scss */
 .menu-burger-icon.burger-active span:nth-child(3) {
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
@@ -8013,7 +8023,7 @@ select::-ms-expand {
 /* line 1, ../components/property_popup_component/clientlibs/property_popup_component.scss */
 .property-popup-component {
   *zoom: 1;
-  display: block;
+  display: none;
   z-index: 3000;
   position: absolute;
   width: 100%;
