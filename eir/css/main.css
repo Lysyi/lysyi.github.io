@@ -1640,7 +1640,7 @@
   position: relative;
   width: 19px;
   height: 19px;
-  top: 6px;
+  top: 4px;
   margin: 0 10px 0 0;
   background-image: url("../img/yellow-phone-ico.svg");
   background-size: 100%;
@@ -8129,7 +8129,7 @@ select::-ms-expand {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   *zoom: 1;
-  padding: 30px 35px 10px 35px;
+  padding: 25px 20px 20px 20px;
 }
 /* line 343, ../sass/core/jeet/_grid.scss */
 .property-popup-component .property-popup-info-container--text:before, .property-popup-component .property-popup-info-container--text:after, .property-popup-component .property-popup-info-container--text2:before, .property-popup-component .property-popup-info-container--text2:after {
@@ -8152,7 +8152,7 @@ select::-ms-expand {
 /* line 43, ../components/property_popup_component/clientlibs/property_popup_component.scss */
 .property-popup-component .property-popup-info-container--text p, .property-popup-component .property-popup-info-container--text2 p {
   font-family: "fbronibe", "Trebuchet MS", Ubuntu, serif;
-  font-size: 21px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 300;
   margin-bottom: 10px;
@@ -8171,7 +8171,7 @@ select::-ms-expand {
   margin-right: 0%;
   margin-left: 0%;
   font-family: "fbronibe", "Trebuchet MS", Ubuntu, serif;
-  font-size: 21px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 300;
   color: #333333;
@@ -8398,7 +8398,25 @@ select::-ms-expand {
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
   }
-  /* line 197, ../components/property_popup_component/clientlibs/property_popup_component.scss */
+  /* line 198, ../components/property_popup_component/clientlibs/property_popup_component.scss */
+  .property-popup-component .property-popup-info-container--text, .property-popup-component .property-popup-info-container--text2 {
+    padding: 30px 30px 20px 30px;
+  }
+  /* line 200, ../components/property_popup_component/clientlibs/property_popup_component.scss */
+  .property-popup-component .property-popup-info-container--text p, .property-popup-component .property-popup-info-container--text2 p {
+    font-family: "fbronibe", "Trebuchet MS", Ubuntu, serif;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 300;
+  }
+  /* line 205, ../components/property_popup_component/clientlibs/property_popup_component.scss */
+  .property-popup-component .property-popup-info-container--list {
+    font-family: "fbronibe", "Trebuchet MS", Ubuntu, serif;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 300;
+  }
+  /* line 211, ../components/property_popup_component/clientlibs/property_popup_component.scss */
   .property-popup-component .property-popup-bottom-container--user-help {
     float: right;
     clear: none;
@@ -8410,7 +8428,7 @@ select::-ms-expand {
   .property-popup-component .property-popup-bottom-container--user-help:last-child {
     margin-left: 0%;
   }
-  /* line 201, ../components/property_popup_component/clientlibs/property_popup_component.scss */
+  /* line 215, ../components/property_popup_component/clientlibs/property_popup_component.scss */
   .property-popup-component .property-popup-bottom-container--button-list {
     float: right;
     clear: none;
@@ -8425,7 +8443,7 @@ select::-ms-expand {
   }
 }
 @media (min-width: 1140px) {
-  /* line 215, ../components/property_popup_component/clientlibs/property_popup_component.scss */
+  /* line 229, ../components/property_popup_component/clientlibs/property_popup_component.scss */
   .property-popup-component__inner {
     position: absolute;
     left: 50%;
@@ -8434,7 +8452,7 @@ select::-ms-expand {
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
   }
-  /* line 219, ../components/property_popup_component/clientlibs/property_popup_component.scss */
+  /* line 233, ../components/property_popup_component/clientlibs/property_popup_component.scss */
   .property-popup-component .property-popup-info-container {
     float: right;
     clear: none;
@@ -8448,11 +8466,36 @@ select::-ms-expand {
   .property-popup-component .property-popup-info-container:last-child {
     margin-left: 0%;
   }
-  /* line 224, ../components/property_popup_component/clientlibs/property_popup_component.scss */
-  .property-popup-component .property-popup-info-container--text2 {
-    padding: 60px 35px 50px 0;
+  /* line 238, ../components/property_popup_component/clientlibs/property_popup_component.scss */
+  .property-popup-component .property-popup-info-container--text {
+    padding: 30px 35px 10px 35px;
   }
-  /* line 229, ../components/property_popup_component/clientlibs/property_popup_component.scss */
+  /* line 240, ../components/property_popup_component/clientlibs/property_popup_component.scss */
+  .property-popup-component .property-popup-info-container--text p {
+    font-family: "fbronibe", "Trebuchet MS", Ubuntu, serif;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 300;
+  }
+  /* line 245, ../components/property_popup_component/clientlibs/property_popup_component.scss */
+  .property-popup-component .property-popup-info-container--text2 {
+    padding: 60px 35px 30px 0;
+  }
+  /* line 247, ../components/property_popup_component/clientlibs/property_popup_component.scss */
+  .property-popup-component .property-popup-info-container--text2 p {
+    font-family: "fbronibe", "Trebuchet MS", Ubuntu, serif;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 300;
+  }
+  /* line 252, ../components/property_popup_component/clientlibs/property_popup_component.scss */
+  .property-popup-component .property-popup-info-container--list {
+    font-family: "fbronibe", "Trebuchet MS", Ubuntu, serif;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 300;
+  }
+  /* line 257, ../components/property_popup_component/clientlibs/property_popup_component.scss */
   .property-popup-component .property-popup-slider-container {
     float: right;
     clear: none;
@@ -8465,16 +8508,16 @@ select::-ms-expand {
   .property-popup-component .property-popup-slider-container:last-child {
     margin-left: 0%;
   }
-  /* line 233, ../components/property_popup_component/clientlibs/property_popup_component.scss */
+  /* line 261, ../components/property_popup_component/clientlibs/property_popup_component.scss */
   .property-popup-component .property-popup-slider-container .property-popup-slider__image {
     position: relative;
     height: 655px;
   }
-  /* line 237, ../components/property_popup_component/clientlibs/property_popup_component.scss */
+  /* line 265, ../components/property_popup_component/clientlibs/property_popup_component.scss */
   .property-popup-component .property-popup-slider-container .property-popup-slider__image img {
     width: 150%;
   }
-  /* line 244, ../components/property_popup_component/clientlibs/property_popup_component.scss */
+  /* line 272, ../components/property_popup_component/clientlibs/property_popup_component.scss */
   .property-popup-component .property-popup-bottom-container--user-help {
     float: right;
     clear: none;
@@ -8486,7 +8529,7 @@ select::-ms-expand {
   .property-popup-component .property-popup-bottom-container--user-help:last-child {
     margin-left: 0%;
   }
-  /* line 248, ../components/property_popup_component/clientlibs/property_popup_component.scss */
+  /* line 276, ../components/property_popup_component/clientlibs/property_popup_component.scss */
   .property-popup-component .property-popup-bottom-container--button-list {
     float: right;
     clear: none;
@@ -8500,13 +8543,13 @@ select::-ms-expand {
     margin-left: 0%;
   }
 }
-/* line 259, ../components/property_popup_component/clientlibs/property_popup_component.scss */
+/* line 287, ../components/property_popup_component/clientlibs/property_popup_component.scss */
 .eir-checkbox-block {
   float: right;
   position: relative;
-  margin: 0 0 0 10px;
+  margin: 0 15px 0 10px;
 }
-/* line 263, ../components/property_popup_component/clientlibs/property_popup_component.scss */
+/* line 291, ../components/property_popup_component/clientlibs/property_popup_component.scss */
 .eir-checkbox-block label {
   width: 19px;
   height: 19px;
@@ -8516,7 +8559,7 @@ select::-ms-expand {
   left: 0;
   border: solid rgba(0, 0, 0, 0.2) 1px;
 }
-/* line 271, ../components/property_popup_component/clientlibs/property_popup_component.scss */
+/* line 299, ../components/property_popup_component/clientlibs/property_popup_component.scss */
 .eir-checkbox-block label:after {
   content: '';
   width: 22px;
@@ -8531,15 +8574,15 @@ select::-ms-expand {
   opacity: 0;
   transform: rotate(-45deg);
 }
-/* line 285, ../components/property_popup_component/clientlibs/property_popup_component.scss */
+/* line 313, ../components/property_popup_component/clientlibs/property_popup_component.scss */
 .eir-checkbox-block label:hover::after {
   opacity: 0.3;
 }
-/* line 289, ../components/property_popup_component/clientlibs/property_popup_component.scss */
+/* line 317, ../components/property_popup_component/clientlibs/property_popup_component.scss */
 .eir-checkbox-block input[type=checkbox] {
   visibility: hidden;
 }
-/* line 291, ../components/property_popup_component/clientlibs/property_popup_component.scss */
+/* line 319, ../components/property_popup_component/clientlibs/property_popup_component.scss */
 .eir-checkbox-block input[type=checkbox]:checked + label:after {
   opacity: 1;
 }
